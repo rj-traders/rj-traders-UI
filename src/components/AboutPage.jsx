@@ -1,4 +1,3 @@
-import React from "react";
 import { ShieldCheck, Award, Users } from "lucide-react";
 
 export default function AboutPage({ timeline, brands }) {

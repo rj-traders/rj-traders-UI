@@ -1,6 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Award, ChevronRight, CheckCircle, Star } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { Award, ChevronRight, CheckCircle, Star } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -15,7 +14,6 @@ export default function HeroSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center lg:text-left z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
           {/* Hero Left Content */}
           <div className="lg:col-span-7 space-y-8">
             {/* Badge */}
@@ -26,7 +24,7 @@ export default function HeroSection() {
 
             {/* Title */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1]">
-              Shape Your Dream Interiors with{' '}
+              Shape Your Dream Interiors with{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 drop-shadow-sm">
                 Ultimate Perfection
               </span>
@@ -34,7 +32,9 @@ export default function HeroSection() {
 
             {/* Tagline */}
             <p className="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Madurai’s supreme destination for high-density calibrated marine plywood, exotic natural veneers, custom pre-laminated MDF, and luxury soft-close architectural hardware.
+              Madurai’s supreme destination for high-density calibrated marine
+              plywood, exotic natural veneers, custom pre-laminated MDF, and
+              luxury soft-close architectural hardware.
             </p>
 
             {/* CTA buttons */}
@@ -54,18 +54,25 @@ export default function HeroSection() {
               </Link>
             </div>
 
-
             {/* Bullet Features */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-4 border-t border-slate-800/60 text-left">
               {[
-                { title: 'Zero Core Gap Plywood', desc: 'Calibrated perfectly' },
-                { title: 'BWP Waterproof Class', desc: 'Marine certified' },
-                { title: 'Exotic Natural Finishes', desc: 'Premium Teak & Oak' }
+                {
+                  title: "Zero Core Gap Plywood",
+                  desc: "Calibrated perfectly",
+                },
+                { title: "BWP Waterproof Class", desc: "Marine certified" },
+                {
+                  title: "Exotic Natural Finishes",
+                  desc: "Premium Teak & Oak",
+                },
               ].map((item, index) => (
                 <div key={index} className="space-y-1">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-amber-500 shrink-0" />
-                    <span className="text-sm font-bold text-slate-100">{item.title}</span>
+                    <span className="text-sm font-bold text-slate-100">
+                      {item.title}
+                    </span>
                   </div>
                   <p className="text-xs text-slate-400 pl-6">{item.desc}</p>
                 </div>
@@ -89,9 +96,12 @@ export default function HeroSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                    <span className="px-3 py-1 rounded bg-amber-500/95 text-slate-950 font-bold text-[10px] uppercase tracking-wider">Sustainable Sourcing</span>
+                    <span className="px-3 py-1 rounded bg-amber-500/95 text-slate-950 font-bold text-[10px] uppercase tracking-wider">
+                      Sustainable Sourcing
+                    </span>
                     <span className="text-white font-extrabold text-sm flex items-center gap-1">
-                      <Star className="w-4 h-4 fill-amber-400 text-amber-400" /> 4.9 Rating
+                      <Star className="w-4 h-4 fill-amber-400 text-amber-400" />{" "}
+                      4.9 Rating
                     </span>
                   </div>
                 </div>
@@ -100,17 +110,20 @@ export default function HeroSection() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 text-center">
                     <p className="text-2xl font-black text-amber-400">100%</p>
-                    <p className="text-xs text-slate-400 font-medium">BWP Gurjan Core</p>
+                    <p className="text-xs text-slate-400 font-medium">
+                      BWP Gurjan Core
+                    </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 text-center">
                     <p className="text-2xl font-black text-amber-400">25 Yrs</p>
-                    <p className="text-xs text-slate-400 font-medium">Full Warranty</p>
+                    <p className="text-xs text-slate-400 font-medium">
+                      Full Warranty
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

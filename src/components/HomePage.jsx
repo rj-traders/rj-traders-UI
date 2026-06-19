@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
   ChevronRight,
@@ -10,11 +10,7 @@ import {
 } from "lucide-react";
 import HeroSection from "./HeroSection";
 
-export default function HomePage({
-  categories,
-  products,
-  testimonials,
-}) {
+export default function HomePage({ categories, products, testimonials }) {
   const navigate = useNavigate();
   const [stats] = useState({
     clients: 10000,

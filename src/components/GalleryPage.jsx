@@ -1,43 +1,49 @@
-import React, { useState, useMemo } from 'react';
-import { Maximize2, X } from 'lucide-react';
-import { GALLERY_PHOTOS } from '../data/mockData';
+import { useState, useMemo } from "react";
+import { Maximize2, X } from "lucide-react";
+import { GALLERY_PHOTOS } from "../data/mockData";
 
 export default function GalleryPage() {
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState("all");
   const [lightboxImage, setLightboxImage] = useState(null);
 
   const filteredPhotos = useMemo(() => {
-    return filter === 'all' ? GALLERY_PHOTOS : GALLERY_PHOTOS.filter(p => p.category === filter);
+    return filter === "all"
+      ? GALLERY_PHOTOS
+      : GALLERY_PHOTOS.filter((p) => p.category === filter);
   }, [filter]);
 
   return (
     <div className="animate-fadeIn py-16 bg-slate-50 min-h-[85vh]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <h1 className="text-3xl font-black text-slate-900 tracking-tight">Inspiration Gallery</h1>
+          <h1 className="text-3xl font-black text-slate-900 tracking-tight">
+            Inspiration Gallery
+          </h1>
           <p className="text-slate-500 text-sm mt-2">
-            Behold finished interior solutions made possible using premium plywood, natural Burma teak wood veneers, fumed oak panel overlays, and soft closing mechanisms.
+            Behold finished interior solutions made possible using premium
+            plywood, natural Burma teak wood veneers, fumed oak panel overlays,
+            and soft closing mechanisms.
           </p>
         </div>
 
         {/* Filter Badges */}
         <div className="flex flex-wrap justify-center gap-2 mb-12">
           {[
-            { id: 'all', label: 'All Projects' },
-            { id: 'kitchen', label: 'Luxury Kitchens' },
-            { id: 'interior', label: 'Warm Interiors' },
-            { id: 'panels', label: 'CNC Wall Panels' },
-            { id: 'office', label: 'Modern Workspaces' }
-          ].map(btn => (
+            { id: "all", label: "All Projects" },
+            { id: "kitchen", label: "Luxury Kitchens" },
+            { id: "interior", label: "Warm Interiors" },
+            { id: "panels", label: "CNC Wall Panels" },
+            { id: "office", label: "Modern Workspaces" },
+          ].map((btn) => (
             <button
               key={btn.id}
               onClick={() => setFilter(btn.id)}
-              className={`px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all ${filter === btn.id
-                ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/10'
-                : 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-100'
-                }`}
+              className={`px-4 py-2 rounded-xl text-xs font-bold tracking-wide transition-all ${
+                filter === btn.id
+                  ? "bg-amber-500 text-slate-950 shadow-md shadow-amber-500/10"
+                  : "bg-white border border-slate-200 text-slate-600 hover:bg-slate-100"
+              }`}
             >
               {btn.label}
             </button>
@@ -73,8 +79,12 @@ export default function GalleryPage() {
               {/* Tag bottom */}
               <div className="p-4 flex justify-between items-center bg-white">
                 <div>
-                  <h3 className="text-sm font-bold text-slate-900">{photo.title}</h3>
-                  <span className="text-[10px] text-amber-600 font-bold uppercase tracking-wider">{photo.category}</span>
+                  <h3 className="text-sm font-bold text-slate-900">
+                    {photo.title}
+                  </h3>
+                  <span className="text-[10px] text-amber-600 font-bold uppercase tracking-wider">
+                    {photo.category}
+                  </span>
                 </div>
                 <button
                   onClick={() => setLightboxImage(photo.image)}
@@ -93,7 +103,10 @@ export default function GalleryPage() {
             className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-sm flex items-center justify-center p-4 animate-fadeIn"
             onClick={() => setLightboxImage(null)}
           >
-            <div className="relative max-w-4xl max-h-[90vh] overflow-hidden rounded-2xl" onClick={(e) => e.stopPropagation()}>
+            <div
+              className="relative max-w-4xl max-h-[90vh] overflow-hidden rounded-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
               <img
                 src={lightboxImage}
                 alt="Enlarged Showcase"
@@ -109,7 +122,6 @@ export default function GalleryPage() {
             </div>
           </div>
         )}
-
       </div>
     </div>
   );
