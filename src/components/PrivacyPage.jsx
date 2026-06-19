@@ -119,8 +119,7 @@ export default function PrivacyPage() {
             <p className="text-xs bg-slate-50 border border-slate-200 rounded-xl p-4 mt-2">
               <strong>RJ Plywood & Hardwares Yard Office</strong>
               <br />
-              12, Woodcutters Lane, Near Central Flyover, Madurai - 625020,
-              Tamil Nadu, India.
+              No. 153/2, SRH Building, Alagar Kovil Mian Road, K Pudur, Madurai
               <br />
               Email:{" "}
               <a

@@ -265,8 +265,8 @@ export default function ContactPage() {
                       Head Office &amp; Yard:
                     </strong>
                     <span className="text-slate-400">
-                      12, Woodcutters Lane, Near Central Flyover, Madurai -
-                      625020, Tamil Nadu, India.
+                      No. 153/2, SRH Building, Alagar Kovil Mian Road, K Pudur,
+                      Madurai
                     </span>
                   </div>
                 </li>

@@ -137,8 +137,8 @@ export default function Footer() {
                 <span>
                   <strong>RJ Plywood &amp; Hardwares</strong>
                   <br />
-                  12, Woodcutters Lane, Near Central Flyover, Madurai - 625020,
-                  Tamil Nadu, India.
+                  No. 153/2, SRH Building, Alagar Kovil Mian Road, K Pudur,
+                  Madurai
                 </span>
               </li>
               <li className="flex items-center gap-3">
