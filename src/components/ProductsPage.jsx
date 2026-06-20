@@ -117,7 +117,7 @@ export default function ProductsPage({ categories, products }) {
                   <img
                     src={prod.image}
                     alt={prod.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-4 left-4 bg-slate-950/90 text-amber-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
                     {prod.category}

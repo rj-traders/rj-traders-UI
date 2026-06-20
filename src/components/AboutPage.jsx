@@ -146,7 +146,7 @@ export default function AboutPage({ timeline, brands }) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {brands.map((brand, idx) => (
               <div
                 key={idx}

@@ -2,6 +2,13 @@ import { Layers, Layers3, Wrench, Droplets } from "lucide-react";
 import greenpanel from "../assets/greenpanel.jpg";
 import egPly from "../assets/eg-ply-certified-polywoods.jpg";
 import fevicol from "../assets/fevicol.png";
+import sleekimg from "../assets/sleek.jpeg";
+import egmarkimg from "../assets/product-images/EG Mark.png";
+import egbondimg from "../assets/product-images/EG Bond.png";
+import egbondBWBimg from "../assets/product-images/EG Bond BWB.png";
+import egbondMRimg from "../assets/product-images/EG PLY ( MR ).png";
+import egedgeply from "../assets/product-images/EG EDGE.png";
+import egplybsl from "../assets/product-images/EG Ply ( BSL ).png";
 
 export const PRODUCT_CATEGORIES = [
   { id: "plywood", name: "EG Plywood", icon: Layers },
@@ -31,8 +38,7 @@ export const PRODUCTS = [
     },
     rating: 4.9,
     reviews: 185,
-    image:
-      "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800",
+    image: egmarkimg,
     specs: {
       "Core Wood": "100% Selected Hardwood & Gurjan",
       Resin: "Phenol Formaldehyde (BWP Grade)",
@@ -63,8 +69,7 @@ export const PRODUCTS = [
     },
     rating: 4.8,
     reviews: 142,
-    image:
-      "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&q=80&w=800",
+    image: egbondBWBimg,
     specs: {
       "Core Wood": "Gurjan & Hardwood Mix Core",
       Resin: "Fortified Phenolic Glue (BWP Grade)",
@@ -96,17 +101,14 @@ export const PRODUCTS = [
     },
     rating: 4.7,
     reviews: 121,
-    image:
-      "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800",
+    image: egbondimg,
     specs: {
       "Core Wood": "Eucalyptus & Selected Hardwoods",
       Resin: "Fortified Synthetic Resin",
       "Glue Shear Strength": "> 1200 N",
       "Moisture Content": "9% - 12%",
-      Warranty: "10 Years Structural Warranty",
     },
     features: [
-      "10 Years Structural Warranty",
       "Excellent Mechanical Strength",
       "High Core Density",
       "Superior Surface Flatness",
@@ -127,14 +129,13 @@ export const PRODUCTS = [
     },
     rating: 4.6,
     reviews: 95,
-    image:
-      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800",
+    image: egbondMRimg,
     specs: {
       "Core Wood": "Selected Plantation Timber Mix",
       Resin: "Melamine Fortified MUF Glue",
       "Glue Shear Strength": "> 1000 N",
       "Moisture Content": "10% - 13%",
-      Warranty: "5 Years Store Warranty",
+      Warranty: "5 Years Warranty",
     },
     features: [
       "5 Years Warranty",
@@ -158,8 +159,7 @@ export const PRODUCTS = [
     },
     rating: 4.7,
     reviews: 104,
-    image:
-      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=800",
+    image: egedgeply,
     specs: {
       "Core Wood": "Eucalyptus Broadleaf Wood",
       Resin: "Modified Phenolic Urea Bond",
@@ -189,14 +189,12 @@ export const PRODUCTS = [
     },
     rating: 4.8,
     reviews: 79,
-    image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
+    image: egplybsl,
     specs: {
       "Core Wood": "High-Density Hardwood Fiber Core",
       Resin: "Fortified Melamine Binder",
       Overlay: "Double Side Decorative Shutter Sheet",
       "Moisture Content": "8% - 11%",
-      Warranty: "10 Years Performance Warranty",
     },
     features: [
       "Double-Sided Protection",
@@ -899,6 +897,7 @@ export const BRAND_PARTNERS = [
   { name: "Greenpanel", logo: greenpanel },
   { name: "EG Ply", logo: egPly },
   { name: "Fevicol", logo: fevicol },
+  { name: "Sleek", logo: sleekimg },
 ];
 
 export const TESTIMONIALS = [
