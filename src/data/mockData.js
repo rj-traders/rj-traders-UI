@@ -9,6 +9,16 @@ import egbondBWBimg from "../assets/product-images/EG Bond BWB.png";
 import egbondMRimg from "../assets/product-images/EG PLY ( MR ).png";
 import egedgeply from "../assets/product-images/EG EDGE.png";
 import egplybsl from "../assets/product-images/EG Ply ( BSL ).png";
+import vitomrimg from "../assets/product-images/Vito ( MR ).png";
+import vitobwrimg from "../assets/product-images/Vito ( BWR ).png";
+import vitobslimg from "../assets/product-images/Vito ( BSL ).png";
+import vitocoreimg from "../assets/product-images/Vito Core.png";
+import lcplywoodimg from "../assets/product-images/LC Plywood.png";
+import ncmrimg from "../assets/product-images/NC ( MR ).png";
+import ncimg from "../assets/product-images/NC.png";
+import ncplyimg from "../assets/product-images/NC PLywood.png";
+import wbcblockimg from "../assets/product-images/WBC Blockboard.png";
+import shutteringimg from "../assets/product-images/Shuttering Plywood.png";
 
 export const PRODUCT_CATEGORIES = [
   { id: "plywood", name: "EG Plywood", icon: Layers },
@@ -220,17 +230,14 @@ export const PRODUCTS = [
     },
     rating: 4.6,
     reviews: 115,
-    image:
-      "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&q=80&w=800",
+    image: vitomrimg,
     specs: {
       "Core Wood": "Eucalyptus & Selected Poplar Core",
       Resin: "Urea Formaldehyde Adhesive",
       "Glue Shear Strength": "> 1000 N",
       "Moisture Content": "10% - 14%",
-      Warranty: "5 Years Store Warranty",
     },
     features: [
-      "5 Years Warranty",
       "Excellent Cost-Benefit Ratio",
       "Carpenter Friendly Easy Cutting",
       "High Flatness Index",
@@ -253,17 +260,14 @@ export const PRODUCTS = [
     },
     rating: 4.5,
     reviews: 98,
-    image:
-      "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800",
+    image: vitobwrimg,
     specs: {
       "Core Wood": "Mixed Hardwood Core Wood",
       Resin: "Fortified Urea Phenolic Resin",
       "Glue Shear Strength": "> 1050 N",
       "Moisture Content": "9% - 13%",
-      Warranty: "6 Years Store Warranty",
     },
     features: [
-      "6 Years Warranty",
       "Boiling Water Resistant (BWR)",
       "Borer Resistant Chemical Barrier",
       "Strong Core Adhesion",
@@ -284,14 +288,12 @@ export const PRODUCTS = [
     },
     rating: 4.4,
     reviews: 55,
-    image:
-      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800",
+    image: vitobslimg,
     specs: {
       "Core Wood": "Softwood & Poplar core veneer",
       Resin: "Commercial Binder",
       Overlay: "Melamine Impregnated Solid Suede Sheet",
       "Moisture Content": "10% - 13%",
-      Warranty: "3 Years Store Warranty",
     },
     features: [
       "Pre-finished Surfaces",
@@ -315,14 +317,12 @@ export const PRODUCTS = [
     },
     rating: 4.6,
     reviews: 41,
-    image:
-      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=800",
+    image: vitocoreimg,
     specs: {
       "Core Wood": "Dense Core Wood Filler battens",
       Resin: "Structural Amino Plast Glue",
       "Glue Shear Strength": "> 1100 N",
       "Moisture Content": "8% - 12%",
-      Warranty: "8 Years Heavy Performance Warranty",
     },
     features: [
       "High Mechanical Force Tolerance",
@@ -346,17 +346,14 @@ export const PRODUCTS = [
     },
     rating: 4.2,
     reviews: 38,
-    image:
-      "https://images.unsplash.com/photo-1610557892470-76d747eed00b?auto=format&fit=crop&q=80&w=800",
+    image: lcplywoodimg,
     specs: {
       "Core Wood": "Plantation Timbers & Poplar mix",
       Resin: "Urea Formaldehyde adhesive",
       "Glue Shear Strength": "> 850 N",
       "Moisture Content": "11% - 14%",
-      Warranty: "3 Years Store Warranty",
     },
     features: [
-      "3 Years Warranty",
       "Thick 18mm board",
       "Very Easy Carpentry Operations",
       "Perfect for Internal Framing",
@@ -379,8 +376,7 @@ export const PRODUCTS = [
     },
     rating: 4.3,
     reviews: 83,
-    image:
-      "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&q=80&w=800",
+    image: ncmrimg,
     specs: {
       "Core Wood": "Poplar core wood sheets",
       Resin: "Standard Urea adhesive",
@@ -410,13 +406,11 @@ export const PRODUCTS = [
     },
     rating: 4.4,
     reviews: 49,
-    image:
-      "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800",
+    image: ncimg,
     specs: {
       "Core Wood": "Softwood Mix core sheets",
       Resin: "Commercial resin adhesive",
       "Moisture Content": "11% - 13%",
-      Warranty: "2 Years Store Warranty",
     },
     features: [
       "Unique 6x4 Feet Sheet Layout",
@@ -440,13 +434,11 @@ export const PRODUCTS = [
     },
     rating: 4.1,
     reviews: 67,
-    image:
-      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800",
+    image: ncplyimg,
     specs: {
       "Core Wood": "Poplar & Softwood Core",
       Resin: "Commercial Urea adhesive",
       "Moisture Content": "11% - 14%",
-      Warranty: "2 Years Store Warranty",
     },
     features: [
       "Extremely Cost Efficient",
@@ -471,16 +463,13 @@ export const PRODUCTS = [
     },
     rating: 4.7,
     reviews: 58,
-    image:
-      "https://images.unsplash.com/photo-1610557892470-76d747eed00b?auto=format&fit=crop&q=80&w=800",
+    image: wbcblockimg,
     specs: {
       "Core Wood": "High-Density Wood Fiber Batten board",
       Resin: "Hydrophobic Phenol Resin Matrix",
       "Moisture Content": "8% - 10%",
-      Warranty: "10 Years Integrity Warranty",
     },
     features: [
-      "10 Years Warranty",
       "High Thermal Insulation",
       "Outstanding Hydrophobic Cover",
       "Anti-Fungal Core Formulation",
@@ -501,8 +490,7 @@ export const PRODUCTS = [
     },
     rating: 4.8,
     reviews: 91,
-    image:
-      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=800",
+    image: shutteringimg,
     specs: {
       "Core Wood": "Dense Premium Eucalyptus Wood",
       Resin: "100% Phenol Formaldehyde Glue",
