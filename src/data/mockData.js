@@ -11,8 +11,8 @@ import egedgeply from "../assets/product-images/EG EDGE.png";
 import egplybsl from "../assets/product-images/EG Ply ( BSL ).png";
 import vitomrimg from "../assets/product-images/NC Vito (MR).png";
 import vitobwrimg from "../assets/product-images/NC Vito ( BWR ).png";
-import vitobslimg from "../assets/product-images/Vito ( BSL ).png";
-import ncmrimg from "../assets/product-images/NC ( MR ).png";
+import vitobslimg from "../assets/product-images/NC Vito ( BSL ).png";
+import ncmrimg from "../assets/product-images/NC Vito Ply ( MR ).png";
 import wbcblockimg from "../assets/product-images/WBC Blockboard.png";
 import shutteringimg from "../assets/product-images/Shuttering Plywood.png";
 
@@ -272,7 +272,7 @@ export const PRODUCTS = [
   {
     id: "ply-vito-bsl",
     category: "plywood",
-    name: "Vito BSL",
+    name: "NC Vito Ply (BSL)",
     tagline: "Double Sided Pre-Laminated Economy Cabinet Board",
     description:
       "An excellent choice for sliding drawers, wardrobe inner shelves, and utility racks. Pre-laminated with durable layers on both sides for effortless maintenance and cleanliness.",
