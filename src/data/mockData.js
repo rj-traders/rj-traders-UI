@@ -9,14 +9,10 @@ import egbondBWBimg from "../assets/product-images/EG Bond BWB.png";
 import egbondMRimg from "../assets/product-images/EG PLY ( MR ).png";
 import egedgeply from "../assets/product-images/EG EDGE.png";
 import egplybsl from "../assets/product-images/EG Ply ( BSL ).png";
-import vitomrimg from "../assets/product-images/Vito ( MR ).png";
-import vitobwrimg from "../assets/product-images/Vito ( BWR ).png";
+import vitomrimg from "../assets/product-images/NC Vito (MR).png";
+import vitobwrimg from "../assets/product-images/NC Vito ( BWR ).png";
 import vitobslimg from "../assets/product-images/Vito ( BSL ).png";
-import vitocoreimg from "../assets/product-images/Vito Core.png";
-import lcplywoodimg from "../assets/product-images/LC Plywood.png";
 import ncmrimg from "../assets/product-images/NC ( MR ).png";
-import ncimg from "../assets/product-images/NC.png";
-import ncplyimg from "../assets/product-images/NC PLywood.png";
 import wbcblockimg from "../assets/product-images/WBC Blockboard.png";
 import shutteringimg from "../assets/product-images/Shuttering Plywood.png";
 
@@ -216,7 +212,7 @@ export const PRODUCTS = [
   {
     id: "ply-vito-mr",
     category: "plywood",
-    name: "Vito (MR)",
+    name: "NC Vito Ply (MR)",
     tagline: "Reliable Moisture Resistant Interior Plywood",
     description:
       "Designed as a robust, cost-effective interior solution for home paneling, commercial room dividers, wardrobe backing, and generic architectural interior works.",
@@ -246,7 +242,7 @@ export const PRODUCTS = [
   {
     id: "ply-vito-bwr",
     category: "plywood",
-    name: "Vito (BWR)",
+    name: "NC Vito Ply (BWR)",
     tagline: "Boiling Water Resistant Structural Grade Plywood",
     description:
       "Resilient and sturdy, Vito BWR is designed to withhold high humidity zones. Built using composite hardwood cross-bands to support reliable structural carpentry frameworks.",
@@ -303,70 +299,13 @@ export const PRODUCTS = [
     ],
   },
   {
-    id: "ply-vito-core",
-    category: "plywood",
-    name: "Vito Core",
-    tagline: "Solid Hardwood Core Frame-Grade Block Board",
-    description:
-      "Heavy structural solid core board designed for main door framing, internal partition support pillars, and customized heavy-duty workshop bench templates.",
-    basePrice: 115,
-    unit: "sq.ft",
-    thicknesses: ["19mm"],
-    stock: {
-      "19mm": 9,
-    },
-    rating: 4.6,
-    reviews: 41,
-    image: vitocoreimg,
-    specs: {
-      "Core Wood": "Dense Core Wood Filler battens",
-      Resin: "Structural Amino Plast Glue",
-      "Glue Shear Strength": "> 1100 N",
-      "Moisture Content": "8% - 12%",
-    },
-    features: [
-      "High Mechanical Force Tolerance",
-      "Thick 19mm Block core",
-      "Excellent Screw Retention Power",
-      "Negligible Warping Coefficients",
-    ],
-  },
-  {
-    id: "ply-lc",
-    category: "plywood",
-    name: "LC Plywood",
-    tagline: "Budget Commercial Dry Framing Utility Board",
-    description:
-      "Optimized for temporary setups, false ceiling back-supports, custom exhibition stalls, and affordable residential furniture framework units.",
-    basePrice: 62,
-    unit: "sq.ft",
-    thicknesses: ["18mm"],
-    stock: {
-      "18mm": 0,
-    },
-    rating: 4.2,
-    reviews: 38,
-    image: lcplywoodimg,
-    specs: {
-      "Core Wood": "Plantation Timbers & Poplar mix",
-      Resin: "Urea Formaldehyde adhesive",
-      "Glue Shear Strength": "> 850 N",
-      "Moisture Content": "11% - 14%",
-    },
-    features: [
-      "Thick 18mm board",
-      "Very Easy Carpentry Operations",
-      "Perfect for Internal Framing",
-    ],
-  },
-  {
     id: "ply-nc-mr",
     category: "plywood",
     name: "NC (MR)",
     tagline: "Moisture Resistant General Interior Utility Board",
     description:
       "A flexible and cost-competitive plywood choice for generic commercial cabinets, modular interior partitions, and wardrobe backing frameworks.",
-    basePrice: 58,
+    basePrice: 68,
     unit: "sq.ft",
     thicknesses: ["8mm", "12mm", "25mm"],
     stock: {
@@ -382,69 +321,11 @@ export const PRODUCTS = [
       Resin: "Standard Urea adhesive",
       "Glue Shear Strength": "> 880 N",
       "Moisture Content": "10% - 14%",
-      Warranty: "3 Years Store Warranty",
     },
     features: [
-      "3 Years Warranty",
       "Excellent Cost Efficiency",
       "Lightweight & easy-to-handle",
       "Nails easily with standard pins",
-    ],
-  },
-  {
-    id: "ply-nc-6x4",
-    category: "plywood",
-    name: "NC (6x4)",
-    tagline: "Custom Dimension 6x4 Plywood Sheet",
-    description:
-      "Specially dimensioned 6ft by 4ft sheets to fulfill specific door structures or reduce custom cutting waste in modular room corners.",
-    basePrice: 56,
-    unit: "sq.ft",
-    thicknesses: ["12mm"],
-    stock: {
-      "12mm": 8,
-    },
-    rating: 4.4,
-    reviews: 49,
-    image: ncimg,
-    specs: {
-      "Core Wood": "Softwood Mix core sheets",
-      Resin: "Commercial resin adhesive",
-      "Moisture Content": "11% - 13%",
-    },
-    features: [
-      "Unique 6x4 Feet Sheet Layout",
-      "Less Carpenter Wood Waste",
-      "Uniform Calibrated Texture",
-      "Nail-Friendly Density",
-    ],
-  },
-  {
-    id: "ply-nc",
-    category: "plywood",
-    name: "NC Plywood",
-    tagline: "Budget Commercial Dry Interior Sheet",
-    description:
-      "Thin commercial utility plywood ideal for wardrobe backings, drawer bottoms, ceiling panel designs, and craft wood projects.",
-    basePrice: 50,
-    unit: "sq.ft",
-    thicknesses: ["6mm"],
-    stock: {
-      "6mm": 24,
-    },
-    rating: 4.1,
-    reviews: 67,
-    image: ncplyimg,
-    specs: {
-      "Core Wood": "Poplar & Softwood Core",
-      Resin: "Commercial Urea adhesive",
-      "Moisture Content": "11% - 14%",
-    },
-    features: [
-      "Extremely Cost Efficient",
-      "Flexible 6mm thickness",
-      "Highly adaptable for general craft",
-      "Easy custom cutting with tools",
     ],
   },
   {
