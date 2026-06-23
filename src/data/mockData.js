@@ -3,18 +3,21 @@ import greenpanel from "../assets/greenpanel.jpg";
 import egPly from "../assets/eg-ply-certified-polywoods.jpg";
 import fevicol from "../assets/fevicol.png";
 import sleekimg from "../assets/sleek.jpeg";
-import egmarkimg from "../assets/product-images/EG Mark.png";
-import egbondimg from "../assets/product-images/EG Bond.png";
-import egbondBWBimg from "../assets/product-images/EG Bond BWB.png";
-import egbondMRimg from "../assets/product-images/EG PLY ( MR ).png";
-import egedgeply from "../assets/product-images/EG EDGE.png";
-import egplybsl from "../assets/product-images/EG Ply ( BSL ).png";
-import vitomrimg from "../assets/product-images/NC Vito (MR).png";
-import vitobwrimg from "../assets/product-images/NC Vito ( BWR ).png";
-import vitobslimg from "../assets/product-images/NC Vito ( BSL ).png";
-import ncmrimg from "../assets/product-images/NC Vito Ply ( MR ).png";
-import wbcblockimg from "../assets/product-images/WBC Blockboard.png";
-import shutteringimg from "../assets/product-images/Shuttering Plywood.png";
+import egmarkimg from "../assets/product-images/EG Mark.webp";
+import egbondimg from "../assets/product-images/EG Bond.webp";
+import egbondBWBimg from "../assets/product-images/EG Bond BWB.webp";
+import egbondMRimg from "../assets/product-images/EG PLY ( MR ).webp";
+import egedgeply from "../assets/product-images/EG EDGE.webp";
+import egplybsl from "../assets/product-images/EG Ply ( BSL ).webp";
+import vitomrimg from "../assets/product-images/NC Vito (MR).webp";
+import vitobwrimg from "../assets/product-images/NC Vito ( BWR ).webp";
+import vitobslimg from "../assets/product-images/NC Vito ( BSL ).webp";
+import ncmrimg from "../assets/product-images/NC Vito Ply ( MR ).webp";
+import wbcblockimg from "../assets/product-images/WBC Blockboard.webp";
+import shutteringimg from "../assets/product-images/Shuttering Plywood.webp";
+import hdmrimg from "../assets/product-images/HDMR.webp";
+import interiormdfimg from "../assets/product-images/Interior MDF.webp";
+import exteriormdfimg from "../assets/product-images/Exterior MDF.webp";
 
 export const PRODUCT_CATEGORIES = [
   { id: "plywood", name: "EG Plywood", icon: Layers },
@@ -643,8 +646,7 @@ export const PRODUCTS = [
     ],
     rating: 4.8,
     reviews: 104,
-    image:
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80&w=1200",
+    image: hdmrimg,
     specs: {
       "Core Density": "850–900 Kg/m³",
       "Water Resistance": "Enhanced moisture-resistant technology",
@@ -695,8 +697,7 @@ export const PRODUCTS = [
     ],
     rating: 4.5,
     reviews: 57,
-    image:
-      "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&q=80&w=1200",
+    image: exteriormdfimg,
     specs: {
       "Core Density": "720 Kg/m³",
       Overlay: "Dual-sided Melamine Impregnated paper",
@@ -743,8 +744,7 @@ export const PRODUCTS = [
     ],
     rating: 4.5,
     reviews: 57,
-    image:
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1200",
+    image: interiormdfimg,
     specs: {
       "Core Density": "700–750 Kg/m³",
       "Surface Finish": "Smooth & Uniform",
