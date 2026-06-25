@@ -1,33 +1,48 @@
 import { useState, useMemo } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
-import { Search, Star, Info, ChevronRight } from "lucide-react";
+import { Link, useParams, useNavigate, useSearchParams } from "react-router-dom";
+import { Search, Star, Info, ChevronRight, X } from "lucide-react";
 
 export default function ProductsPage({ categories, products }) {
   const { categoryId } = useParams();
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState("");
 
   const activeCategoryFilter = categoryId || "all";
+  const brandFilter = searchParams.get("brand");
 
   const setActiveCategoryFilter = (catId) => {
+    const brandParam = brandFilter ? `?brand=${brandFilter}` : "";
     if (catId === "all") {
-      navigate("/products");
+      navigate(`/products${brandParam}`);
     } else {
-      navigate(`/products/category/${catId}`);
+      navigate(`/products/category/${catId}${brandParam}`);
     }
   };
-  // Filter Products based on search query and active category
+
+  const handleClearBrandFilter = () => {
+    const newParams = new URLSearchParams(searchParams);
+    newParams.delete("brand");
+    setSearchParams(newParams);
+  };
+
+  // Filter Products based on search query, active category and active brand
   const filteredProducts = useMemo(() => {
     return products.filter((p) => {
       const matchesSearch =
         p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.tagline.toLowerCase().includes(searchQuery.toLowerCase());
+      
       const matchesCat =
         activeCategoryFilter === "all" || p.category === activeCategoryFilter;
-      return matchesSearch && matchesCat;
+      
+      const matchesBrand =
+        !brandFilter || (p.brand && p.brand.toLowerCase() === brandFilter.toLowerCase());
+
+      return matchesSearch && matchesCat && matchesBrand;
     });
-  }, [products, searchQuery, activeCategoryFilter]);
+  }, [products, searchQuery, activeCategoryFilter, brandFilter]);
 
   return (
     <div className="animate-fadeIn min-h-[80vh] py-12 bg-slate-50">
@@ -102,6 +117,25 @@ export default function ProductsPage({ categories, products }) {
               );
             })}
           </div>
+
+          {/* Row 3: Active Brand Filter Status */}
+          {brandFilter && (
+            <div className="flex items-center gap-3 p-3.5 bg-amber-500/10 border border-amber-500/20 rounded-xl text-xs font-bold text-amber-800 animate-fadeIn">
+              <span className="flex items-center gap-1">
+                <span>Filtering by Brand:</span>
+                <span className="uppercase text-slate-950 bg-amber-500/20 px-2 py-0.5 rounded text-[10px]">
+                  {brandFilter}
+                </span>
+              </span>
+              <button
+                onClick={handleClearBrandFilter}
+                className="flex items-center gap-1 px-2.5 py-1 bg-amber-500 hover:bg-amber-600 text-slate-950 hover:text-white rounded-lg transition-all cursor-pointer text-[10px] shadow-sm"
+              >
+                <span>Clear Brand</span>
+                <X className="w-3 h-3" />
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Product Grid */}

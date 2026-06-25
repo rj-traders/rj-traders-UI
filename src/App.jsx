@@ -7,6 +7,7 @@ import HomePage from "./components/HomePage";
 import ProductsPage from "./components/ProductsPage";
 import ProductDetailsPage from "./components/ProductDetailsPage";
 import AboutPage from "./components/AboutPage";
+import BrandsPage from "./components/BrandsPage";
 import GalleryPage from "./components/GalleryPage";
 import ContactPage from "./components/ContactPage";
 import PrivacyPage from "./components/PrivacyPage";
@@ -94,6 +95,7 @@ export default function App() {
             }
           />
           <Route path="/products/:id" element={<ProductDetailsPage />} />
+          <Route path="/brands" element={<BrandsPage />} />
           <Route
             path="/about"
             element={

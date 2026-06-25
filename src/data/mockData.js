@@ -19,6 +19,27 @@ import hdmrimg from "../assets/product-images/HDMR.webp";
 import interiormdfimg from "../assets/product-images/Interior MDF.webp";
 import exteriormdfimg from "../assets/product-images/Exterior MDF.webp";
 
+// Brand Logo Imports
+import jainsonLogo from "../assets/our-brand/jainson.png";
+import ebcoLogo from "../assets/our-brand/ebco.webp";
+import sleekLogo from "../assets/our-brand/sleek.jpeg";
+import habloLogo from "../assets/our-brand/hablologo.png";
+import woodsLogo from "../assets/our-brand/woods.png";
+import yaleLogo from "../assets/our-brand/yale.webp";
+import godrejLogo from "../assets/our-brand/godrej.webp";
+import europaLogo from "../assets/our-brand/europa.webp";
+import newmikaLogo from "../assets/our-brand/newmika.jpeg";
+import centurylamLogo from "../assets/our-brand/centurylaminates.webp";
+import greenlamLogo from "../assets/our-brand/greenlam_laminates.png";
+import ivasLogo from "../assets/our-brand/ivas.jpg";
+import sharonLogo from "../assets/our-brand/sharon.png";
+import centuryvenLogo from "../assets/our-brand/century.png";
+import greenplyLogo from "../assets/our-brand/greenply.png";
+import realplyLogo from "../assets/our-brand/realply.jpeg";
+import greenpanelLogo from "../assets/our-brand/logo-Greenpanel.png";
+import egplyLogo from "../assets/our-brand/eg-ply-certified-polywoods.jpg";
+import fevicolLogo from "../assets/our-brand/fevicol.png";
+
 export const PRODUCT_CATEGORIES = [
   { id: "plywood", name: "EG Plywood", icon: Layers },
   { id: "laminates", name: "Decorative Laminates", icon: Layers3 },
@@ -28,12 +49,211 @@ export const PRODUCT_CATEGORIES = [
   { id: "mdf", name: "MDF & HDF", icon: Layers3 },
 ];
 
+export const BRANDS = [
+  // Hardwares
+  {
+    id: "jainson",
+    name: "Jainson",
+    logo: jainsonLogo,
+    category: "hardware",
+    description:
+      "Renowned for designer cabinet pulls and furniture hardware that add a touch of classic elegance.",
+    details:
+      "Premium cabinet handles, solid brass knobs, utility locks, and sleek metal hinges with anti-tarnish protection.",
+  },
+  {
+    id: "ebco",
+    name: "Ebco",
+    logo: ebcoLogo,
+    category: "hardware",
+    description:
+      "India's leading brand for smart office and home furniture hardware systems and sliding fittings.",
+    details:
+      "Precision soft-close slides, heavy drawer runners, hydraulic hinges, modular workdesk elements, and wardrobe rails.",
+  },
+  {
+    id: "sleek",
+    name: "Sleek",
+    logo: sleekLogo,
+    category: "hardware",
+    description:
+      "An Asian Paints venture, Sleek is the hallmark of modern modular kitchens and space-saving organizers.",
+    details:
+      "Rust-resistant kitchen wire baskets, pull-outs, corner carousels, tall units, and modular steel framework.",
+  },
+  {
+    id: "hablo",
+    name: "Hablo",
+    logo: habloLogo,
+    category: "hardware",
+    description:
+      "Delivers Italian-inspired luxury handles, high-end knobs, and sleek architectural fittings.",
+    details:
+      "Zinc alloy handles, glass sliding locks, designer doors pulls, and premium concealed cabinet fittings.",
+  },
+  {
+    id: "woods",
+    name: "Woods",
+    logo: woodsLogo,
+    category: "hardware",
+    description:
+      "Pioneers in high-load sliding wardrobe systems, silent runners, and heavy-duty hinges.",
+    details:
+      "Wardrobe sliding door fittings, soft-close roller channels, glass doors clips, and heavy architectural hinges.",
+  },
+  {
+    id: "yale",
+    name: "Yale",
+    logo: yaleLogo,
+    category: "hardware",
+    description:
+      "A world-famous pioneer in smart security systems, biometric locks, and high-tensile brass padlocks.",
+    details:
+      "Fingerprint digital locks, numeric main door locks, RFID card locks, safe deposit lockers, and door closers.",
+  },
+  {
+    id: "godrej",
+    name: "Godrej",
+    logo: godrejLogo,
+    category: "hardware",
+    description:
+      "The gold standard of household security in India, providing unpickable mechanical and digital locks.",
+    details:
+      "Ultra Tribolt rim locks, heavy deadbolt main locks, cupboard locks, biometric safes, and mechanical padlocks.",
+  },
+  {
+    id: "europa",
+    name: "Europa",
+    logo: europaLogo,
+    category: "hardware",
+    description:
+      "Celebrated for innovative locking designs, dimple key security, and high physical force resistance.",
+    details:
+      "Hexabolt central main locks, night latches, padlocks with localized LED lights, and shutter locks.",
+  },
+  // Laminates
+  {
+    id: "newmika",
+    name: "New Mika",
+    logo: newmikaLogo,
+    category: "laminates",
+    description:
+      "A luxury brand by Greenlam, providing trendy high-pressure laminate designs and colors.",
+    details:
+      "1.0mm decorative laminates, scuff-resistant suede finishes, woodgrain overlays, and anti-fingerprint panels.",
+  },
+  {
+    id: "century-laminates",
+    name: "Century Laminates",
+    logo: centurylamLogo,
+    category: "laminates",
+    description:
+      "India's trusted name for virus-proof, highly durable laminates with excellent surface stability.",
+    details:
+      "Lucida super-gloss panels, ViroKill antibacterial sheets, matte textures, and designer cabinet sheets.",
+  },
+  {
+    id: "greenlam",
+    name: "Greenlam",
+    logo: greenlamLogo,
+    category: "laminates",
+    description:
+      "Asia's largest laminate manufacturer, delivering globally acclaimed textures and eco-friendly panels.",
+    details:
+      "Anti-fungal laminate sheets, HD wood designs, custom digital laminates, and compact structural sheets.",
+  },
+  {
+    id: "ivas",
+    name: "Ivas",
+    logo: ivasLogo,
+    category: "laminates",
+    description:
+      "Part of Goldmedal Group, providing premium modular kitchen surfaces and elegant PVC laminates.",
+    details:
+      "90-degree bendable PVC laminates, acrylic high-gloss overlays, metallic textures, and modern pastel sheets.",
+  },
+  // Veneers
+  {
+    id: "sharon",
+    name: "Sharon",
+    logo: sharonLogo,
+    category: "veneers",
+    description:
+      "Exquisite natural wood veneers backed with durable marine substrates for premium wall paneling.",
+    details:
+      "Sharon Gold teak veneers, reconstituted designer sheets, fumed wood, and moisture-free timber overlays.",
+  },
+  {
+    id: "century-veneers",
+    name: "Century Veneers",
+    logo: centuryvenLogo,
+    category: "veneers",
+    description:
+      "Flawless recon wood panels and premium timber faces designed for premium interior applications.",
+    details:
+      "Senzura recon veneers, fumed oak sheets, book-matched teak, and eco-certified backing fleeces.",
+  },
+  {
+    id: "greenply",
+    name: "Greenply Veneers",
+    logo: greenplyLogo,
+    category: "veneers",
+    description:
+      "Rich decorative veneers sourced from sustainable global forests, bringing raw nature into spaces.",
+    details:
+      "Wood Crest exotic veneers, American Walnut faces, European Dark Oak sheets, and calibrated backings.",
+  },
+  {
+    id: "realply",
+    name: "Realply",
+    logo: realplyLogo,
+    category: "veneers",
+    description:
+      "Renowned for eco-friendly, premium natural teak and fumed wood veneers with rich grain patterns.",
+    details:
+      "Premium teak veneers, crown-cut wood sheets, reconstituted designs, and matching edge strips.",
+  },
+  // Plywood, MDF & HDF
+  {
+    id: "greenpanel",
+    name: "Greenpanel",
+    logo: greenpanel,
+    category: "plywood_mdf",
+    description:
+      "India's largest manufacturer of MDF and HDF, producing ultra-flat and dense calibrated panels.",
+    details:
+      "HDWR water-resistant boards, calibrated premium plywood, interior MDF sheets, and pre-laminated office boards.",
+  },
+  {
+    id: "egply",
+    name: "EG Ply",
+    logo: egplyLogo,
+    category: "plywood_mdf",
+    description:
+      "Our in-house premium partner providing high-specification IS:710 Marine Boiling Water Proof calibrated plywood.",
+    details:
+      "EG Mark 710 calibrated marine plywood, EG Bond premium MR/BWP boards, both-side pre-laminated boards, and high-density shuttering sheets.",
+  },
+  // Adhesives
+  {
+    id: "fevicol",
+    name: "Fevicol",
+    logo: fevicolLogo,
+    category: "adhesives",
+    description:
+      "Pidilite's Fevicol is the ultimate standard for woodworking adhesives, guaranteeing lifelong bonding for wood-to-wood joinery and laminates.",
+    details:
+      "Fevicol SH (synthetic resin), Fevicol Marine (waterproof adhesive), D3 polyurethane wood adhesives, and rapid-curing aliphatic resins.",
+  },
+];
+
 export const PRODUCTS = [
   // Plywood
   {
     id: "ply-eg-mark-710",
     category: "plywood",
-    name: "EG Mark 710",
+    brand: "egply",
+    name: "EG Mark 710 Plywood",
     tagline: "Premium IS:710 Marine Boiling Water Proof Plywood",
     description:
       "Our top-tier structural grade plywood. Crafted with selected high-density hardwood veneers and bonded with premium undiluted phenol-formaldehyde resin. Offers extraordinary moisture immunity for extreme conditions.",
@@ -65,6 +285,7 @@ export const PRODUCTS = [
   {
     id: "ply-eg-bond-bwb",
     category: "plywood",
+    brand: "egply",
     name: "EG Bond (BWB)",
     tagline: "High-Performance Waterproof Bonded Plywood",
     description:
@@ -96,6 +317,7 @@ export const PRODUCTS = [
   {
     id: "ply-eg-bond",
     category: "plywood",
+    brand: "egply",
     name: "EG Bond Plywood",
     tagline: "Premium Structural Synthetic Resin Bonded Plywood",
     description:
@@ -126,6 +348,7 @@ export const PRODUCTS = [
   {
     id: "ply-eg-ply-mr",
     category: "plywood",
+    brand: "egply",
     name: "EG Ply (MR)",
     tagline: "Premium Moisture Resistant Commercial Plywood",
     description:
@@ -156,7 +379,8 @@ export const PRODUCTS = [
   {
     id: "ply-eg-edge",
     category: "plywood",
-    name: "EG Edge",
+    brand: "egply",
+    name: "EG Edge Plywood",
     tagline: "Extreme Precision Calibrated Edging Board",
     description:
       "A special-dimension calibrated panel showcasing supreme edge-holding strength. Best suited for high-accuracy modern architectural framing where precise corner joints are paramount.",
@@ -186,6 +410,7 @@ export const PRODUCTS = [
   {
     id: "ply-eg-ply-bsl",
     category: "plywood",
+    brand: "egply",
     name: "EG Ply (BSL)",
     tagline: "Both Side Laminated (BSL) Pre-Finished Wood Board",
     description:
@@ -215,6 +440,7 @@ export const PRODUCTS = [
   {
     id: "ply-vito-mr",
     category: "plywood",
+    brand: "egply",
     name: "NC Vito Ply (MR)",
     tagline: "Reliable Moisture Resistant Interior Plywood",
     description:
@@ -245,6 +471,7 @@ export const PRODUCTS = [
   {
     id: "ply-vito-bwr",
     category: "plywood",
+    brand: "egply",
     name: "NC Vito Ply (BWR)",
     tagline: "Boiling Water Resistant Structural Grade Plywood",
     description:
@@ -275,6 +502,7 @@ export const PRODUCTS = [
   {
     id: "ply-vito-bsl",
     category: "plywood",
+    brand: "egply",
     name: "NC Vito Ply (BSL)",
     tagline: "Double Sided Pre-Laminated Economy Cabinet Board",
     description:
@@ -304,7 +532,8 @@ export const PRODUCTS = [
   {
     id: "ply-nc-mr",
     category: "plywood",
-    name: "NC (MR)",
+    brand: "egply",
+    name: "NC (MR) Plywood",
     tagline: "Moisture Resistant General Interior Utility Board",
     description:
       "A flexible and cost-competitive plywood choice for generic commercial cabinets, modular interior partitions, and wardrobe backing frameworks.",
@@ -334,6 +563,7 @@ export const PRODUCTS = [
   {
     id: "ply-wbc",
     category: "plywood",
+    brand: "egply",
     name: "WBC Blockboard",
     tagline: "Waterproof Wood-Based Composite Plywood Board",
     description:
@@ -362,6 +592,7 @@ export const PRODUCTS = [
   {
     id: "ply-shuttering",
     category: "plywood",
+    brand: "egply",
     name: "Shuttering Plywood",
     tagline: "High Compression Structural Concrete Formwork Plywood",
     description:
@@ -394,11 +625,12 @@ export const PRODUCTS = [
   {
     id: "lam-01",
     category: "laminates",
-    name: "Suede Finish Decorative Laminates",
+    brand: "greenlam",
+    name: "Greenlam Suede Finish Decorative Laminates",
     tagline: "1.0mm Premium Suede & Matte Scratch-Resistant Sheets",
     description:
       "Bring sophisticated textures and deep pigments to your interior cabinetry. These high-pressure laminates are equipped with surface-defending properties protecting them from scuffs and moisture.",
-    basePrice: 1400, // per sheet
+    basePrice: 1400,
     unit: "sheet (8x4 ft)",
     sizes: ["8ft x 4ft"],
     finishes: ["Suede", "Ultra-Matte", "Textured Woodgrain"],
@@ -423,7 +655,8 @@ export const PRODUCTS = [
   {
     id: "lam-02",
     category: "laminates",
-    name: "High Gloss Acrylic Luxury Laminates",
+    brand: "century-laminates",
+    name: "Century High Gloss Acrylic Luxury Laminates",
     tagline: "Mirror-like Premium High Gloss Kitchen Laminates",
     description:
       "Turn your kitchen and vanity shutter panels into statements of pure luxury. Our premium high-gloss acrylic laminates provide absolute depth of color, UV protection, and supreme scratch shielding.",
@@ -449,12 +682,101 @@ export const PRODUCTS = [
       "Waterproof design",
     ],
   },
+  {
+    id: "lam-newmika-suede",
+    category: "laminates",
+    brand: "newmika",
+    name: "NewMika Premium Matte Laminates",
+    tagline:
+      "1.0mm scratch-resistant decorative sheets with rich pigment depth",
+    description:
+      "Available in a wide range of sophisticated solids, textures, and wood patterns. Crafted to deliver premium scuff defense for modern residential kitchens and workspaces.",
+    basePrice: 1650,
+    unit: "sheet (8x4 ft)",
+    sizes: ["8ft x 4ft"],
+    finishes: ["Suede", "Matte", "Woodgrain"],
+    rating: 4.7,
+    reviews: 54,
+    image:
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      Thickness: "1.0mm",
+      Size: "1220mm x 2440mm",
+      Finish: "Super Matte & Fine Suede",
+      Resistance: "Impact, stain and boil resistant",
+    },
+    features: [
+      "100% phenolic paper backing",
+      "Vibrant UV-resistant pigments",
+      "Anti-crack flexibility",
+      "Easy maintenance and cleanability",
+    ],
+  },
+  {
+    id: "lam-century-antibac",
+    category: "laminates",
+    brand: "century-laminates",
+    name: "CenturyLaminates Silver-Ion Antibacterial Sheets",
+    tagline: "Hygienic 1.0mm high-pressure laminates with ViroKill technology",
+    description:
+      "Specially treated sheets that kill 99.9% of bacteria and viruses on touch. Highly recommended for dining tables, kitchen countertops, and kids' bedroom furniture.",
+    basePrice: 1950,
+    unit: "sheet (8x4 ft)",
+    sizes: ["8ft x 4ft"],
+    finishes: ["Suede", "Glossy"],
+    rating: 4.9,
+    reviews: 106,
+    image:
+      "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      Technology: "ViroKill Nanotechnology",
+      Thickness: "1.0mm",
+      Size: "1220mm x 2440mm",
+      Certification: "ISO 22196 Certified Antibacterial",
+    },
+    features: [
+      "Kills 99.9% microbes on surface",
+      "Excellent resistance to hot water spills",
+      "Termite and borer resistant backing",
+      "Scratch-resistant coating",
+    ],
+  },
+  {
+    id: "lam-ivas-gloss",
+    category: "laminates",
+    brand: "ivas",
+    name: "IVAS Decorative PVC Laminates",
+    tagline: "High-gloss scratch-resistant PVC laminate sheets for cabinetry",
+    description:
+      "IVAS laminate sheets offer high reflectivity and vibrant colors, making them perfect for sleek modular kitchen shutters, wardrobe doors, and modern cabinets.",
+    basePrice: 2200,
+    unit: "sheet (8x4 ft)",
+    sizes: ["8ft x 4ft"],
+    finishes: ["Acrylic High Gloss", "PVC Suede"],
+    rating: 4.6,
+    reviews: 31,
+    image:
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      Material: "Premium PVC Base",
+      Thickness: "1.2mm",
+      "Gloss Level": "90+ Gloss Units (GU)",
+      Flexibility: "Can bend up to 90 degrees for post-forming",
+    },
+    features: [
+      "Bends seamlessly for post-forming edges",
+      "High UV-fade resistance",
+      "Zero orange peel effect",
+      "Completely waterproof and rustproof",
+    ],
+  },
 
   // Veneers
   {
     id: "ven-01",
     category: "veneers",
-    name: "Exotic Teak Natural Wood Veneers",
+    brand: "realply",
+    name: "Realply Exotic Teak Natural Wood Veneers",
     tagline: "Hand-picked Natural Lumber Face Veneers",
     description:
       "Each slice of veneer is a unique canvas of nature. Sourced from sustainable teak plantations in Burma, our Exotic Teak Veneers add real natural wealth, warmth, and unrivaled prestige to your high-end furniture.",
@@ -482,7 +804,8 @@ export const PRODUCTS = [
   {
     id: "ven-02",
     category: "veneers",
-    name: "Smoked Oak Luxury Architectural Veneer",
+    brand: "greenply",
+    name: "Greenply Smoked Oak Luxury Veneer",
     tagline: "Fumed Dark Oak Premium Modern Veneers",
     description:
       "Achieve the sleek, ultra-premium dark charcoal/cocoa tones of contemporary Italian architecture. Fumed under high-pressure steam, this Oak veneer gains deep colors throughout the fibers, not just on the surface.",
@@ -507,12 +830,69 @@ export const PRODUCTS = [
       "Extremely resilient to UV fade",
     ],
   },
+  {
+    id: "ven-sharon-gold",
+    category: "veneers",
+    brand: "sharon",
+    name: "Sharon Gold Natural Burma Teak Veneer",
+    tagline: "Genuine high-grade Burma teak veneer on thick Gurjan base",
+    description:
+      "Sharon Gold veneers display the ultimate rich golden grains of premium Burma teak logs. Exquisitely book-matched for luxury wall panels and high-end executive desks.",
+    basePrice: 240,
+    unit: "sq.ft",
+    thicknesses: ["4mm total (0.6mm face)"],
+    rating: 4.9,
+    reviews: 35,
+    image:
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      "Face Wood": "Genuine Burma Teak",
+      Backing: "IS:303 Premium Gurjan Ply",
+      Glue: "Melamine Urea Formaldehyde",
+      Warranty: "10 Years Warpage Warranty",
+    },
+    features: [
+      "Deep golden-brown woodgrains",
+      "Rich natural oil content preserves luster",
+      "Sanded and ready for polyurethane polish",
+      "Eco-friendly lumber harvesting",
+    ],
+  },
+  {
+    id: "ven-century-senzura",
+    category: "veneers",
+    brand: "century-veneers",
+    name: "Century Senzura Premium Recon Wood Veneer",
+    tagline: "Reconstituted designer wood veneers with flawless uniform grains",
+    description:
+      "Perfect for matching large veneer panels in hotel lobbies and premium wardrobe suites. Senzura eliminates natural wood defects for continuous, flawless design paths.",
+    basePrice: 210,
+    unit: "sq.ft",
+    thicknesses: ["3.5mm total"],
+    rating: 4.8,
+    reviews: 49,
+    image:
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      Type: "Reconstituted Wood Face",
+      "Backing Layer": "Flexible non-woven fleece",
+      "Adhesive Class": "E0 Eco-Emission certified",
+      Size: "8ft x 4ft sheets",
+    },
+    features: [
+      "Zero grain deviation across sheets",
+      "Extremely easy to bend on curved surfaces",
+      "No natural cracks or knots",
+      "Perfect for modern minimalist panels",
+    ],
+  },
 
   // Hardware
   {
     id: "hw-01",
     category: "hardware",
-    name: "Soft-Close Premium Hydraulic Kitchen Hinges",
+    brand: "ebco",
+    name: "Ebco Soft-Close Premium Hydraulic Hinges",
     tagline: "3D Adjustable Nickel-Plated Soft Close Cabinet Hinges",
     description:
       "Ensure absolute silence and smooth closing motion for every cabinet door in your household. Tested for over 200,000 cycles, these heavy-duty soft-close hinges prevent slamming and protect finger joints.",
@@ -539,7 +919,8 @@ export const PRODUCTS = [
   {
     id: "hw-02",
     category: "hardware",
-    name: "Heavy Duty Soft-Close Drawer Telescopic Slides",
+    brand: "ebco",
+    name: "Ebco Heavy Duty Soft-Close Drawer Slides",
     tagline: "Full Extension Ball Bearing Kitchen & Wardrobe Runners",
     description:
       "Upgrade your drawers to professional level smooth gliding. Made of ultra-tough cold-rolled steel, these slides carry massive pots, heavy winter garments, and storage boxes with effortless, whisper-quiet action.",
@@ -564,12 +945,202 @@ export const PRODUCTS = [
       "Anti-dust self-cleaning bearing tracks",
     ],
   },
+  {
+    id: "hw-jainson-pulls",
+    category: "hardware",
+    brand: "jainson",
+    name: "Jainson Brass Cabinet Pull Handles",
+    tagline: "Solid designer brass pulls with anti-tarnish protective coating",
+    description:
+      "Handcrafted from premium brass, the Jainson Cabinet Pull handles elevate wardrobes and cabinets with a timeless antique metallic sheen.",
+    basePrice: 450,
+    unit: "piece",
+    thicknesses: ["96mm", "128mm", "192mm"],
+    rating: 4.8,
+    reviews: 42,
+    image:
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      Material: "Premium Solid Brass",
+      Finish: "Antique Brass Lacquered",
+      "Available Sizes": "96mm to 192mm hole centers",
+      Warranty: "5 Years Tarnish Warranty",
+    },
+    features: [
+      "100% Solid Brass Construction",
+      "Anti-Tarnish Protective Layer",
+      "Includes Mounting Screws",
+      "Elegant Traditional Design",
+    ],
+  },
+  {
+    id: "hw-hablo-mortise",
+    category: "hardware",
+    brand: "hablo",
+    name: "Hablo Luxury Satin Mortise Handle Set",
+    tagline: "Ergonomic zinc alloy mortise handles for interior doors",
+    description:
+      "Experience Italian design and smooth movement. The Hablo mortise sets feature high-precision return springs and sleek satin chrome finishes.",
+    basePrice: 1850,
+    unit: "set",
+    rating: 4.7,
+    reviews: 39,
+    image:
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      Material: "Zinc Alloy",
+      Finish: "Satin Chrome Dual Tone",
+      "Lock Cylinder": "Brass 60mm double key cylinder",
+      Warranty: "7 Years Mechanical Warranty",
+    },
+    features: [
+      "Heavy-duty return spring",
+      "Corrosion resistant zinc body",
+      "Computerized key system",
+      "Silent latch operation",
+    ],
+  },
+  {
+    id: "hw-woods-sliding",
+    category: "hardware",
+    brand: "woods",
+    name: "Woods Heavy-Duty Wardrobe Sliding System",
+    tagline: "Top-hung silent sliding channels for wooden wardrobe doors",
+    description:
+      "Designed for seamless wardrobe door movements. The Woods sliding door system utilizes heavy-duty nylon rollers and solid aluminum top tracks to support heavy doors up to 80kg.",
+    basePrice: 3200,
+    unit: "set",
+    rating: 4.9,
+    reviews: 51,
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      "Weight Capacity": "80 Kg per door panel",
+      Material: "Extruded Aluminum & Ball Bearing Nylon Wheels",
+      Warranty: "5 Years Wear Warranty",
+    },
+    features: [
+      "Anti-jump safety guide wheels",
+      "Ultra-silent ball bearing rollers",
+      "Durable anodized track finish",
+      "Adjustable height alignment",
+    ],
+  },
+  {
+    id: "hw-yale-smartlock",
+    category: "hardware",
+    brand: "yale",
+    name: "Yale YDM 7116 GP Digital Smart Lock",
+    tagline: "Biometric, PIN, RFID card and mechanical key smart handle",
+    description:
+      "Upgrade your main entrance with state-of-the-art security. Featuring multiple access methods, scramble PIN code capability, and intrusion alarm systems.",
+    basePrice: 16500,
+    unit: "unit",
+    rating: 5.0,
+    reviews: 92,
+    image:
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      "Access Methods": "Fingerprint, PIN, RFID, Mechanical Key, Mobile App",
+      Material: "Zinc Diecasting & ABS",
+      "Battery Life": "Approx. 1 Year (10 uses/day)",
+      Warranty: "2 Years Manufacturer Warranty",
+    },
+    features: [
+      "Biometric scanner stores 100 prints",
+      "Fake PIN code protection",
+      "Intrusion & temperature alarm",
+      "Low battery warning with emergency power port",
+    ],
+  },
+  {
+    id: "hw-godrej-rim",
+    category: "hardware",
+    brand: "godrej",
+    name: "Godrej Ultra Tribolt Rim Lock",
+    tagline:
+      "Ultra-secure main door lock with triple deadbolts and pull-handle",
+    description:
+      "The legendary home security choice. Features three heavy-duty brass deadbolts and Godrej's signature Ultra technology with 14-pin computerized dimple keys.",
+    basePrice: 2850,
+    unit: "unit",
+    rating: 4.8,
+    reviews: 147,
+    image:
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      Mechanism: "14-Pin Computerized Key System",
+      Deadbolts: "3 Heavy Solid Brass Bolts",
+      Material: "High strength steel scratch-proof case",
+      Warranty: "15 Years Mechanical Warranty",
+    },
+    features: [
+      "Triple strength locking bolts",
+      "Hold-back button prevents lock-out",
+      "Includes solid brass safety pull-handle",
+      "Unpickable dimple key lock cylinder",
+    ],
+  },
+  {
+    id: "hw-europa-hexabolt",
+    category: "hardware",
+    brand: "europa",
+    name: "Europa Hexabolt Main Door Lock",
+    tagline: "High-tensile steel 6-bolt lock for complete security",
+    description:
+      "Engineered to withstand extreme physical force. The Europa Hexabolt system anchors six independent deadbolts into a solid steel striker plate, backed by a dimpled key core.",
+    basePrice: 3400,
+    unit: "unit",
+    rating: 4.9,
+    reviews: 88,
+    image:
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      Deadbolts: "6 High-tensile Steel Bolts",
+      Keys: "4 Dimple Keys with Key LED Light",
+      Finish: "Satin Nickel-plated finish",
+      Warranty: "15 Years Warranty",
+    },
+    features: [
+      "Six-bolt extreme anchorage",
+      "Sturdy integrated steel pull-knob",
+      "Built-in LED locator on key fob",
+      "Rust-proof internal mechanism",
+    ],
+  },
+  {
+    id: "hw-sleek-basket",
+    category: "hardware",
+    brand: "sleek",
+    name: "Sleek Stainless Steel Kitchen Drawer Organizer",
+    tagline: "Heavy-duty wire basket pull-out drawer organizer",
+    description:
+      "Elevate kitchen utilities with Sleek's stainless steel wire pull-out baskets. Designed to roll on soft-close tracks, it handles pots, dinnerware, and pantry packs seamlessly.",
+    basePrice: 2450,
+    unit: "unit",
+    rating: 4.8,
+    reviews: 43,
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+    specs: {
+      Material: "304 Grade Stainless Steel",
+      "Weight Capacity": "30 Kg dynamic",
+      Warranty: "10 Years Rust-Free Warranty",
+    },
+    features: [
+      "Rust-free electroplated chrome finish",
+      "Compatible with major telescopics runner systems",
+      "Sturdy double wire framework",
+      "Specially designed plate and cup separators included",
+    ],
+  },
 
   // Adhesives
   {
     id: "adh-01",
     category: "adhesives",
-    name: "SuperBond Extreme Waterproof Polyurethane D3 Adhesive",
+    brand: "fevicol",
+    name: "Fevicol Marine Waterproof D3 PVA Adhesive",
     tagline: "The ultimate wood adhesive with 5x fast bond strength",
     description:
       "Designed specifically for wood-to-wood joinery, laminate pasting, and complex veneer pressing. Dries into a transparent layer, ensuring clean carpentry lines while providing unshakeable, water-resistant bonds.",
@@ -578,8 +1149,7 @@ export const PRODUCTS = [
     sizes: ["1 kg", "5 kg", "10 kg", "20 kg", "50 kg"],
     rating: 4.9,
     reviews: 175,
-    image:
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800",
+    image: fevicolLogo,
     specs: {
       "Base Chemistries": "Polyvinyl Acetate (PVA) dispersion",
       "Water Resistance": "EN 204 D3 certified waterproof class",
@@ -597,27 +1167,26 @@ export const PRODUCTS = [
   {
     id: "adh-02",
     category: "adhesives",
-    name: "RapidFix Fast Setting Adhesive (Aliphatic)",
-    tagline: "No-nails high bond rapid assembly adhesive",
+    brand: "fevicol",
+    name: "Fevicol SH Ultimate Synthetic Resin",
+    tagline: "Pidilite's flagship high-strength woodwork white glue",
     description:
-      "Ideal for fast architectural paneling and quick framing. This aliphatic resin adhesive sets twice as fast as normal white glue and is sandable, paintable, and completely unaffected by wood stains or finishes.",
-    basePrice: 320,
+      "The undisputed market leader for wood bonding. Fevicol SH offers exceptional bond strength that exceeds the strength of wood itself. Ideal for all wood assemblies and laminations.",
+    basePrice: 240,
     unit: "kg",
-    sizes: ["1 kg", "10 kg"],
-    rating: 4.6,
-    reviews: 69,
-    image:
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=800",
+    sizes: ["1 kg", "5 kg", "10 kg", "20 kg"],
+    rating: 4.9,
+    reviews: 295,
+    image: fevicolLogo,
     specs: {
-      "Setting Time": "Initial grab in 5 minutes, sandable in 30 minutes",
-      "Bond Strength": "4000 PSI (Stronger than the wood itself)",
-      "Heat Resistance": "Up to 110°C without melting bond",
-      Solvent: "Cleans up with water easily before drying",
+      Material: "Synthetic Resin Adhesive",
+      "Bond Strength": "Exceeds wood shear strength",
+      "Drying Time": "Initial grab in 4-6 hours, fully cured in 24 hours",
     },
     features: [
-      "High sandability - won't clog sanding belts",
-      "Unaffected by lacquers or varnishes",
-      "Strong initial tack reduces need for clamps",
+      "Lifelong bonding durability",
+      "Saves panel assembly time with solid tack",
+      "Resistant to high stress joints",
     ],
   },
 
@@ -625,21 +1194,20 @@ export const PRODUCTS = [
   {
     id: "mdf-01",
     category: "mdf",
-    name: "HDWR (High Density Water Resistant) Boards",
+    brand: "greenpanel",
+    name: "Greenpanel HDWR Water Resistant Boards",
     tagline:
       "High-density water-resistant boards engineered for durable interiors",
     description:
-      "HDWR (High Density Water Resistant) Boards are premium engineered wood panels designed for superior strength, durability, and moisture resistance. Manufactured with high-density wood fibers and advanced resin technology, these boards are ideal for modular kitchens, wardrobes, bathroom vanities, wall paneling, and commercial furniture. Their smooth surface and excellent machinability make them perfect for laminates, veneers, acrylic finishes, and CNC routing applications.",
+      "HDWR (High Density Water Resistant) Boards are premium engineered wood panels designed for superior strength, durability, and moisture resistance. Manufactured with high-density wood fibers and advanced resin technology, these boards are ideal for modular kitchens, wardrobes, bathroom vanities, wall paneling, and commercial furniture.",
     basePrice: 33,
     unit: "sq.ft",
     thicknesses: [
       "3mm",
-      "3.3mm",
       "5.5mm",
       "7.5mm",
       "11mm",
       "16mm",
-      "16.75mm",
       "18mm",
       "25mm",
       "30mm",
@@ -668,33 +1236,14 @@ export const PRODUCTS = [
   {
     id: "mdf-02",
     category: "mdf",
-    name: "Exterior MDF (MR Grade)",
+    brand: "greenpanel",
+    name: "Greenpanel Exterior MDF (MR Grade)",
     tagline: "Sleek pre-laminated dense fiber boards for modular spaces",
     description:
       "Perfect for fast-paced corporate office desks, lightweight dividers, and budget-friendly shelves. Comes pre-pressed with beautiful suede or woodgrain laminates on both sides to save time and polishing labor.",
     basePrice: 25,
     unit: "sq.ft",
-    thicknesses: [
-      "1.7mm",
-      "1.9mm",
-      "2.1mm",
-      "2.7mm",
-      "3.3mm",
-      "4mm",
-      "4.6mm",
-      "5.5mm",
-      "7mm",
-      "7.3mm",
-      "9.75mm",
-      "11mm",
-      "14.5mm",
-      "16mm",
-      "16.5mm",
-      "17mm",
-      "18mm",
-      "25mm",
-      "30mm",
-    ],
+    thicknesses: ["1.7mm", "5.5mm", "11mm", "16mm", "18mm", "25mm", "30mm"],
     rating: 4.5,
     reviews: 57,
     image: exteriormdfimg,
@@ -714,34 +1263,15 @@ export const PRODUCTS = [
   {
     id: "mdf-03",
     category: "mdf",
-    name: "Interior MDF (REG Grade)",
+    brand: "greenpanel",
+    name: "Greenpanel Interior MDF (REG Grade)",
     tagline:
       "Smooth, durable, and versatile boards for modern interior applications",
     description:
-      "Interior MDF (Medium Density Fiberboard) is engineered for furniture, wardrobes, partitions, wall paneling, and modular interiors. Its uniform density and smooth surface make it ideal for laminates, veneers, paints, and decorative finishes. Designed for dry indoor environments, it delivers excellent machinability, dimensional stability, and a premium finish for residential and commercial projects.",
+      "Interior MDF (Medium Density Fiberboard) is engineered for furniture, wardrobes, partitions, wall paneling, and modular interiors. Its uniform density and smooth surface make it ideal for laminates, veneers, paints, and decorative finishes.",
     basePrice: 25,
     unit: "sq.ft",
-    thicknesses: [
-      "1.7mm",
-      "1.9mm",
-      "2.1mm",
-      "2.7mm",
-      "3.3mm",
-      "4mm",
-      "4.6mm",
-      "5.5mm",
-      "7mm",
-      "7.3mm",
-      "9.75mm",
-      "11mm",
-      "14.5mm",
-      "16mm",
-      "16.5mm",
-      "17mm",
-      "18mm",
-      "25mm",
-      "30mm",
-    ],
+    thicknesses: ["1.7mm", "5.5mm", "11mm", "16mm", "18mm", "25mm", "30mm"],
     rating: 4.5,
     reviews: 57,
     image: interiormdfimg,
@@ -764,9 +1294,9 @@ export const PRODUCTS = [
 
 export const BRAND_PARTNERS = [
   { name: "Greenpanel", logo: greenpanel },
-  { name: "EG Ply", logo: egPly },
-  { name: "Fevicol", logo: fevicol },
-  { name: "Sleek", logo: sleekimg },
+  { name: "EG Ply", logo: egplyLogo },
+  { name: "Fevicol", logo: fevicolLogo },
+  { name: "Sleek", logo: sleekLogo },
 ];
 
 export const TESTIMONIALS = [
