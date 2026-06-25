@@ -24,6 +24,11 @@ export default function HomePage({ categories, products, testimonials }) {
     return products.slice(0, 3);
   }, [products]);
 
+  // Filter 3 new arrival products for home
+  const newArrivals = useMemo(() => {
+    return products.slice(3, 6);
+  }, [products]);
+
   return (
     <div className="animate-fadeIn">
       {/* 1. HERO SECTION */}
@@ -297,6 +302,113 @@ export default function HomePage({ categories, products, testimonials }) {
                     <Link
                       to={`/products/${prod.id}`}
                       className="px-4 py-2.5 rounded-lg bg-slate-950 hover:bg-amber-500 text-white hover:text-slate-950 font-bold text-xs transition-colors flex items-center gap-1"
+                    >
+                      <span>Specifications</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5.5 NEW ARRIVALS */}
+      <section className="py-24 bg-white border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between mb-16 gap-4">
+            <div className="text-center md:text-left">
+              <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2">
+                Fresh In Inventory
+              </h2>
+              <p className="text-3xl font-black text-slate-900 tracking-tight">
+                New Arrivals
+              </p>
+            </div>
+            <Link
+              to="/products"
+              className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl border border-slate-300 hover:border-emerald-500 hover:text-emerald-600 text-slate-700 font-bold text-sm bg-white transition-all animate-fadeIn"
+            >
+              <span>Explore Latest Catalog</span>
+              <ChevronRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {newArrivals.map((prod) => (
+              <div
+                key={prod.id}
+                className="group bg-slate-50 border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
+              >
+                {/* Product Image */}
+                <div className="relative h-56 overflow-hidden bg-slate-100">
+                  <img
+                    src={prod.image}
+                    alt={prod.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full shadow-md">
+                      New Arrival
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg text-xs font-bold text-slate-800 flex items-center gap-1">
+                    <Star className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
+                    <span>{prod.rating}</span>
+                  </div>
+                </div>
+
+                {/* Card Body */}
+                <div className="p-6 flex-grow flex flex-col justify-between">
+                  <div>
+                    <span className="text-xs uppercase font-bold tracking-widest text-emerald-600">
+                      {prod.category}
+                    </span>
+                    <h3 className="text-lg font-bold text-slate-900 mt-1 line-clamp-1 group-hover:text-emerald-600 transition-colors">
+                      {prod.name}
+                    </h3>
+                    <p className="text-xs text-slate-500 italic mt-0.5">
+                      {prod.tagline}
+                    </p>
+                    <p className="text-sm text-slate-600 mt-3 line-clamp-2">
+                      {prod.description}
+                    </p>
+
+                    {/* Thickness display if plywood */}
+                    {prod.thicknesses && (
+                      <div className="flex flex-wrap gap-1.5 mt-4">
+                        <span className="text-xs text-slate-400 font-semibold self-center mr-1">
+                          Thick:
+                        </span>
+                        {prod.thicknesses.map((t, i) => (
+                          <span
+                            key={i}
+                            className="text-[10px] font-bold px-2 py-0.5 rounded bg-white text-slate-600 border border-slate-200"
+                          >
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Pricing and Button */}
+                  <div className="mt-6 pt-5 border-t border-slate-200/60 flex items-center justify-between">
+                    <div>
+                      <span className="block text-xs text-slate-400 font-medium">
+                        Starting from
+                      </span>
+                      <span className="text-xl font-black text-slate-900">
+                        ₹{prod.basePrice}
+                        <span className="text-xs font-medium text-slate-500">
+                          /{prod.unit}
+                        </span>
+                      </span>
+                    </div>
+                    <Link
+                      to={`/products/${prod.id}`}
+                      className="px-4 py-2.5 rounded-lg bg-slate-950 hover:bg-emerald-500 text-white hover:text-slate-950 font-bold text-xs transition-colors flex items-center gap-1"
                     >
                       <span>Specifications</span>
                       <ChevronRight className="w-3.5 h-3.5" />

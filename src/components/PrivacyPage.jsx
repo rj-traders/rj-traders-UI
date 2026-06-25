@@ -1,17 +1,29 @@
-import { Link } from "react-router-dom";
-import { ShieldCheck, ChevronRight } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
+import { ShieldCheck, ChevronRight, ArrowLeft } from "lucide-react";
 
 export default function PrivacyPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="animate-fadeIn py-16 bg-slate-50 min-h-[85vh]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Navigation Breadcrumb */}
-        <div className="flex items-center gap-2 text-xs text-slate-500 mb-8 font-semibold">
-          <Link to="/" className="hover:text-amber-500">
-            Home
-          </Link>
-          <ChevronRight className="w-3 h-3" />
-          <span className="text-slate-800">Privacy Policy</span>
+        {/* Back Button & Breadcrumbs */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+          <button
+            onClick={() => navigate(-1)}
+            className="group inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-slate-100 shadow-sm hover:shadow hover:bg-slate-50 text-xs font-bold text-slate-600 hover:text-amber-500 transition-all duration-300 cursor-pointer w-fit"
+          >
+            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+            <span>Back</span>
+          </button>
+          
+          <div className="flex items-center gap-2 text-xs text-slate-500 font-semibold">
+            <Link to="/" className="hover:text-amber-500">
+              Home
+            </Link>
+            <ChevronRight className="w-3 h-3" />
+            <span className="text-slate-800">Privacy Policy</span>
+          </div>
         </div>
 
         {/* Header Hero Card */}

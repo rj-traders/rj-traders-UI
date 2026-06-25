@@ -8,6 +8,7 @@ import {
   ShieldCheck,
   Award,
   Layers,
+  ArrowLeft,
 } from "lucide-react";
 
 export default function BrandsPage() {
@@ -57,6 +58,17 @@ export default function BrandsPage() {
   return (
     <div className="animate-fadeIn min-h-[90vh] bg-slate-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Back Button */}
+        <div className="mb-6">
+          <button
+            onClick={() => navigate(-1)}
+            className="group inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-slate-100 shadow-sm hover:shadow hover:bg-slate-50 text-xs font-bold text-slate-600 hover:text-amber-500 transition-all duration-300 cursor-pointer"
+          >
+            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+            <span>Back</span>
+          </button>
+        </div>
+
         {/* Page Hero Header */}
         <div className="relative overflow-hidden rounded-3xl bg-slate-950 text-white border border-slate-900 shadow-2xl p-8 sm:p-12 lg:p-16 mb-12">
           <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-tr from-amber-500/10 to-orange-600/15 rounded-full blur-[100px] pointer-events-none" />

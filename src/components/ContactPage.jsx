@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
-import { CheckCircle, MapPin, Phone, Clock } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { CheckCircle, MapPin, Phone, Clock, ArrowLeft } from "lucide-react";
 
 export default function ContactPage() {
+  const navigate = useNavigate();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [submittedName, setSubmittedName] = useState("");
   const [submittedSubject, setSubmittedSubject] = useState("");
@@ -36,6 +38,17 @@ export default function ContactPage() {
   return (
     <div className="animate-fadeIn py-16 bg-slate-50 min-h-[85vh]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Back Button */}
+        <div className="mb-6">
+          <button
+            onClick={() => navigate(-1)}
+            className="group inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-slate-100 shadow-sm hover:shadow hover:bg-slate-50 text-xs font-bold text-slate-600 hover:text-amber-500 transition-all duration-300 cursor-pointer"
+          >
+            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+            <span>Back</span>
+          </button>
+        </div>
+
         {/* Header text */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h1 className="text-3xl font-black text-slate-900 tracking-tight">

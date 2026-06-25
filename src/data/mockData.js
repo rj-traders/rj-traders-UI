@@ -1,8 +1,8 @@
 import { Layers, Layers3, Wrench, Droplets } from "lucide-react";
 import greenpanel from "../assets/greenpanel.jpg";
-import egPly from "../assets/eg-ply-certified-polywoods.jpg";
-import fevicol from "../assets/fevicol.png";
-import sleekimg from "../assets/sleek.jpeg";
+// import egPly from "../assets/eg-ply-certified-polywoods.jpg";
+// import fevicol from "../assets/fevicol.png";
+// import sleekimg from "../assets/sleek.jpeg";
 import egmarkimg from "../assets/product-images/EG Mark.webp";
 import egbondimg from "../assets/product-images/EG Bond.webp";
 import egbondBWBimg from "../assets/product-images/EG Bond BWB.webp";
@@ -18,8 +18,6 @@ import shutteringimg from "../assets/product-images/Shuttering Plywood.webp";
 import hdmrimg from "../assets/product-images/HDMR.webp";
 import interiormdfimg from "../assets/product-images/Interior MDF.webp";
 import exteriormdfimg from "../assets/product-images/Exterior MDF.webp";
-
-// Brand Logo Imports
 import jainsonLogo from "../assets/our-brand/jainson.png";
 import ebcoLogo from "../assets/our-brand/ebco.webp";
 import sleekLogo from "../assets/our-brand/sleek.jpeg";
@@ -36,7 +34,7 @@ import sharonLogo from "../assets/our-brand/sharon.png";
 import centuryvenLogo from "../assets/our-brand/century.png";
 import greenplyLogo from "../assets/our-brand/greenply.png";
 import realplyLogo from "../assets/our-brand/realply.jpeg";
-import greenpanelLogo from "../assets/our-brand/logo-Greenpanel.png";
+// import greenpanelLogo from "../assets/our-brand/logo-Greenpanel.png";
 import egplyLogo from "../assets/our-brand/eg-ply-certified-polywoods.jpg";
 import fevicolLogo from "../assets/our-brand/fevicol.png";
 
@@ -50,16 +48,57 @@ export const PRODUCT_CATEGORIES = [
 ];
 
 export const BRANDS = [
+  // Plywood, MDF & HDF
+  {
+    id: "egply",
+    name: "EG Ply",
+    logo: egplyLogo,
+    category: "plywood_mdf",
+    description:
+      "Our in-house premium partner providing high-specification IS:710 Marine Boiling Water Proof calibrated plywood.",
+    details:
+      "EG Mark 710 calibrated marine plywood, EG Bond premium MR/BWP boards, both-side pre-laminated boards, and high-density shuttering sheets.",
+  },
+  {
+    id: "greenpanel",
+    name: "Greenpanel",
+    logo: greenpanel,
+    category: "plywood_mdf",
+    description:
+      "India's largest manufacturer of MDF and HDF, producing ultra-flat and dense calibrated panels.",
+    details:
+      "HDWR water-resistant boards, calibrated premium plywood, interior MDF sheets, and pre-laminated office boards.",
+  },
   // Hardwares
   {
-    id: "jainson",
-    name: "Jainson",
-    logo: jainsonLogo,
-    category: "hardware",
+    id: "century-laminates",
+    name: "Century Laminates",
+    logo: centurylamLogo,
+    category: "laminates",
     description:
-      "Renowned for designer cabinet pulls and furniture hardware that add a touch of classic elegance.",
+      "India's trusted name for virus-proof, highly durable laminates with excellent surface stability.",
     details:
-      "Premium cabinet handles, solid brass knobs, utility locks, and sleek metal hinges with anti-tarnish protection.",
+      "Lucida super-gloss panels, ViroKill antibacterial sheets, matte textures, and designer cabinet sheets.",
+  },
+  {
+    id: "century-veneers",
+    name: "Century Veneers",
+    logo: centuryvenLogo,
+    category: "veneers",
+    description:
+      "Flawless recon wood panels and premium timber faces designed for premium interior applications.",
+    details:
+      "Senzura recon veneers, fumed oak sheets, book-matched teak, and eco-certified backing fleeces.",
+  },
+  {
+    id: "sharon",
+    name: "Sharon",
+    logo: sharonLogo,
+    category: "veneers",
+    description:
+      "Exquisite natural wood veneers backed with durable marine substrates for premium wall paneling.",
+    details:
+      "Sharon Gold teak veneers, reconstituted designer sheets, fumed wood, and moisture-free timber overlays.",
   },
   {
     id: "ebco",
@@ -70,6 +109,16 @@ export const BRANDS = [
       "India's leading brand for smart office and home furniture hardware systems and sliding fittings.",
     details:
       "Precision soft-close slides, heavy drawer runners, hydraulic hinges, modular workdesk elements, and wardrobe rails.",
+  },
+  {
+    id: "jainson",
+    name: "Jainson",
+    logo: jainsonLogo,
+    category: "hardware",
+    description:
+      "Renowned for designer cabinet pulls and furniture hardware that add a touch of classic elegance.",
+    details:
+      "Premium cabinet handles, solid brass knobs, utility locks, and sleek metal hinges with anti-tarnish protection.",
   },
   {
     id: "sleek",
@@ -142,16 +191,7 @@ export const BRANDS = [
     details:
       "1.0mm decorative laminates, scuff-resistant suede finishes, woodgrain overlays, and anti-fingerprint panels.",
   },
-  {
-    id: "century-laminates",
-    name: "Century Laminates",
-    logo: centurylamLogo,
-    category: "laminates",
-    description:
-      "India's trusted name for virus-proof, highly durable laminates with excellent surface stability.",
-    details:
-      "Lucida super-gloss panels, ViroKill antibacterial sheets, matte textures, and designer cabinet sheets.",
-  },
+
   {
     id: "greenlam",
     name: "Greenlam",
@@ -174,26 +214,6 @@ export const BRANDS = [
   },
   // Veneers
   {
-    id: "sharon",
-    name: "Sharon",
-    logo: sharonLogo,
-    category: "veneers",
-    description:
-      "Exquisite natural wood veneers backed with durable marine substrates for premium wall paneling.",
-    details:
-      "Sharon Gold teak veneers, reconstituted designer sheets, fumed wood, and moisture-free timber overlays.",
-  },
-  {
-    id: "century-veneers",
-    name: "Century Veneers",
-    logo: centuryvenLogo,
-    category: "veneers",
-    description:
-      "Flawless recon wood panels and premium timber faces designed for premium interior applications.",
-    details:
-      "Senzura recon veneers, fumed oak sheets, book-matched teak, and eco-certified backing fleeces.",
-  },
-  {
     id: "greenply",
     name: "Greenply Veneers",
     logo: greenplyLogo,
@@ -213,27 +233,7 @@ export const BRANDS = [
     details:
       "Premium teak veneers, crown-cut wood sheets, reconstituted designs, and matching edge strips.",
   },
-  // Plywood, MDF & HDF
-  {
-    id: "greenpanel",
-    name: "Greenpanel",
-    logo: greenpanel,
-    category: "plywood_mdf",
-    description:
-      "India's largest manufacturer of MDF and HDF, producing ultra-flat and dense calibrated panels.",
-    details:
-      "HDWR water-resistant boards, calibrated premium plywood, interior MDF sheets, and pre-laminated office boards.",
-  },
-  {
-    id: "egply",
-    name: "EG Ply",
-    logo: egplyLogo,
-    category: "plywood_mdf",
-    description:
-      "Our in-house premium partner providing high-specification IS:710 Marine Boiling Water Proof calibrated plywood.",
-    details:
-      "EG Mark 710 calibrated marine plywood, EG Bond premium MR/BWP boards, both-side pre-laminated boards, and high-density shuttering sheets.",
-  },
+
   // Adhesives
   {
     id: "fevicol",
