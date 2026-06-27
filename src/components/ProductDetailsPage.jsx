@@ -109,7 +109,12 @@ export default function ProductDetailsPage() {
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-full object-cover"
+                className={`w-full h-full ${
+                  product.category === "adhesives" ||
+                  product.category === "hardware"
+                    ? "object-contain p-6"
+                    : "object-contain"
+                }`}
               />
               <span className="absolute bottom-4 left-4 px-3 py-1 bg-slate-950/90 text-amber-400 text-xs font-bold rounded-lg uppercase tracking-wider">
                 Certified Quality
@@ -385,7 +390,7 @@ export default function ProductDetailsPage() {
                     <img
                       src={p.image}
                       alt={p.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   <h4 className="text-sm font-bold text-slate-900 mt-3 group-hover:text-amber-600 transition-colors line-clamp-1">

@@ -239,7 +239,12 @@ export default function HomePage({ categories, products, testimonials }) {
                   <img
                     src={prod.image}
                     alt={prod.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${
+                      prod.category === "adhesives" ||
+                      prod.category === "hardware"
+                        ? "object-contain p-6"
+                        : "object-contain"
+                    }`}
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider bg-slate-950 text-amber-400 rounded-full shadow-md">
@@ -346,7 +351,12 @@ export default function HomePage({ categories, products, testimonials }) {
                   <img
                     src={prod.image}
                     alt={prod.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${
+                      prod.category === "adhesives" ||
+                      prod.category === "hardware"
+                        ? "object-contain p-6"
+                        : "object-contain"
+                    }`}
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full shadow-md">
