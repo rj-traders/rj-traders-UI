@@ -34,6 +34,8 @@ import sharonLogo from "../assets/our-brand/sharon.png";
 import centuryvenLogo from "../assets/our-brand/century.png";
 import greenplyLogo from "../assets/our-brand/greenply.png";
 import realplyLogo from "../assets/our-brand/realply.jpeg";
+import clubwelllogo from "../assets/our-brand/clubwell-logo.webp"
+import linklogo from "../assets/our-brand/links.jpg"
 // import greenpanelLogo from "../assets/our-brand/logo-Greenpanel.png";
 import egplyLogo from "../assets/our-brand/eg-ply-certified-polywoods.jpg";
 import fevicolLogo from "../assets/our-brand/fevicol.png";
@@ -206,6 +208,26 @@ export const BRANDS = [
       "Celebrated for innovative locking designs, dimple key security, and high physical force resistance.",
     details:
       "Hexabolt central main locks, night latches, padlocks with localized LED lights, and shutter locks.",
+  },
+  {
+    id: "clubwell",
+    name: "Clubwell",
+    logo: clubwelllogo,
+    category: "hardware",
+    description:
+      "A trusted name in hardware solutions, offering a wide range of quality products for residential and commercial use.",
+    details:
+      "Durable cabinet hardware, stylish door handles, and reliable lock systems.",
+  },
+  {
+    id: "links",
+    name: "Links",
+    logo: linklogo,
+    category: "hardware",
+    description:
+      "A trusted name in hardware solutions, offering a wide range of quality products for residential and commercial use.",
+    details:
+      "Durable cabinet hardware, stylish door handles, and reliable lock systems.",
   },
   // Laminates
   {
