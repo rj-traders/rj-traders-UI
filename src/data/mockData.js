@@ -34,11 +34,109 @@ import sharonLogo from "../assets/our-brand/sharon.png";
 import centuryvenLogo from "../assets/our-brand/century.png";
 import greenplyLogo from "../assets/our-brand/greenply.png";
 import realplyLogo from "../assets/our-brand/realply.jpeg";
-import clubwelllogo from "../assets/our-brand/clubwell-logo.webp"
-import linklogo from "../assets/our-brand/links.jpg"
+import clubwelllogo from "../assets/our-brand/clubwell-logo.webp";
+import linklogo from "../assets/our-brand/links.jpg";
 // import greenpanelLogo from "../assets/our-brand/logo-Greenpanel.png";
 import egplyLogo from "../assets/our-brand/eg-ply-certified-polywoods.jpg";
 import fevicolLogo from "../assets/our-brand/fevicol.png";
+
+// Ebco Product Images
+import ebcoHingesNormal from "../assets/ebco-images/hinges-normal.jpg";
+import ebcoHingesSoftClose from "../assets/ebco-images/hinges-soft-close.webp";
+import ebcoTelescopicNormal from "../assets/ebco-images/telescopic-drawer.webp";
+import ebcoTelescopicSC from "../assets/ebco-images/Telescopic-Drawer-SC.webp";
+import ebcoDoorCloser from "../assets/ebco-images/Door-Closer-Compact.webp";
+
+// Jainson Product Images
+import jainsonAxel from "../assets/jainson-images/AXEL.jpg";
+import jainsonDesire from "../assets/jainson-images/Desire.jpg";
+import jainsonDoorLockBrass from "../assets/jainson-images/Door Lock with Latch (Brass).jpg";
+import jainsonFabio from "../assets/jainson-images/Fabio.jpg";
+import jainsonGizmo from "../assets/jainson-images/GIZMO.jpg";
+import jainsonKnox from "../assets/jainson-images/Multipurpose Knox.png";
+import jainsonPlum from "../assets/jainson-images/Plum.jpg";
+import jainsonTriLock from "../assets/jainson-images/Tri-Lock.jpg";
+import jainsonTriLockNS from "../assets/jainson-images/Tri-Lock Nickel Silver.png";
+import jainsonWave from "../assets/jainson-images/Wave.jpg";
+import jainsonMortise1 from "../assets/jainson-images/mortise-lock-1.png";
+import jainsonMortise2 from "../assets/jainson-images/mortise-lock-2.png";
+
+// Sleek Product Images
+import sleekTelescopicSC from "../assets/sleek-images/sleek-by-asian-paints-telescopic-channel-zinc-soft-closing.webp";
+import sleekTandemBox from "../assets/sleek-images/tandem-box-in-kitchen.jpg";
+
+// Clubwell Product Images
+import clubwell1 from "../assets/club-well-images/1.webp";
+import clubwell2 from "../assets/club-well-images/2.webp";
+import clubwell3 from "../assets/club-well-images/3.webp";
+import clubwell4 from "../assets/club-well-images/4.webp";
+import clubwell5 from "../assets/club-well-images/5.webp";
+import clubwell6 from "../assets/club-well-images/6.webp";
+import clubwell7 from "../assets/club-well-images/7.webp";
+import clubwell8 from "../assets/club-well-images/8.webp";
+// import clubwell9 from "../assets/club-well-images/9.webp";
+// import clubwell10 from "../assets/club-well-images/10.webp";
+// import clubwell11 from "../assets/club-well-images/11.webp";
+// import clubwell12 from "../assets/club-well-images/12.webp";
+// import clubwell13 from "../assets/club-well-images/13.webp";
+// import clubwell14 from "../assets/club-well-images/14.webp";
+
+// Links Product Images
+import linksDoorCloser from "../assets/link-images/door-closer-1.jpeg";
+import linksLock1 from "../assets/link-images/lock-1.jpeg";
+import linksLock2 from "../assets/link-images/lock-2.jpeg";
+import linksLock3 from "../assets/link-images/lock-3.jpeg";
+import linksLock4 from "../assets/link-images/lock-4.jpeg";
+import linksTelescopic from "../assets/link-images/telescopic-1.jpeg";
+import linksMortiseA from "../assets/link-images/WhatsApp Image 2026-06-30 at 6.55.32 PM (6).jpeg";
+import linksMortiseB from "../assets/link-images/WhatsApp Image 2026-06-30 at 6.55.32 PM (7).jpeg";
+
+// Yale Product Images
+import yaleDrawerLock1 from "../assets/yale-images/drawer-lock-1.webp";
+import yaleDrawerLock2 from "../assets/yale-images/drawer-lock-2.webp";
+import yaleDrawerLock3 from "../assets/yale-images/drawer-lock-3.webp";
+import yaleMortiseHandle1 from "../assets/yale-images/mortise-handle-1.webp";
+import yaleMortiseHandle2 from "../assets/yale-images/mortise-handle-2.webp";
+import yaleMortiseHandle3 from "../assets/yale-images/mortise-handle-3.webp";
+import yaleMortiseHandle4 from "../assets/yale-images/mortise-handle-4.webp";
+import yaleMortiseHandle5 from "../assets/yale-images/mortise-handle-5.webp";
+import yaleMortiseLock1 from "../assets/yale-images/mortise-lock-1.webp";
+// import yaleMortiseLock2 from "../assets/yale-images/mortise-lock-2.webp";
+// import yaleMortiseLock3 from "../assets/yale-images/mortise-lock-3.webp";
+import yaleMortiseLockset1 from "../assets/yale-images/mortise-lockset-1.webp";
+import yaleMortiseLockset2 from "../assets/yale-images/mortise-lockset-2.webp";
+
+// Woods Product Images
+import woodsSlidingChannel from "../assets/woods-images/WSH-400x278.jpg";
+
+// Godrej Product Images
+import godrejMortise1 from "../assets/godrej-images/mortise-lock-1.webp";
+import godrejMortise2 from "../assets/godrej-images/mortise-lock-2.webp";
+import godrejMortise3 from "../assets/godrej-images/mortise-lock-3.webp";
+// import godrejMortise4 from "../assets/godrej-images/mortise-lock-4.webp";
+// import godrejMortise5 from "../assets/godrej-images/mortise-lock-5.webp";
+import godrejRim1 from "../assets/godrej-images/rim-lock-1.webp";
+import godrejRim2 from "../assets/godrej-images/rim-lock-2.webp";
+import godrejRim3 from "../assets/godrej-images/rim-lock-3.webp";
+
+// Hablo Product Images
+import habloAutoHinges from "../assets/hablo-images/AUTO HINGES.jpg";
+import habloDoorCloser from "../assets/hablo-images/DOOR CLOSER.jpg";
+import habloDrawerChannel from "../assets/hablo-images/DRAWER CHANNEL.jpg";
+import habloGHandleProfile from "../assets/hablo-images/G HANDLE PROFILE.jpg";
+import habloPureSSHinges from "../assets/hablo-images/PURE SS SOFT CLOSING HINGES.jpg";
+import habloSoftTelescopic from "../assets/hablo-images/SOFT TELESCOPIC CHANNEL.jpg";
+import habloSlimTandem from "../assets/hablo-images/Slim Tandem Box.jpg";
+
+// Europa Product Images
+import europaDrawerAB from "../assets/europa-images/Drawer-Lock-AB.webp";
+import europaDrawerF365 from "../assets/europa-images/Drawer-Lock-F365.webp";
+import europaDrawerRG from "../assets/europa-images/Drawer-Lock-RG.webp";
+import europaDrawerSS from "../assets/europa-images/Drawer-Lock-SS.webp";
+import europaCupboardF160 from "../assets/europa-images/cupboard-lock-F160.webp";
+import europaCupboardF170 from "../assets/europa-images/cupboard-lock-F170.jpg";
+import europaCupboardF360 from "../assets/europa-images/cupboard-lock-F360.webp";
+
 import bwp2 from "../assets/fevicol-images/BWP-2.jpg";
 import fevicolSWR from "../assets/fevicol-images/Fevicol-SWR.png";
 import memPressLC from "../assets/fevicol-images/Fevicol-membrane-Press-Adhesive-LC.png";
@@ -64,8 +162,6 @@ import sh from "../assets/fevicol-images/fevicol-sh.png";
 import speedx from "../assets/fevicol-images/fevicol-speedx.png";
 import swrEq from "../assets/fevicol-images/swr-eq.png";
 import probond from "../assets/fevicol-images/fevicol-FV-Probond-Packshot.webp";
-
-
 
 export const PRODUCT_CATEGORIES = [
   { id: "plywood", name: "EG Plywood", icon: Layers },
@@ -215,9 +311,9 @@ export const BRANDS = [
     logo: clubwelllogo,
     category: "hardware",
     description:
-      "A trusted name in hardware solutions, offering a wide range of quality products for residential and commercial use.",
+      "A premium brand for architectural fittings and kitchen hardware, recognized for robust build quality, high load endurance, and smooth silent operations in modern homes.",
     details:
-      "Durable cabinet hardware, stylish door handles, and reliable lock systems.",
+      "Double-spring soft-close auto hinges, heavy-duty tandem box drawer systems, corner organizers, stainless steel bathroom fittings, and designer furniture handles.",
   },
   {
     id: "links",
@@ -225,9 +321,9 @@ export const BRANDS = [
     logo: linklogo,
     category: "hardware",
     description:
-      "A trusted name in hardware solutions, offering a wide range of quality products for residential and commercial use.",
+      "Highly dependable utility locks, heavy-duty door closers, and drawer channels engineered for long-term commercial and household security.",
     details:
-      "Durable cabinet hardware, stylish door handles, and reliable lock systems.",
+      "Standard and double-action rim locks, high-security shutter locks, compact overhead door closers, and solid steel telescopic drawer runners.",
   },
   // Laminates
   {
@@ -936,21 +1032,46 @@ export const PRODUCTS = [
     ],
   },
 
-  // Hardware
+  // Hardware  // --- EBCO PRODUCTS ---
   {
-    id: "hw-01",
+    id: "hw-ebco-hinges-normal",
     category: "hardware",
     brand: "ebco",
-    name: "Ebco Soft-Close Premium Hydraulic Hinges",
-    tagline: "3D Adjustable Nickel-Plated Soft Close Cabinet Hinges",
+    name: "Ebco Standard Cabinet Hinges",
+    tagline: "Durable Steel Pivot Hinges for Regular Cabinets",
     description:
-      "Ensure absolute silence and smooth closing motion for every cabinet door in your household. Tested for over 200,000 cycles, these heavy-duty soft-close hinges prevent slamming and protect finger joints.",
-    basePrice: 190,
+      "High-grade steel pivot hinges designed for standard home cabinet doors. Offers reliable 90-degree opening angles and long-lasting mechanical durability.",
+    basePrice: 85,
     unit: "pair",
-    rating: 4.8,
-    reviews: 210,
-    image:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    rating: 4.6,
+    reviews: 120,
+    image: ebcoHingesNormal,
+    specs: {
+      Material: "Cold-Rolled Steel",
+      Finish: "Nickel-Plated Glossy",
+      "Opening Angle": "95°",
+      Adjustment: "Standard side and depth adjustment screws",
+    },
+    features: [
+      "Robust double-riveted steel linkage",
+      "Standard cup diameter of 35mm",
+      "Corrosion-resistant plating",
+      "Tested for 100,000 cycles",
+    ],
+  },
+  {
+    id: "hw-ebco-hinges-soft",
+    category: "hardware",
+    brand: "ebco",
+    name: "Ebco Premium Hydraulic Soft-Close Hinges",
+    tagline: "3D Adjustable Soft Close Cabinet Hinges",
+    description:
+      "Ensure absolute silence and smooth closing motion for every cabinet door in your household. Integrated hydraulic piston prevents slamming and protects finger joints.",
+    basePrice: 195,
+    unit: "pair",
+    rating: 4.9,
+    reviews: 215,
+    image: ebcoHingesSoftClose,
     specs: {
       Material: "Cold-rolled Steel & Solid Brass piston",
       Finish: "Triple Layer Anti-rust Nickel plating",
@@ -966,113 +1087,1089 @@ export const PRODUCTS = [
     ],
   },
   {
-    id: "hw-02",
+    id: "hw-ebco-drawer-normal",
     category: "hardware",
     brand: "ebco",
-    name: "Ebco Heavy Duty Soft-Close Drawer Slides",
-    tagline: "Full Extension Ball Bearing Kitchen & Wardrobe Runners",
+    name: "Ebco Telescopic Ball Bearing Slides",
+    tagline: "Smooth Gliding Full-Extension Steel Channels",
     description:
-      "Upgrade your drawers to professional level smooth gliding. Made of ultra-tough cold-rolled steel, these slides carry massive pots, heavy winter garments, and storage boxes with effortless, whisper-quiet action.",
-    basePrice: 650,
+      "Standard heavy-duty telescopic drawer runners with double rows of steel ball bearings. Provides smooth and sag-free movement for home wardrobes and office drawers.",
+    basePrice: 420,
     unit: "pair",
-    sizes: ["12 inch", "14 inch", "16 inch", "18 inch", "20 inch", "22 inch"],
     rating: 4.7,
-    reviews: 132,
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+    reviews: 154,
+    image: ebcoTelescopicNormal,
+    specs: {
+      "Weight Capacity": "35 Kg dynamic load rating",
+      Material: "High-tensile Steel",
+      Extension: "100% Full Extension",
+      Mechanism: "Double Row Solid Steel Bearings",
+    },
+    features: [
+      "Lever-action disconnect for easy drawer removal",
+      "Bumper stops prevent drawer roll-out",
+      "Zinc-plated anti-rust surface finish",
+      "Dust protection seals on bearing rails",
+    ],
+  },
+  {
+    id: "hw-ebco-drawer-sc",
+    category: "hardware",
+    brand: "ebco",
+    name: "Ebco Soft-Close Heavy Duty Drawer Slides",
+    tagline: "Premium Full Extension Soft-Closing Runners",
+    description:
+      "Premium slides equipped with an integrated copper-cylinder hydraulic damper for silent, self-closing action. Ideal for luxury modular kitchens and drawers carrying heavy loads.",
+    basePrice: 680,
+    unit: "pair",
+    rating: 4.8,
+    reviews: 188,
+    image: ebcoTelescopicSC,
     specs: {
       "Weight Capacity": "45 Kg dynamic load rating",
-      Material: "High-tensile Cold Rolled Steel",
-      Mechanism: "Double Row Solid Steel Ball Bearings",
+      Material: "Ultra-tough Cold-Rolled Steel",
       Extension: "100% Full Extension",
-      "Closing system": "Double spring-loaded copper cylinder dampener",
+      Mechanism: "Double-spring soft close piston",
     },
     features: [
-      "Zero sagging at maximum weight",
-      "Silent and continuous slide path",
-      "Trigger disconnect lever for drawer removal",
-      "Anti-dust self-cleaning bearing tracks",
+      "Zero drawer slamming under full loads",
+      "Self-cleaning tracks prevent dust buildup",
+      "High lateral stability ensures zero wobble",
+      "Smooth and quiet gliding action",
     ],
   },
   {
-    id: "hw-jainson-pulls",
+    id: "hw-ebco-door-closer",
+    category: "hardware",
+    brand: "ebco",
+    name: "Ebco Compact Overhead Door Closer",
+    tagline: "Hydraulic Speed Adjustable Overhead Door Closer",
+    description:
+      "A compact hydraulic door closer with dual-speed adjustments. Designed to fit both left and right-hand opening doors, ensuring secure and controlled door closure.",
+    basePrice: 1250,
+    unit: "unit",
+    rating: 4.7,
+    reviews: 95,
+    image: ebcoDoorCloser,
+    specs: {
+      Material: "Extruded Aluminum Alloy Body",
+      Finish: "Satin Silver Powder Coated",
+      "Door Weight Max": "60 Kg",
+      "Adjustment Options": "Adjustable closing and latching speed",
+    },
+    features: [
+      "Leak-proof hydraulic oil reservoir",
+      "Compact aesthetic profile",
+      "Non-handed installation layout",
+      "Suitable for wooden and aluminum frame doors",
+    ],
+  },
+
+  // --- JAINSON PRODUCTS ---
+  {
+    id: "hw-jainson-axel",
     category: "hardware",
     brand: "jainson",
-    name: "Jainson Brass Cabinet Pull Handles",
-    tagline: "Solid designer brass pulls with anti-tarnish protective coating",
+    name: "Jainson Axel Designer Pull Handle",
+    tagline: "Luxury Zinc Alloy Wardrobe Pull Handle",
     description:
-      "Handcrafted from premium brass, the Jainson Cabinet Pull handles elevate wardrobes and cabinets with a timeless antique metallic sheen.",
-    basePrice: 450,
+      "The Axel designer pull handle features a sleek modern geometric design with premium hand-polished textures. Perfect for contemporary bedroom wardrobe doors.",
+    basePrice: 380,
     unit: "piece",
-    thicknesses: ["96mm", "128mm", "192mm"],
     rating: 4.8,
-    reviews: 42,
-    image:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    reviews: 64,
+    image: jainsonAxel,
     specs: {
-      Material: "Premium Solid Brass",
-      Finish: "Antique Brass Lacquered",
-      "Available Sizes": "96mm to 192mm hole centers",
-      Warranty: "5 Years Tarnish Warranty",
+      Material: "Premium Zinc Alloy",
+      Finish: "Brushed Satin Gold & Dark Grey Matte",
+      Length: "200mm",
+      "Hole Center": "160mm",
     },
     features: [
-      "100% Solid Brass Construction",
-      "Anti-Tarnish Protective Layer",
-      "Includes Mounting Screws",
-      "Elegant Traditional Design",
+      "Heavy zinc solid casting",
+      "Ergonomic finger-grip comfort",
+      "Screws included in package",
+      "Tarnish-resistant clear coating",
     ],
   },
   {
-    id: "hw-hablo-mortise",
+    id: "hw-jainson-desire",
     category: "hardware",
-    brand: "hablo",
-    name: "Hablo Luxury Satin Mortise Handle Set",
-    tagline: "Ergonomic zinc alloy mortise handles for interior doors",
+    brand: "jainson",
+    name: "Jainson Desire Cabinet Handle",
+    tagline: "Elegant Wave-Profile Cabinet Pull",
     description:
-      "Experience Italian design and smooth movement. The Hablo mortise sets feature high-precision return springs and sleek satin chrome finishes.",
-    basePrice: 1850,
-    unit: "set",
+      "An elegant cabinet handle featuring a subtle wave profile that offers a comfortable grip. Instantly elevates bathroom vanities and office credenza surfaces.",
+    basePrice: 220,
+    unit: "piece",
     rating: 4.7,
-    reviews: 39,
-    image:
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=800",
+    reviews: 48,
+    image: jainsonDesire,
     specs: {
       Material: "Zinc Alloy",
-      Finish: "Satin Chrome Dual Tone",
-      "Lock Cylinder": "Brass 60mm double key cylinder",
-      Warranty: "7 Years Mechanical Warranty",
+      Finish: "Chrome Polish & Satin Chrome Finish",
+      Length: "128mm",
     },
     features: [
-      "Heavy-duty return spring",
-      "Corrosion resistant zinc body",
-      "Computerized key system",
-      "Silent latch operation",
+      "Smooth rounded edges",
+      "Stain-resistant chrome coating",
+      "Easy mounting design",
+      "Perfect for kitchen drawers",
     ],
   },
   {
-    id: "hw-woods-sliding",
+    id: "hw-jainson-door-lock-brass",
     category: "hardware",
-    brand: "woods",
-    name: "Woods Heavy-Duty Wardrobe Sliding System",
-    tagline: "Top-hung silent sliding channels for wooden wardrobe doors",
+    brand: "jainson",
+    name: "Jainson Brass Door Lock with Latch",
+    tagline: "Solid Brass Heavy-Duty Main Door Lockset",
     description:
-      "Designed for seamless wardrobe door movements. The Woods sliding door system utilizes heavy-duty nylon rollers and solid aluminum top tracks to support heavy doors up to 80kg.",
+      "High-security lockset crafted from solid brass components. Comes with an integrated latch mechanism and computerized dimple keys for maximum burglar resistance.",
     basePrice: 3200,
     unit: "set",
     rating: 4.9,
-    reviews: 51,
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+    reviews: 74,
+    image: jainsonDoorLockBrass,
     specs: {
-      "Weight Capacity": "80 Kg per door panel",
-      Material: "Extruded Aluminum & Ball Bearing Nylon Wheels",
-      Warranty: "5 Years Wear Warranty",
+      Material: "100% Solid Brass Latch & Body",
+      Keys: "4 Computerized Brass Dimple Keys",
+      "Latch Throw": "20mm secure throw",
     },
     features: [
-      "Anti-jump safety guide wheels",
-      "Ultra-silent ball bearing rollers",
-      "Durable anodized track finish",
-      "Adjustable height alignment",
+      "Heavy duty brass cylinders",
+      "Double-locking safety bolt",
+      "Anti-drill protection shield",
+      "Premium gold brass polish finish",
+    ],
+  },
+  {
+    id: "hw-jainson-fabio",
+    category: "hardware",
+    brand: "jainson",
+    name: "Jainson Fabio Premium Handle",
+    tagline: "Contemporary Dual-Tone Furniture Handle",
+    description:
+      "Fabio handle features a gorgeous dual-tone contrast finish that complements both dark and light wood veneers. A top choice for luxury living room cabinets.",
+    basePrice: 450,
+    unit: "piece",
+    rating: 4.8,
+    reviews: 53,
+    image: jainsonFabio,
+    specs: {
+      Material: "Zinc Alloy",
+      Finish: "Rose Gold & Textured Black Matte",
+      Length: "250mm",
+    },
+    features: [
+      "Anti-scratch clear coat",
+      "Solid zinc core structure",
+      "Architectural dual-tone aesthetics",
+      "Excellent load-bearing strength",
+    ],
+  },
+  {
+    id: "hw-jainson-gizmo",
+    category: "hardware",
+    brand: "jainson",
+    name: "Jainson Gizmo Designer Knob",
+    tagline: "Minimalist Solid Metal Drawer Knob",
+    description:
+      "A compact, minimalist round knob designed for sleek drawers, shoe racks, and bedside tables. Adds a subtle high-end touch to minimal interiors.",
+    basePrice: 110,
+    unit: "piece",
+    rating: 4.6,
+    reviews: 38,
+    image: jainsonGizmo,
+    specs: {
+      Material: "Solid Zinc Metal",
+      Finish: "Satin Nickel & Gold Trim",
+      Diameter: "30mm",
+    },
+    features: [
+      "Single-hole easy installation",
+      "Elegant circular styling",
+      "Solid heavy hand feel",
+      "Rust-free lifetime finish",
+    ],
+  },
+  {
+    id: "hw-jainson-knox",
+    category: "hardware",
+    brand: "jainson",
+    name: "Jainson Knox Multipurpose Lock",
+    tagline: "High-Security Cabinet and Drawer Lock",
+    description:
+      "A versatile, high-security lock suitable for office desk drawers, storage units, and wooden cabinets. Equipped with a thick locking bolt and a secure keyway.",
+    basePrice: 280,
+    unit: "unit",
+    rating: 4.7,
+    reviews: 82,
+    image: jainsonKnox,
+    specs: {
+      Material: "Zinc Alloy Cylinder & Steel Cam",
+      Keys: "2 Reversible Nickel Silver Keys",
+      "Cylinder Length": "22mm",
+    },
+    features: [
+      "Smooth 180-degree rotation",
+      "Thickened steel locking cam",
+      "Ideal for documents and cash drawers",
+      "Includes faceplate ring and screws",
+    ],
+  },
+  {
+    id: "hw-jainson-plum",
+    category: "hardware",
+    brand: "jainson",
+    name: "Jainson Plum Cabinet Handle",
+    tagline: "Slim Rectangular T-Bar Handle",
+    description:
+      "The Plum handle features a clean T-Bar profile with slim rectangular sections. Excellent for vertical placements on tall wardrobe shutters.",
+    basePrice: 290,
+    unit: "piece",
+    rating: 4.7,
+    reviews: 41,
+    image: jainsonPlum,
+    specs: {
+      Material: "High-Grade Aluminum Alloy",
+      Finish: "Anodized Black Suede Finish",
+      Length: "320mm",
+    },
+    features: [
+      "Lightweight yet structurally rigid",
+      "Fingermark resistant coating",
+      "Slim profile avoids bumping",
+      "Modern minimalist styling",
+    ],
+  },
+  {
+    id: "hw-jainson-trilock",
+    category: "hardware",
+    brand: "jainson",
+    name: "Jainson Tri-Lock Safety Lock",
+    tagline: "Triple-Bolt Premium Rim Lock for Main Doors",
+    description:
+      "A heavy-duty rim lock featuring a triple-bolt deadbolt locking mechanism. Provides superior reinforcement against brute force attempts on main wooden doors.",
+    basePrice: 1950,
+    unit: "unit",
+    rating: 4.8,
+    reviews: 67,
+    image: jainsonTriLock,
+    specs: {
+      Material: "Powder Coated Steel Case, Brass Bolts",
+      "Bolts Count": "3 Solid Deadbolts",
+      Keys: "3 Computerized Keys",
+    },
+    features: [
+      "Triple deadbolt reinforcement",
+      "Rust-proof internal springs",
+      "Hold-back slider button",
+      "Supplied with heavy steel striker receiver",
+    ],
+  },
+  {
+    id: "hw-jainson-trilock-ns",
+    category: "hardware",
+    brand: "jainson",
+    name: "Jainson Tri-Lock Nickel Silver Edition",
+    tagline: "Luxury Nickel Silver Finish Triple Bolt Lock",
+    description:
+      "An upgrade to the classic Tri-Lock, featuring a sleek, high-reflectivity nickel silver finish. Combines premium aesthetics with high-strength structural lock casing.",
+    basePrice: 2250,
+    unit: "unit",
+    rating: 4.9,
+    reviews: 58,
+    image: jainsonTriLockNS,
+    specs: {
+      Material: "Nickel Silver Coated Steel Case",
+      "Bolts Count": "3 Solid Deadbolts",
+      Keys: "4 Dimple Keys",
+    },
+    features: [
+      "Premium decorative finish",
+      "High resistance to wear and weather",
+      "Thick security strike box",
+      "Unpickable key lock cylinder",
+    ],
+  },
+  {
+    id: "hw-jainson-wave",
+    category: "hardware",
+    brand: "jainson",
+    name: "Jainson Wave Pull Handle",
+    tagline: "Ergonomic Sculpted Wave Handle",
+    description:
+      "Sculpted with organic flowing wave aesthetics, this handle offers a wonderful tactile feel and premium styling. Ideal for central luxury drawers.",
+    basePrice: 340,
+    unit: "piece",
+    rating: 4.8,
+    reviews: 49,
+    image: jainsonWave,
+    specs: {
+      Material: "Zinc Alloy Casting",
+      Finish: "Satin Nickel & Glossy Chrome Accents",
+      Length: "160mm",
+    },
+    features: [
+      "Elegant fluid contours",
+      "Comfortable grip ergonomics",
+      "Easy-to-clean polished surface",
+      "Premium heavy metal weight",
+    ],
+  },
+  {
+    id: "hw-jainson-mortise-1",
+    category: "hardware",
+    brand: "jainson",
+    name: "Jainson Classic Mortise Handle Set",
+    tagline: "Satin Chrome Finish Mortise Lever Handles",
+    description:
+      "A complete mortise door handle lockset, including premium spring-loaded handles and double-action latch body. Perfect for bedroom and balcony wooden doors.",
+    basePrice: 1850,
+    unit: "set",
+    rating: 4.7,
+    reviews: 62,
+    image: jainsonMortise1,
+    specs: {
+      Material: "Premium Zinc Alloy Plates, Brass Cylinders",
+      Finish: "Satin Chrome Dual-Tone",
+      "Lock Cylinder": "60mm Double Key Cylinder",
+    },
+    features: [
+      "Heavy-duty return spring mechanism",
+      "Rust-proof internal locks",
+      "Includes 3 computerized keys",
+      "Supplied with standard mounting spindle",
+    ],
+  },
+  {
+    id: "hw-jainson-mortise-2",
+    category: "hardware",
+    brand: "jainson",
+    name: "Jainson Royal Mortise Lockset",
+    tagline: "Antique Gold Premium Mortise Handle Lockset",
+    description:
+      "The Royal Mortise set features exquisite classic detailing and antique gold finishing. Instantly elevates luxury doors with vintage traditional grandeur.",
+    basePrice: 2450,
+    unit: "set",
+    rating: 4.8,
+    reviews: 45,
+    image: jainsonMortise2,
+    specs: {
+      Material: "Heavy Cast Zinc Alloy",
+      Finish: "Antique Gold Lacquered",
+      "Lock Cylinder": "70mm Brass Cylinder",
+    },
+    features: [
+      "Ornate classical design elements",
+      "Thick protective clear lacquer layer",
+      "Ultra-smooth latch release action",
+      "Extra keys included",
+    ],
+  },
+
+  // --- SLEEK PRODUCTS ---
+  {
+    id: "hw-sleek-drawer-sc",
+    category: "hardware",
+    brand: "sleek",
+    name: "Sleek Asian Paints Soft-Closing Slides",
+    tagline: "Zinc Coated Soft Closing Telescopic Channels",
+    description:
+      "Premium zinc-plated drawer slides by Asian Paints. Formulated for heavy-duty kitchen applications where oil, steam, and heavy loads demand corrosion resistance and silent soft-close action.",
+    basePrice: 750,
+    unit: "pair",
+    rating: 4.8,
+    reviews: 95,
+    image: sleekTelescopicSC,
+    specs: {
+      Material: "Zinc-Plated High-Tensile Steel",
+      Mechanism: "Hydraulic Copper Cylinder Soft-Close",
+      "Weight Capacity": "45 Kg dynamic load",
+      Sizes: "14 to 22 inches available",
+    },
+    features: [
+      "Superior zinc anti-rust protection",
+      "Tested for 150,000 operations",
+      "Whisper-silent hydraulic damping",
+      "Perfect track alignment guides",
+    ],
+  },
+  {
+    id: "hw-sleek-tandem-box",
+    category: "hardware",
+    brand: "sleek",
+    name: "Sleek Premium Kitchen Tandem Box",
+    tagline: "Double-Wall Metal Drawer Box System",
+    description:
+      "The ultimate solution for modular kitchen organization. High double-wall steel sides with integrated soft-close runners provide sleek drawers that pull out completely for easy access.",
+    basePrice: 3400,
+    unit: "set",
+    rating: 4.9,
+    reviews: 110,
+    image: sleekTandemBox,
+    specs: {
+      Material: "Powder Coated Premium Steel",
+      Finish: "Silk White / Dark Metallic Grey",
+      "Weight Capacity": "50 Kg load rating",
+      Height: "85mm / 150mm side profile options",
+    },
+    features: [
+      "Ultra-smooth full extension synchronised runners",
+      "Integrated 3D drawer front adjustments",
+      "Sleek double-wall design maximizes storage",
+      "No cabinet slamming even when fully loaded with utensils",
+    ],
+  },
+
+  // --- CLUBWELL PRODUCTS ---
+  {
+    id: "hw-clubwell-handle-1",
+    category: "hardware",
+    brand: "clubwell",
+    name: "Clubwell Luxury D-Pull Handle",
+    tagline: "Premium Stainless Steel Wardrobe Handle",
+    description:
+      "A heavy solid stainless steel handle featuring a classic D-shape profile. Elegant, durable, and rust-proof, it is ideal for tall wardrobe cabinets and master bedroom closets.",
+    basePrice: 280,
+    unit: "piece",
+    rating: 4.7,
+    reviews: 84,
+    image: clubwell1,
+    specs: {
+      Material: "Grade 304 Stainless Steel",
+      Finish: "Satin Brush Silver",
+      Length: "150mm",
+    },
+    features: [
+      "Solid heavy stainless construction",
+      "Lifetime anti-rust warranty",
+      "Ergonomic square-edge design",
+      "Anti-fingerprint texture",
+    ],
+  },
+  {
+    id: "hw-clubwell-handle-2",
+    category: "hardware",
+    brand: "clubwell",
+    name: "Clubwell Designer Profile Handle",
+    tagline: "Slim Edge-Mounted Cabinet Handle",
+    description:
+      "A modern, edge-mounted aluminum profile handle. Installs discreetly on the upper edge of drawer panels, presenting an ultra-minimal, handle-less cabinetry appearance.",
+    basePrice: 190,
+    unit: "piece",
+    rating: 4.6,
+    reviews: 62,
+    image: clubwell2,
+    specs: {
+      Material: "Anodized Aluminum",
+      Finish: "Matte Black Anodized",
+      Length: "200mm",
+    },
+    features: [
+      "Ultra-low profile edge mounting",
+      "Saves space and avoids snagging",
+      "Corrosion-resistant anodized film",
+      "Perfect for kitchen drawers and shutters",
+    ],
+  },
+  {
+    id: "hw-clubwell-hinge-soft",
+    category: "hardware",
+    brand: "clubwell",
+    name: "Clubwell Soft-Close Auto Hinge",
+    tagline: "Double-Spring Hydraulic Cabinet Hinge",
+    description:
+      "Equipped with dual springs and a high-performance copper hydraulic cylinder, this hinge provides a smooth, gentle close starting at 30 degrees. Prevents cabinet damage.",
+    basePrice: 145,
+    unit: "pair",
+    rating: 4.8,
+    reviews: 135,
+    image: clubwell3,
+    specs: {
+      Material: "Cold-Rolled Steel",
+      Finish: "Heavy Nickel Finish",
+      "Opening Angle": "105°",
+      "Cup Depth": "11.5mm",
+    },
+    features: [
+      "Smooth silent soft-close action",
+      "Easy clip-on installation plate",
+      "Double-spring force mechanism",
+      "Corrosion-resistant heavy plating",
+    ],
+  },
+  {
+    id: "hw-clubwell-hinge-normal",
+    category: "hardware",
+    brand: "clubwell",
+    name: "Clubwell Normal Cabinet Hinge",
+    tagline: "Standard Steel Slide-On Hinge",
+    description:
+      "Reliable, standard slide-on hinges for budget cabinet doors. Offers basic adjustments and solid build quality for secondary kitchen cabinets and storage trunks.",
+    basePrice: 65,
+    unit: "pair",
+    rating: 4.5,
+    reviews: 78,
+    image: clubwell4,
+    specs: {
+      Material: "Steel",
+      Finish: "Nickel-Plated",
+      "Opening Angle": "95°",
+    },
+    features: [
+      "Slide-on simple attachment",
+      "Affordable utility hardware",
+      "Sturdy metal construction",
+      "Standard cup size",
+    ],
+  },
+  {
+    id: "hw-clubwell-slide-normal",
+    category: "hardware",
+    brand: "clubwell",
+    name: "Clubwell Heavy Duty Telescopic Channels",
+    tagline: "Reliable Full-Extension Drawer Slides",
+    description:
+      "Robust telescopic channels featuring thick steel rails and precision steel balls for smooth, sag-free operations under daily heavy residential kitchen use.",
+    basePrice: 380,
+    unit: "pair",
+    rating: 4.7,
+    reviews: 104,
+    image: clubwell5,
+    specs: {
+      Material: "High-Tensile Cold Rolled Steel",
+      "Weight Rating": "35 Kg",
+      Extension: "100% Full Extension",
+    },
+    features: [
+      "Smooth steel ball bearing action",
+      "Quick release disconnect trigger",
+      "Thick gauge steel prevents bending",
+      "Standard side mount installation",
+    ],
+  },
+  {
+    id: "hw-clubwell-slide-soft",
+    category: "hardware",
+    brand: "clubwell",
+    name: "Clubwell Soft-Close Telescopic Channel",
+    tagline: "Aesthetic Soft-Closing Ball Bearing Slide",
+    description:
+      "Telescopic drawer slide featuring a reliable, built-in soft-close mechanism. Pulls the drawer closed gently and quietly in the last 2 inches.",
+    basePrice: 590,
+    unit: "pair",
+    rating: 4.8,
+    reviews: 92,
+    image: clubwell6,
+    specs: {
+      Material: "Steel",
+      Finish: "Electrophoresis Black / Zinc Plated",
+      "Weight Capacity": "40 Kg dynamic load",
+    },
+    features: [
+      "Gentle automatic self-close",
+      "Smooth black anti-rust finish option",
+      "Silent ball tracks",
+      "Long service life",
+    ],
+  },
+  {
+    id: "hw-clubwell-glass-hinge",
+    category: "hardware",
+    brand: "clubwell",
+    name: "Clubwell Glass Pivot Hinge",
+    tagline: "Frameless Glass Cabinet Door Hinge",
+    description:
+      "A compact pivot hinge designed to mount directly onto glass cabinet doors without drilling holes. Ideal for luxury display cabinets and crockery units.",
+    basePrice: 180,
+    unit: "set",
+    rating: 4.6,
+    reviews: 55,
+    image: clubwell7,
+    specs: {
+      Material: "Zinc Alloy Clamp, Steel Pivot",
+      Finish: "Polished Chrome / Satin Gold",
+      "Glass Thickness": "4mm to 6mm",
+    },
+    features: [
+      "No-drill clamp mounting",
+      "Includes protective rubber spacers",
+      "Self-latching spring mechanism",
+      "Perfect for premium store display cases",
+    ],
+  },
+  {
+    id: "hw-clubwell-lock",
+    category: "hardware",
+    brand: "clubwell",
+    name: "Clubwell Ultra Cabinet Lock",
+    tagline: "Solid Brass Cylinder Drawer Lock",
+    description:
+      "A durable cabinet lock featuring a solid brass cylinder core and a heavy locking tongue. Restricts unauthorized access to documents, jewelry, and vanity chests.",
+    basePrice: 320,
+    unit: "unit",
+    rating: 4.7,
+    reviews: 69,
+    image: clubwell8,
+    specs: {
+      Material: "Brass Cylinder & Zinc Lock Body",
+      Keys: "2 Brass Reversible Keys",
+      "Bolt Length": "10mm thick bolt",
+    },
+    features: [
+      "Wear-resistant solid brass key core",
+      "Double-throw locking tongue",
+      "Standard installation drilling size",
+      "Supplied with neat chrome trim ring",
+    ],
+  },
+
+  // --- LINKS PRODUCTS ---
+  {
+    id: "hw-links-closer",
+    category: "hardware",
+    brand: "links",
+    name: "Links Heavy Duty Overhead Door Closer",
+    tagline: "Industrial Grade Heavy-Duty Door Closer",
+    description:
+      "An industrial-grade hydraulic door closer designed for high-traffic entry doors. Certified for high load endurance and fire safety compliance.",
+    basePrice: 1650,
+    unit: "unit",
+    rating: 4.8,
+    reviews: 82,
+    image: linksDoorCloser,
+    specs: {
+      Material: "High-Strength Cast Iron Body",
+      "Door Weight Max": "85 Kg",
+      Adjustment: "Dual valve closing & latching control",
+    },
+    features: [
+      "Explosion-proof hydraulic system",
+      "Wear-resistant steel rack and pinion",
+      "Wide opening angle up to 180°",
+      "Suitable for commercial metallic fire doors",
+    ],
+  },
+  {
+    id: "hw-links-lock-1",
+    category: "hardware",
+    brand: "links",
+    name: "Links Classic Security Padlock",
+    tagline: "Hardened Steel Heavy-Duty Padlock",
+    description:
+      "A heavy mechanical padlock with a hardened steel shackle and double-locking mechanism. Protects shop shutters, gates, and warehouse grills.",
+    basePrice: 480,
+    unit: "unit",
+    rating: 4.7,
+    reviews: 104,
+    image: linksLock1,
+    specs: {
+      Material: "Hardened Solid Steel Block Body",
+      Shackle: "12mm hardened steel shackle",
+      Keys: "3 Brass Keys",
+    },
+    features: [
+      "Resistant to hacksaws and crowbar force",
+      "Brass cylinder prevents internal rust",
+      "Double steel ball locking mechanism",
+      "Durable weather-resistant exterior",
+    ],
+  },
+  {
+    id: "hw-links-lock-2",
+    category: "hardware",
+    brand: "links",
+    name: "Links Double-Action Rim Lock",
+    tagline: "Heavy-Duty Entrance Door Rim Lock",
+    description:
+      "Designed for wooden main doors, this rim lock features a double-throw bolt mechanism that provides a deep anchorage into steel strike receivers.",
+    basePrice: 1150,
+    unit: "unit",
+    rating: 4.8,
+    reviews: 73,
+    image: linksLock2,
+    specs: {
+      Material: "Zinc-Plated Steel Shell, Solid Brass Bolts",
+      "Bolt Throw": "Double-throw 24mm throw",
+      Keys: "4 Computerized Dimple Keys",
+    },
+    features: [
+      "Heavy duty double bolts design",
+      "Interior mechanical safety hold knob",
+      "Unpickable brass keyway",
+      "Includes security cover trim",
+    ],
+  },
+  {
+    id: "hw-links-lock-3",
+    category: "hardware",
+    brand: "links",
+    name: "Links Ultra Shutter Lock",
+    tagline: "Bullet-Style Rolling Shutter Security Lock",
+    description:
+      "A bullet-style sliding bolt shutter lock. Installs onto the bottom rails of rolling commercial shutters, pinning them deep into concrete grooves.",
+    basePrice: 650,
+    unit: "unit",
+    rating: 4.9,
+    reviews: 51,
+    image: linksLock3,
+    specs: {
+      Material: "Forged Steel Lock Core & Brass Pins",
+      Bolt: "16mm thick solid steel deadbolt",
+    },
+    features: [
+      "Ultra-thick structural steel body",
+      "Rustproof heavy brass core pins",
+      "Drill-resistant safety shield",
+      "Specially made for heavy commercial stores",
+    ],
+  },
+  {
+    id: "hw-links-lock-4",
+    category: "hardware",
+    brand: "links",
+    name: "Links Premium Drawer Lock",
+    tagline: "Aesthetic Cabinet & Wardrobe Drawer Lock",
+    description:
+      "A compact drawer lock featuring a neat chrome face and smooth-turning key cylinder. Securely seals cabinet drawers with basic, everyday security.",
+    basePrice: 190,
+    unit: "unit",
+    rating: 4.5,
+    reviews: 63,
+    image: linksLock4,
+    specs: {
+      Material: "Zinc Alloy Chrome Plated",
+      "Drill Hole": "19mm",
+      Keys: "2 Metal Keys",
+    },
+    features: [
+      "Cost-effective drawer security",
+      "Smooth 90-degree key rotation",
+      "Corrosion-resistant chromium finish",
+      "Easy, rapid template installation",
+    ],
+  },
+  {
+    id: "hw-links-slide",
+    category: "hardware",
+    brand: "links",
+    name: "Links Steel Telescopic Drawer Slides",
+    tagline: "Standard Steel Runner Channels",
+    description:
+      "Smooth steel telescopic drawer channels utilizing a triple-rail design. Offers full-extension drawer accessibility at a budget-friendly price point.",
+    basePrice: 320,
+    unit: "pair",
+    rating: 4.6,
+    reviews: 84,
+    image: linksTelescopic,
+    specs: {
+      Material: "Cold Rolled Steel Rails",
+      Extension: "Full Extension (3-fold slide)",
+      "Weight Capacity": "30 Kg dynamic",
+    },
+    features: [
+      "End-stop rubber bumpers reduce noise",
+      "Durable zinc electroplating",
+      "Standard side-mount drilling hole grid",
+      "Reliable ball bearing tracks",
+    ],
+  },
+  {
+    id: "hw-links-mortise-a",
+    category: "hardware",
+    brand: "links",
+    name: "Links Premium Mortise Handle Set A",
+    tagline: "Sleek Chrome Finish Lever Mortise Set",
+    description:
+      "Features a modern, squared lever handle on a long plate with a high-durability return spring. Adds a polished modern finish to interior doors.",
+    basePrice: 1650,
+    unit: "set",
+    rating: 4.7,
+    reviews: 48,
+    image: linksMortiseA,
+    specs: {
+      Material: "Zinc Alloy Lever and Plate",
+      Finish: "Glossy Polished Chrome",
+      "Cylinder Size": "60mm Double Key Brass Cylinder",
+    },
+    features: [
+      "Premium mirror chrome finish",
+      "Solid zinc lever handle core",
+      "Triple-throw latch lock body",
+      "Includes 3 computerized dimple keys",
+    ],
+  },
+  {
+    id: "hw-links-mortise-b",
+    category: "hardware",
+    brand: "links",
+    name: "Links Designer Mortise Lockset B",
+    tagline: "Dual-Tone Satin & Chrome Lockset",
+    description:
+      "A gorgeous dual-tone mortise handle set. Satin silver grip with polished mirror chrome borders provides a stunning contrast for luxury main door shutters.",
+    basePrice: 1950,
+    unit: "set",
+    rating: 4.8,
+    reviews: 55,
+    image: linksMortiseB,
+    specs: {
+      Material: "Premium Zinc Alloy",
+      Finish: "Satin Nickel & Bright Chrome Dual Finish",
+      "Cylinder Size": "70mm Brass Cylinder",
+    },
+    features: [
+      "Exquisite dual-finish aesthetics",
+      "Corrosion-resistant electroplating",
+      "High tension heavy return springs",
+      "Ultra-secure multi-row pin key cylinder",
+    ],
+  },
+
+  // --- YALE PRODUCTS ---
+  {
+    id: "hw-yale-drawer-1",
+    category: "hardware",
+    brand: "yale",
+    name: "Yale Classic Furniture Drawer Lock",
+    tagline: "Premium Brass Cylinder Wardrobe Lock",
+    description:
+      "A premium furniture lock from Yale. Features a solid brass cylinder, heavy steel housing, and Yale's signature high-precision security keyway.",
+    basePrice: 420,
+    unit: "unit",
+    rating: 4.8,
+    reviews: 79,
+    image: yaleDrawerLock1,
+    specs: {
+      Material: "Solid Brass Cylinder Core, Steel Lock Body",
+      Keys: "2 Solid Nickel Brass Yale Keys",
+      "Drilling Diameter": "19mm",
+    },
+    features: [
+      "Original Yale keyway security",
+      "Corrosion proof brass cylinder structure",
+      "Smooth lock cylinder rotation",
+      "Perfect for office storage and cupboards",
+    ],
+  },
+  {
+    id: "hw-yale-drawer-2",
+    category: "hardware",
+    brand: "yale",
+    name: "Yale Multipurpose Lock",
+    tagline: "Versatile Cabinet & Locker Security Lock",
+    description:
+      "A versatile high-durability drawer lock designed for multi-tier cabinet stacks and lockers. Features robust steel latch pins and long-lasting mechanical components.",
+    basePrice: 380,
+    unit: "unit",
+    rating: 4.7,
+    reviews: 62,
+    image: yaleDrawerLock2,
+    specs: {
+      Material: "Zinc Alloy Cylinder, Heavy Steel Latch",
+      Finish: "Polished Nickel",
+      "Cylinder Length": "22mm",
+    },
+    features: [
+      "Anti-drill protection features",
+      "Heavy steel lock housing cover",
+      "Reversible key operations",
+      "Standard retrofitting dimensions",
+    ],
+  },
+  {
+    id: "hw-yale-drawer-3",
+    category: "hardware",
+    brand: "yale",
+    name: "Yale Ultra Security Cabinet Lock",
+    tagline: "High-Security Heavy Brass Core Cabinet Lock",
+    description:
+      "Equipped with an extra-thick brass locking tongue and dual-cam lock cylinder for high mechanical pull resistance. Recommended for master jewelry safes.",
+    basePrice: 550,
+    unit: "unit",
+    rating: 4.9,
+    reviews: 47,
+    image: yaleDrawerLock3,
+    specs: {
+      Material: "Full Brass Body & Core",
+      Keys: "3 Computerised Dimple Keys",
+    },
+    features: [
+      "Dimple key technology resists lock picks",
+      "Solid heavy brass construction",
+      "Extended locking tongue depth",
+      "Lifetime mechanical spring warranty",
+    ],
+  },
+  {
+    id: "hw-yale-mortise-handle-1",
+    category: "hardware",
+    brand: "yale",
+    name: "Yale Kyoto Mortise Handle Set",
+    tagline: "Ergonomic Modern Door Handle Set",
+    description:
+      "Part of Yale's premium designer handle series, the Kyoto handle features an organic, curved grip plate in a beautiful matte satin finish. Perfect for bedroom doors.",
+    basePrice: 2200,
+    unit: "set",
+    rating: 4.8,
+    reviews: 58,
+    image: yaleMortiseHandle1,
+    specs: {
+      Material: "Zinc Alloy Grip, Brass Locking Elements",
+      Finish: "Satin Nickel Matte",
+      "Lock Body Compatibility": "Standard 85mm center lock bodies",
+    },
+    features: [
+      "Soft rounded modern grip styling",
+      "10-year surface finish guarantee",
+      "Smooth silent latch action",
+      "Heavy-duty double spring lever return",
+    ],
+  },
+  {
+    id: "hw-yale-mortise-handle-2",
+    category: "hardware",
+    brand: "yale",
+    name: "Yale Tokyo Satin Lever Set",
+    tagline: "Contemporary Satin Silver Mortise Set",
+    description:
+      "Features a modern, geometric square handle plate with an ergonomic flat handle lever. Combines Japanese-inspired minimal styling with robust security.",
+    basePrice: 2600,
+    unit: "set",
+    rating: 4.8,
+    reviews: 64,
+    image: yaleMortiseHandle2,
+    specs: {
+      Material: "Solid Zinc Core, Stainless Finish",
+      Finish: "Brushed Satin Silver",
+      Length: "240mm plate length",
+    },
+    features: [
+      "Geometric contemporary layout",
+      "Anti-scratch protective nano-coating",
+      "Resistant to high humidity and weather",
+      "Supplied with template for easy routing",
+    ],
+  },
+  {
+    id: "hw-yale-mortise-handle-3",
+    category: "hardware",
+    brand: "yale",
+    name: "Yale Osaka Antique Brass Lever Set",
+    tagline: "Classic Antique Gold Mortise Lever Set",
+    description:
+      "A gorgeous antique brass handle set featuring a classic sculpted handle. Ideal for traditional main doors, adding a rustic, rich metallic look.",
+    basePrice: 2900,
+    unit: "set",
+    rating: 4.9,
+    reviews: 51,
+    image: yaleMortiseHandle3,
+    specs: {
+      Material: "Zinc Alloy Heavy Cast",
+      Finish: "Antique Brass Lacquered Finish",
+    },
+    features: [
+      "Royal traditional vintage detailing",
+      "Tarnish resistant lacquer coating",
+      "Smooth lever operation",
+      "Highly secure latch mechanism",
+    ],
+  },
+  {
+    id: "hw-yale-mortise-handle-4",
+    category: "hardware",
+    brand: "yale",
+    name: "Yale Nagoya Premium Door Handle",
+    tagline: "Sleek Matt Black Minimal Mortise Set",
+    description:
+      "An ultra-minimal Nagoya design, with a deep matte black finish. Enhances architectural doors with pure, clean lines and premium styling.",
+    basePrice: 3200,
+    unit: "set",
+    rating: 4.9,
+    reviews: 42,
+    image: yaleMortiseHandle4,
+    specs: {
+      Material: "Premium Zinc Alloy",
+      Finish: "Deep Matte Black Anodised",
+    },
+    features: [
+      "Fingermark resistant powder coating",
+      "Heavy solid lever casting",
+      "Extremely long-lasting spring system",
+      "Premium visual aesthetic contrast",
+    ],
+  },
+  {
+    id: "hw-yale-mortise-handle-5",
+    category: "hardware",
+    brand: "yale",
+    name: "Yale Fukuoka Luxury Mortise Set",
+    tagline: "Glossy Rose Gold Luxury Lever Set",
+    description:
+      "A luxury rose gold mortise set. Highly reflective mirror rose gold accents are perfect for statement luxury master bedroom doors.",
+    basePrice: 3900,
+    unit: "set",
+    rating: 5.0,
+    reviews: 31,
+    image: yaleMortiseHandle5,
+    specs: {
+      Material: "Zinc Alloy, PVD Plated",
+      Finish: "Rose Gold PVD Mirror",
+    },
+    features: [
+      "PVD vacuum plating ensures no fade",
+      "Corrosion-free lifetime structure",
+      "Sturdy heavy-weight build",
+      "Sophisticated luxury appeal",
+    ],
+  },
+  {
+    id: "hw-yale-lock-body-1",
+    category: "hardware",
+    brand: "yale",
+    name: "Yale Premium Mortise Lock Body",
+    tagline: "Solid Brass Latch & Deadbolt Lock Body",
+    description:
+      "A heavy-duty internal mortise lock body featuring a solid brass double-throw deadbolt and reversible latch. Compatible with Yale handle sets.",
+    basePrice: 950,
+    unit: "unit",
+    rating: 4.8,
+    reviews: 87,
+    image: yaleMortiseLock1,
+    specs: {
+      Material: "Solid Brass deadbolt & latch, Stainless Steel faceplate",
+      "Center Distance": "85mm",
+      Backset: "45mm / 50mm options",
+    },
+    features: [
+      "Reversible latch bolt fits left/right doors",
+      "Solid brass deadbolt offers high shear strength",
+      "Tested for over 200,000 operations",
+      "Precision internal gears for smooth key turn",
+    ],
+  },
+  {
+    id: "hw-yale-lockset-1",
+    category: "hardware",
+    brand: "yale",
+    name: "Yale Classic Mortise Lockset",
+    tagline: "Complete Lever Mortise Set with Keys",
+    description:
+      "A complete out-of-the-box door security solution. Includes premium satin handles, 85mm brass lock body, and a 60mm brass key cylinder.",
+    basePrice: 3250,
+    unit: "set",
+    rating: 4.8,
+    reviews: 104,
+    image: yaleMortiseLockset1,
+    specs: {
+      "Included Items": "Lever Handles, Lock Body, Key Cylinder, 3 Keys",
+      Finish: "Satin Nickel Finish",
+    },
+    features: [
+      "All-in-one complete package",
+      "Original Yale security standards",
+      "Computerized safety pin system",
+      "Heavy load bearing handles",
     ],
   },
   {
@@ -1080,15 +2177,14 @@ export const PRODUCTS = [
     category: "hardware",
     brand: "yale",
     name: "Yale YDM 7116 GP Digital Smart Lock",
-    tagline: "Biometric, PIN, RFID card and mechanical key smart handle",
+    tagline: "Biometric, PIN, RFID Card and Mechanical Key Lock",
     description:
       "Upgrade your main entrance with state-of-the-art security. Featuring multiple access methods, scramble PIN code capability, and intrusion alarm systems.",
     basePrice: 16500,
     unit: "unit",
     rating: 5.0,
     reviews: 92,
-    image:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    image: yaleMortiseLockset2,
     specs: {
       "Access Methods": "Fingerprint, PIN, RFID, Mechanical Key, Mobile App",
       Material: "Zinc Diecasting & ABS",
@@ -1102,21 +2198,147 @@ export const PRODUCTS = [
       "Low battery warning with emergency power port",
     ],
   },
+
+  // --- WOODS PRODUCTS ---
   {
-    id: "hw-godrej-rim",
+    id: "hw-woods-sliding",
+    category: "hardware",
+    brand: "woods",
+    name: "Woods Heavy-Duty Wardrobe Sliding System",
+    tagline: "Top-Hung Silent Sliding Channels for Wardrobe Doors",
+    description:
+      "Designed for seamless wardrobe door movements. The Woods sliding door system utilizes heavy-duty nylon rollers and solid aluminum top tracks to support heavy doors up to 80kg.",
+    basePrice: 3200,
+    unit: "set",
+    rating: 4.9,
+    reviews: 51,
+    image: woodsSlidingChannel,
+    specs: {
+      "Weight Capacity": "80 Kg per door panel",
+      Material: "Extruded Aluminum & Ball Bearing Nylon Wheels",
+      Warranty: "5 Years Wear Warranty",
+    },
+    features: [
+      "Anti-jump safety guide wheels",
+      "Ultra-silent ball bearing rollers",
+      "Durable anodized track finish",
+      "Adjustable height alignment",
+    ],
+  },
+
+  // --- GODREJ PRODUCTS ---
+  {
+    id: "hw-godrej-mortise-1",
+    category: "hardware",
+    brand: "godrej",
+    name: "Godrej Premium Mortise Lockset A",
+    tagline: "Elegant Brass Lever Door Lock Set",
+    description:
+      "Crafted with Godrej's legendary locking technology. Lever handles in a stunning finish, coupled with a brass cylinder for long-term smooth home entrance security.",
+    basePrice: 2850,
+    unit: "set",
+    rating: 4.8,
+    reviews: 110,
+    image: godrejMortise1,
+    specs: {
+      Material: "Premium Zinc Alloy Plates, Brass Cylinders",
+      Finish: "Satin Nickel & Gold Dual Polish",
+      Keys: "3 Computerized Ultra Keys",
+    },
+    features: [
+      "Godrej Ultra 14-pin security tech",
+      "High strength double-bolt locking",
+      "Smooth spring return lever action",
+      "Tested for 100,000 cycles",
+    ],
+  },
+  {
+    id: "hw-godrej-mortise-2",
+    category: "hardware",
+    brand: "godrej",
+    name: "Godrej Classic Mortise Set B",
+    tagline: "Solid Satin Steel Door Handle Lockset",
+    description:
+      "Classic design with rectangular handle plates and a thick lever grip. Offers a heavy, secure hand feel and clean metallic styling.",
+    basePrice: 3100,
+    unit: "set",
+    rating: 4.8,
+    reviews: 84,
+    image: godrejMortise2,
+    specs: {
+      Material: "High-grade Steel & Solid Brass Deadbolts",
+      Finish: "Brushed Satin Steel",
+    },
+    features: [
+      "Extremely robust steel plates",
+      "Rustproof interior components",
+      "Dimple keys prevent duplicate creation",
+      "Corrosion-resistant plating",
+    ],
+  },
+  {
+    id: "hw-godrej-mortise-3",
+    category: "hardware",
+    brand: "godrej",
+    name: "Godrej Premium Mortise Lockset C",
+    tagline: "Heavy Brass Lever Mortise Lock",
+    description:
+      "A premium heavy-duty mortise lock body made from solid brass. Designed for maximum security and smooth operation on main wooden doors.",
+    basePrice: 1650,
+    unit: "unit",
+    rating: 4.9,
+    reviews: 98,
+    image: godrejMortise3,
+    specs: {
+      Material: "Solid Brass Deadbolt & Latch",
+      "Center Distance": "85mm",
+      Backset: "45mm & 50mm options",
+    },
+    features: [
+      "Extra heavy solid brass construction",
+      "Reversible latch bolt",
+      "Tested for 200,000 operations",
+      "Rustproof components & smooth key turn",
+    ],
+  },
+  {
+    id: "hw-godrej-rim-1",
+    category: "hardware",
+    brand: "godrej",
+    name: "Godrej Classic Rim Lock",
+    tagline: "Mechanical Rim Lock for Wooden Main Doors",
+    description:
+      "A mechanical rim lock with a heavy steel case. Mounts onto the inside face of main wooden doors, securing them with a double-bolt brass throw.",
+    basePrice: 1650,
+    unit: "unit",
+    rating: 4.7,
+    reviews: 135,
+    image: godrejRim1,
+    specs: {
+      Material: "Powder Coated Scratch-proof Steel Case",
+      Bolts: "2 Brass Deadbolts",
+      Keys: "3 Pin Keys",
+    },
+    features: [
+      "Legendary mechanical security",
+      "Double bolt locking safety",
+      "Hold-back latch button",
+      "Durable painted case",
+    ],
+  },
+  {
+    id: "hw-godrej-rim-2",
     category: "hardware",
     brand: "godrej",
     name: "Godrej Ultra Tribolt Rim Lock",
-    tagline:
-      "Ultra-secure main door lock with triple deadbolts and pull-handle",
+    tagline: "Ultra-Secure Main Door Lock with Triple Deadbolts",
     description:
       "The legendary home security choice. Features three heavy-duty brass deadbolts and Godrej's signature Ultra technology with 14-pin computerized dimple keys.",
-    basePrice: 2850,
+    basePrice: 2950,
     unit: "unit",
-    rating: 4.8,
+    rating: 4.9,
     reviews: 147,
-    image:
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=800",
+    image: godrejRim2,
     specs: {
       Mechanism: "14-Pin Computerized Key System",
       Deadbolts: "3 Heavy Solid Brass Bolts",
@@ -1131,56 +2353,378 @@ export const PRODUCTS = [
     ],
   },
   {
-    id: "hw-europa-hexabolt",
+    id: "hw-godrej-rim-3",
     category: "hardware",
-    brand: "europa",
-    name: "Europa Hexabolt Main Door Lock",
-    tagline: "High-tensile steel 6-bolt lock for complete security",
+    brand: "godrej",
+    name: "Godrej Pentabolt High-Security Lock",
+    tagline: "Five-Bolt Extreme Security Rim Lock",
     description:
-      "Engineered to withstand extreme physical force. The Europa Hexabolt system anchors six independent deadbolts into a solid steel striker plate, backed by a dimpled key core.",
-    basePrice: 3400,
+      "Godrej's ultimate mechanical rim lock. Anchors five independent locking bolts into a thick steel strike plate. Designed for maximum resistance against crowbar entries.",
+    basePrice: 4200,
     unit: "unit",
-    rating: 4.9,
-    reviews: 88,
-    image:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    rating: 5.0,
+    reviews: 95,
+    image: godrejRim3,
     specs: {
-      Deadbolts: "6 High-tensile Steel Bolts",
-      Keys: "4 Dimple Keys with Key LED Light",
-      Finish: "Satin Nickel-plated finish",
-      Warranty: "15 Years Warranty",
+      Deadbolts: "5 Solid Steel Interlocking Bolts",
+      Mechanism: "Ultra-high security 14-pin cylinder",
+      Keys: "4 Dimple Keys with LED Light Fob",
     },
     features: [
-      "Six-bolt extreme anchorage",
-      "Sturdy integrated steel pull-knob",
-      "Built-in LED locator on key fob",
-      "Rust-proof internal mechanism",
+      "Five-bolt absolute mechanical anchorage",
+      "High-security drill-resistant plate",
+      "Visual locking status indicator",
+      "Heavy brass inner handle knob",
+    ],
+  },
+
+  // --- HABLO PRODUCTS ---
+  {
+    id: "hw-hablo-auto-hinges",
+    category: "hardware",
+    brand: "hablo",
+    name: "Hablo Hydraulic Auto Hinges",
+    tagline: "Premium Soft Close Auto Hinges",
+    description:
+      "Italian-designed hydraulic auto hinges that offer smooth, slow close damping. Formulated to resist door slamming and cabinet panel stress.",
+    basePrice: 180,
+    unit: "pair",
+    rating: 4.8,
+    reviews: 64,
+    image: habloAutoHinges,
+    specs: {
+      Material: "Cold Rolled Steel",
+      Finish: "Heavy Nickel Finish",
+      Mechanism: "Hydraulic Dampening Cylinder",
+    },
+    features: [
+      "Gentle and quiet soft close",
+      "Tested for 150,000 open cycles",
+      "Anti-rust steel construction",
+      "Standard template boring holes",
     ],
   },
   {
-    id: "hw-sleek-basket",
+    id: "hw-hablo-door-closer",
     category: "hardware",
-    brand: "sleek",
-    name: "Sleek Stainless Steel Kitchen Drawer Organizer",
-    tagline: "Heavy-duty wire basket pull-out drawer organizer",
+    brand: "hablo",
+    name: "Hablo Heavy Duty Door Closer",
+    tagline: "Adjustable Hydraulic Overhead Door Closer",
     description:
-      "Elevate kitchen utilities with Sleek's stainless steel wire pull-out baskets. Designed to roll on soft-close tracks, it handles pots, dinnerware, and pantry packs seamlessly.",
-    basePrice: 2450,
+      "High-spec hydraulic door closer designed to handle large heavy doors. Features dual-valve adjustments to configure precise closing and latching speeds.",
+    basePrice: 1450,
+    unit: "unit",
+    rating: 4.7,
+    reviews: 58,
+    image: habloDoorCloser,
+    specs: {
+      Material: "Cast Aluminum Alloy Body",
+      "Door Weight Max": "75 Kg",
+      Adjustment: "Dual speed adjustment valves",
+    },
+    features: [
+      "Leak-proof hydraulic oil operation",
+      "Satin silver modern design",
+      "Fits left and right opening doors",
+      "Heavy steel linkage arm",
+    ],
+  },
+  {
+    id: "hw-hablo-drawer-channel",
+    category: "hardware",
+    brand: "hablo",
+    name: "Hablo Premium Telescopic Channel",
+    tagline: "Full-Extension Ball Bearing Slide Channels",
+    description:
+      "Sleek, black electrophoresis coated telescopic drawer runners. Delivers smooth and silent drawer gliding with high lateral stability.",
+    basePrice: 480,
+    unit: "pair",
+    rating: 4.7,
+    reviews: 91,
+    image: habloDrawerChannel,
+    specs: {
+      Material: "High-Tensile Cold Rolled Steel",
+      Finish: "Black Electrophoresis Smooth Coating",
+      "Weight Capacity": "35 Kg",
+    },
+    features: [
+      "Full extension 3-fold design",
+      "Elegant black anti-rust finish",
+      "Silent ball bearing movement",
+      "Dust protection seals on tracks",
+    ],
+  },
+  {
+    id: "hw-hablo-g-profile",
+    category: "hardware",
+    brand: "hablo",
+    name: "Hablo G-Handle Profile",
+    tagline: "Extruded Aluminum G-Profile Handle",
+    description:
+      "Premium G-profile handle sections that install flush onto cabinet door tops. Eliminates normal handles, presenting a clean architectural line.",
+    basePrice: 650,
+    unit: "piece",
+    rating: 4.8,
+    reviews: 73,
+    image: habloGHandleProfile,
+    specs: {
+      Material: "Extruded Architectural Aluminum",
+      Finish: "Anodised Matte Silver / Gold / Black",
+      Length: "3 meters (cut to size)",
+    },
+    features: [
+      "Flush edge-mount cabinet design",
+      "Modern handleless modular kitchens",
+      "Durable anodized surface coat",
+      "Can be customized to specific cabinet sizes",
+    ],
+  },
+  {
+    id: "hw-hablo-hinge-ss",
+    category: "hardware",
+    brand: "hablo",
+    name: "Hablo Pure SS Soft Closing Hinges",
+    tagline: "Stainless Steel Soft-Close Auto Hinges",
+    description:
+      "Pure Grade 304 Stainless Steel hinges designed for moisture-rich zones like kitchen sink cabinets and bathroom vanity cupboards. 100% rustproof.",
+    basePrice: 240,
+    unit: "pair",
+    rating: 4.9,
+    reviews: 82,
+    image: habloPureSSHinges,
+    specs: {
+      Material: "Grade 304 Stainless Steel",
+      Finish: "Polished Stainless Steel",
+      Mechanism: "SS Hydraulic Piston",
+    },
+    features: [
+      "100% Rust-Proof Grade 304 construction",
+      "Ideal for under-sink kitchen damp zones",
+      "Smooth silent hydraulic damping close",
+      "Clip-on easy setup plate",
+    ],
+  },
+  {
+    id: "hw-hablo-slide-soft",
+    category: "hardware",
+    brand: "hablo",
+    name: "Hablo Soft Telescopic Channel",
+    tagline: "Soft-Closing Smooth Telescopic Slides",
+    description:
+      "Heavy-duty steel drawer slides featuring an integrated double-spring soft-close action. Prevents drawer slamming, keeping cookware secure.",
+    basePrice: 720,
+    unit: "pair",
+    rating: 4.8,
+    reviews: 95,
+    image: habloSoftTelescopic,
+    specs: {
+      Material: "Steel",
+      Finish: "Zinc Plated High Finish",
+      Mechanism: "Integrated Hydraulic Soft-Close",
+      "Weight Capacity": "45 Kg dynamic load",
+    },
+    features: [
+      "Silent automatic soft closure",
+      "Thick gauge structural rails",
+      "Bumper stops avoid roll-back",
+      "Robust double ball bear tracks",
+    ],
+  },
+  {
+    id: "hw-hablo-tandem",
+    category: "hardware",
+    brand: "hablo",
+    name: "Hablo Slim Tandem Box System",
+    tagline: "Double-Wall Slim Drawer Box System",
+    description:
+      "Hablo's slim-profile tandem box system. Thin double-wall steel sides optimize drawer storage space while supporting heavy loads with complete silence.",
+    basePrice: 3800,
+    unit: "set",
+    rating: 4.9,
+    reviews: 41,
+    image: habloSlimTandem,
+    specs: {
+      Material: "Premium Zinc Coated Steel Sides",
+      Finish: "Carbon Slate Matte Grey Finish",
+      "Side Wall Thickness": "Only 13mm (super slim)",
+      "Load Capacity": "45 Kg dynamic",
+    },
+    features: [
+      "Super slim walls maximize cabinet space",
+      "Synchronized runner action for smooth glide",
+      "Integrated 3D adjustments",
+      "Whisper silent soft-close action",
+    ],
+  },
+
+  // --- EUROPA PRODUCTS ---
+  {
+    id: "hw-europa-drawer-ab",
+    category: "hardware",
+    brand: "europa",
+    name: "Europa Antique Brass Drawer Lock",
+    tagline: "Decorative Traditional Drawer Lock",
+    description:
+      "A secure cabinet drawer lock featuring a rich antique brass face plate. Ideal for traditional wardrobes and study tables.",
+    basePrice: 380,
+    unit: "unit",
+    rating: 4.7,
+    reviews: 48,
+    image: europaDrawerAB,
+    specs: {
+      Material: "Zinc Alloy Face, Steel Case",
+      Finish: "Antique Brass Plated Face",
+      Keys: "2 Reversible Keys",
+    },
+    features: [
+      "Classic antique gold look",
+      "Thick steel locking deadbolt",
+      "Smooth key turn motion",
+      "Standard face diameter",
+    ],
+  },
+  {
+    id: "hw-europa-drawer-f365",
+    category: "hardware",
+    brand: "europa",
+    name: "Europa F365 Heavy-Duty Drawer Lock",
+    tagline: "High-Security Cabinet Lock with Brass Core",
+    description:
+      "Equipped with a high-security brass cylinder core and computer keys. Delivers high pull resistance for office drawers and home safes.",
+    basePrice: 490,
+    unit: "unit",
+    rating: 4.9,
+    reviews: 64,
+    image: europaDrawerF365,
+    specs: {
+      Material: "Brass Cylinder Core, Steel Housing",
+      Keys: "3 Computer Dimple Keys",
+    },
+    features: [
+      "Resistant to picklocks",
+      "Thicker steel locking bolt",
+      "Durable internal spring construction",
+      "Yale/Europa cross-compatibility standards",
+    ],
+  },
+  {
+    id: "hw-europa-drawer-rg",
+    category: "hardware",
+    brand: "europa",
+    name: "Europa Rose Gold Drawer Lock",
+    tagline: "Luxury Rose Gold Finish Locker Lock",
+    description:
+      "A gorgeous rose gold finish cabinet lock designed for luxury wardrobes and boutique closets. Blends high safety with rich aesthetic appeal.",
+    basePrice: 420,
+    unit: "unit",
+    rating: 4.8,
+    reviews: 35,
+    image: europaDrawerRG,
+    specs: {
+      Material: "PVD Coated Zinc Alloy",
+      Finish: "Rose Gold PVD Polish",
+    },
+    features: [
+      "Stunning PVD luxury finish",
+      "Lifetime color retention warranty",
+      "Includes color-matched bezel ring",
+      "Ultra-smooth keyway operation",
+    ],
+  },
+  {
+    id: "hw-europa-drawer-ss",
+    category: "hardware",
+    brand: "europa",
+    name: "Europa Stainless Steel Drawer Lock",
+    tagline: "Classic Satin Steel Cabinet Lock",
+    description:
+      "Standard satin stainless steel lock core suitable for modular office furniture and utility cabinets. Resists corrosion and everyday wear.",
+    basePrice: 320,
+    unit: "unit",
+    rating: 4.7,
+    reviews: 91,
+    image: europaDrawerSS,
+    specs: {
+      Material: "Satin Stainless Steel Face Plate",
+      Finish: "Brushed Satin SS Finish",
+    },
+    features: [
+      "Matches stainless steel handle setups",
+      "Highly durable steel pins",
+      "Standard template drill guide",
+      "Smooth latch throw action",
+    ],
+  },
+  {
+    id: "hw-europa-cupboard-f160",
+    category: "hardware",
+    brand: "europa",
+    name: "Europa F160 Cupboard Lock",
+    tagline: "Overhead Cupboard Bolt Lock",
+    description:
+      "A compact cupboard lock with a long deadbolt throw. Suitable for tall pantry units, wooden closets, and cabinet doors.",
+    basePrice: 350,
+    unit: "unit",
+    rating: 4.6,
+    reviews: 57,
+    image: europaCupboardF160,
+    specs: {
+      Material: "Cast Metal Body, Brass Cylinder",
+      "Deadbolt Throw": "18mm",
+    },
+    features: [
+      "Extended bolt throw secures double shutters",
+      "Corrosion-resistant components",
+      "Standard cabinet mounting holes",
+      "Clean visual bezel cover",
+    ],
+  },
+  {
+    id: "hw-europa-cupboard-f170",
+    category: "hardware",
+    brand: "europa",
+    name: "Europa F170 Cabinet Lock",
+    tagline: "Heavy-Duty Wardrobe Deadbolt Lock",
+    description:
+      "A heavy-duty deadlock for wooden wardrobe shutters. Features Europa's double deadbolt design and computerized keys to prevent duplicate keys.",
+    basePrice: 580,
     unit: "unit",
     rating: 4.8,
     reviews: 43,
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+    image: europaCupboardF170,
     specs: {
-      Material: "304 Grade Stainless Steel",
-      "Weight Capacity": "30 Kg dynamic",
-      Warranty: "10 Years Rust-Free Warranty",
+      Material: "Full Brass Internal Cylinder & Bolts",
+      Keys: "3 Computer Dimple Keys",
     },
     features: [
-      "Rust-free electroplated chrome finish",
-      "Compatible with major telescopics runner systems",
-      "Sturdy double wire framework",
-      "Specially designed plate and cup separators included",
+      "Maximum security wardrobe lock",
+      "Heavy brass deadlock pins",
+      "Anti-drill protection cylinder",
+      "Supplied with solid strike receiver",
+    ],
+  },
+  {
+    id: "hw-europa-cupboard-f360",
+    category: "hardware",
+    brand: "europa",
+    name: "Europa F360 Premium Cupboard Lock",
+    tagline: "Ultra Security Long Cylinder Cupboard Lock",
+    description:
+      "A high-security long cylinder lock designed specifically for thick wooden cupboard frames. Features a robust double-throw mechanism.",
+    basePrice: 620,
+    unit: "unit",
+    rating: 4.8,
+    reviews: 39,
+    image: europaCupboardF360,
+    specs: {
+      Material: "Solid Brass Cylinder, Thick Steel Cam",
+      "Cylinder Length": "32mm (for thick panels)",
+    },
+    features: [
+      "Designed for thick solid timber frames",
+      "Reversible key functionality",
+      "Thickened deadlock plate resists leverage",
+      "Standard of trust for wardrobe safety",
     ],
   },
 
@@ -1191,7 +2735,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol SH Ultimate",
     tagline: "Pidilite's flagship high-strength woodwork white glue",
-    description: "The undisputed market leader for wood bonding. Fevicol SH offers exceptional bond strength that exceeds the strength of wood itself. Ideal for all wood assemblies, carcass furniture, and laminate pressing.",
+    description:
+      "The undisputed market leader for wood bonding. Fevicol SH offers exceptional bond strength that exceeds the strength of wood itself. Ideal for all wood assemblies, carcass furniture, and laminate pressing.",
     basePrice: 240,
     unit: "kg",
     sizes: ["1 kg", "5 kg", "10 kg", "20 kg", "50 kg"],
@@ -1217,7 +2762,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Marine Waterproof Glue",
     tagline: "Waterproof woodwork adhesive offering 7-day water resistance",
-    description: "Advanced waterproof adhesive designed for kitchens, bathrooms, and outdoor shaded wooden structures. Prevents joint failure under continuous exposure to moisture, dampness, or extreme weather conditions.",
+    description:
+      "Advanced waterproof adhesive designed for kitchens, bathrooms, and outdoor shaded wooden structures. Prevents joint failure under continuous exposure to moisture, dampness, or extreme weather conditions.",
     basePrice: 280,
     unit: "kg",
     sizes: ["1 kg", "5 kg", "10 kg", "20 kg", "50 kg"],
@@ -1227,7 +2773,7 @@ export const PRODUCTS = [
     specs: {
       "Water Resistance": "EN 204 D3 Waterproof Grade",
       "Setting Time": "Quick tack in 2 hours, fully cured in 24 hours",
-      "Coverage": "150 - 180 sq.ft per kg",
+      Coverage: "150 - 180 sq.ft per kg",
       "Shelf Life": "18 months from manufacturing",
     },
     features: [
@@ -1243,7 +2789,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol HeatX Adhesive",
     tagline: "Heat-resistant laminate adhesive withstanding up to 170°C",
-    description: "Specialized heatproof formulation created for kitchen counter backsplashes, chimney zones, and server room paneling. Retains complete bond strength even under intense, direct heat exposure.",
+    description:
+      "Specialized heatproof formulation created for kitchen counter backsplashes, chimney zones, and server room paneling. Retains complete bond strength even under intense, direct heat exposure.",
     basePrice: 320,
     unit: "kg",
     sizes: ["1 kg", "5 kg", "10 kg"],
@@ -1254,7 +2801,7 @@ export const PRODUCTS = [
       "Heat Resistance": "Withstands up to 170°C temperature",
       "Base Material": "Synthetic Rubber Polymer",
       "Setting Time": "Initial grab within 2 hours",
-      "Coverage": "160 - 180 sq.ft per kg",
+      Coverage: "160 - 180 sq.ft per kg",
     },
     features: [
       "Withstands direct heat near stoves & ovens",
@@ -1269,7 +2816,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Hiper Premium",
     tagline: "Anti-bubble high performance laminate adhesive",
-    description: "Premium woodwork adhesive featuring anti-bubble technology for a flat, smooth laminate finish. Easy to spread and ideal for vertical laminate pasting and premium wardrobes.",
+    description:
+      "Premium woodwork adhesive featuring anti-bubble technology for a flat, smooth laminate finish. Easy to spread and ideal for vertical laminate pasting and premium wardrobes.",
     basePrice: 270,
     unit: "kg",
     sizes: ["1 kg", "5 kg", "10 kg", "20 kg"],
@@ -1280,7 +2828,7 @@ export const PRODUCTS = [
       "Base Chemistry": "Advanced PVA Dispersion",
       "Anti-Bubble": "Active Bubble-Prevention Formula",
       "Setting Time": "3 - 4 hours drying time",
-      "Coverage": "170 - 200 sq.ft per kg",
+      Coverage: "170 - 200 sq.ft per kg",
     },
     features: [
       "Zero bubbles on laminates and veneers",
@@ -1295,7 +2843,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Speedx",
     tagline: "Super fast curing woodwork adhesive curing in 2 hours",
-    description: "Formulated for carpenters demanding rapid turnaround times. Fevicol Speedx achieves high bond strength in just 2 hours, allowing clamping removal and next-stage cutting or polishing.",
+    description:
+      "Formulated for carpenters demanding rapid turnaround times. Fevicol Speedx achieves high bond strength in just 2 hours, allowing clamping removal and next-stage cutting or polishing.",
     basePrice: 290,
     unit: "kg",
     sizes: ["1 kg", "5 kg", "10 kg", "20 kg"],
@@ -1320,7 +2869,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Ezee Spray",
     tagline: "No-mess sprayable contact adhesive for fast laminating",
-    description: "Revolutionary spray adhesive designed for vertical laminate pasting, ceiling panels, and curved MDF panels. Provides an instant, uniform grab with zero brush marks or thickness variations.",
+    description:
+      "Revolutionary spray adhesive designed for vertical laminate pasting, ceiling panels, and curved MDF panels. Provides an instant, uniform grab with zero brush marks or thickness variations.",
     basePrice: 380,
     unit: "can",
     sizes: ["500 ml", "1 L"],
@@ -1331,7 +2881,7 @@ export const PRODUCTS = [
       "Application Mode": "Aerosol Spray / Spray Gun",
       "Tack Time": "1 - 3 minutes open time",
       "Base Chemistry": "Synthetic Rubber",
-      "Coverage": "200 - 220 sq.ft per liter",
+      Coverage: "200 - 220 sq.ft per liter",
     },
     features: [
       "Ultra-fast installation on vertical structures",
@@ -1346,7 +2896,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Floorfix",
     tagline: "Premium vinyl, PVC flooring and carpet adhesive",
-    description: "Highly specialized water-based dispersion adhesive formulated for pasting PVC tiles, roll flooring, and carpets onto concrete or wooden subfloors. Resists pedestrian load and heavy furniture movement.",
+    description:
+      "Highly specialized water-based dispersion adhesive formulated for pasting PVC tiles, roll flooring, and carpets onto concrete or wooden subfloors. Resists pedestrian load and heavy furniture movement.",
     basePrice: 310,
     unit: "kg",
     sizes: ["1 kg", "5 kg", "20 kg"],
@@ -1357,7 +2908,7 @@ export const PRODUCTS = [
       "Base Chemistry": "Acrylic Copolymer Dispersion",
       "Open Time": "10 - 20 minutes before laying",
       "Walk-on Time": "After 24 hours of curing",
-      "Coverage": "120 - 140 sq.ft per kg",
+      Coverage: "120 - 140 sq.ft per kg",
     },
     features: [
       "Excellent plasticizer resistance preventing edge curling",
@@ -1372,7 +2923,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Foamfix",
     tagline: "Flexible sprayable glue for foam and upholstery",
-    description: "Specially developed for headboards, sofas, office chairs, and soundproof foam panel installations. Bonds polyurethane foam to wood, fabric, metal, and coir sheets without making the joints stiff.",
+    description:
+      "Specially developed for headboards, sofas, office chairs, and soundproof foam panel installations. Bonds polyurethane foam to wood, fabric, metal, and coir sheets without making the joints stiff.",
     basePrice: 290,
     unit: "liter",
     sizes: ["1 L", "5 L", "15 L"],
@@ -1383,7 +2935,7 @@ export const PRODUCTS = [
       "Base Material": "Synthetic Elastomer Rubber Solvent",
       "Tack Time": "1 - 5 minutes",
       "Join Type": "Flexible elastomeric bond line",
-      "Color": "Slight yellow tint",
+      Color: "Slight yellow tint",
     },
     features: [
       "Keeps foam joints soft and comfortable",
@@ -1398,7 +2950,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol SWR Wood Resin",
     tagline: "High performance synthetic wood resin with water resistance",
-    description: "A moisture-resistant wood glue built for standard furniture applications that experience occasional humidity. Ideal for ceiling frameworks, partitions, and panels under shelter.",
+    description:
+      "A moisture-resistant wood glue built for standard furniture applications that experience occasional humidity. Ideal for ceiling frameworks, partitions, and panels under shelter.",
     basePrice: 220,
     unit: "kg",
     sizes: ["1 kg", "5 kg", "10 kg", "20 kg"],
@@ -1408,7 +2961,7 @@ export const PRODUCTS = [
     specs: {
       "Base Chemistry": "Modified Polyvinyl Emulsion",
       "Setting Time": "4 hours clamping required",
-      "Viscosity": "Medium-high paste",
+      Viscosity: "Medium-high paste",
     },
     features: [
       "Enhanced moisture resistance",
@@ -1423,7 +2976,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol SR 505 Contact Adhesive",
     tagline: "High strength rubber & leather contact cement",
-    description: "Multipurpose solvent-based synthetic rubber adhesive offering instant bonding on contact. Perfect for rubber linings, leather panels, laminate edge banding, cork sheets, and wood overlays.",
+    description:
+      "Multipurpose solvent-based synthetic rubber adhesive offering instant bonding on contact. Perfect for rubber linings, leather panels, laminate edge banding, cork sheets, and wood overlays.",
     basePrice: 260,
     unit: "liter",
     sizes: ["500 ml", "1 L", "5 L"],
@@ -1448,7 +3002,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Nail Free Ultra",
     tagline: "Extreme hold construction adhesive replacing nails & screws",
-    description: "Heavy-duty construction adhesive designed to bond heavy structural elements without drilling. Ideal for hanging heavy glass mirrors, PVC panels, acrylic sheets, moldings, and metal fixtures to walls.",
+    description:
+      "Heavy-duty construction adhesive designed to bond heavy structural elements without drilling. Ideal for hanging heavy glass mirrors, PVC panels, acrylic sheets, moldings, and metal fixtures to walls.",
     basePrice: 420,
     unit: "cartridge",
     sizes: ["310 ml"],
@@ -1474,7 +3029,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol PL111 Laminating Glue",
     tagline: "Industrial adhesive for flat laminations and veneer pressing",
-    description: "Engineered specifically for hot press and cold press machines. Fevicol PL111 ensures a smooth, bubble-free adhesion of raw laminate sheets and wood veneers on particle boards and MDF panels.",
+    description:
+      "Engineered specifically for hot press and cold press machines. Fevicol PL111 ensures a smooth, bubble-free adhesion of raw laminate sheets and wood veneers on particle boards and MDF panels.",
     basePrice: 215,
     unit: "kg",
     sizes: ["10 kg", "20 kg", "50 kg"],
@@ -1484,7 +3040,7 @@ export const PRODUCTS = [
     specs: {
       "Base Chemistry": "Industrial Grade PVA Resin",
       "Pressing Mode": "Hot Press (70-90°C) or Cold Press",
-      "Viscosity": "Low-medium for roller coaters",
+      Viscosity: "Low-medium for roller coaters",
     },
     features: [
       "No grain raise or telegraphing on fine wood veneers",
@@ -1499,7 +3055,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol PL222 D4 Polyurethane",
     tagline: "Highest European D4 waterproof grade timber glue",
-    description: "Supreme-grade single-component polyurethane adhesive that reacts with moisture to expand slightly, securing joints in windows, exterior doors, garden furniture, and structural wooden columns.",
+    description:
+      "Supreme-grade single-component polyurethane adhesive that reacts with moisture to expand slightly, securing joints in windows, exterior doors, garden furniture, and structural wooden columns.",
     basePrice: 580,
     unit: "bottle",
     sizes: ["500 g", "1 kg"],
@@ -1524,7 +3081,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol 707 FW Shoe Adhesive",
     tagline: "Specialized flexible footwear and leather adhesive",
-    description: "Industrial strength flexible resin designed for high-stress leather joints, sole bonding, shoe repairs, and heavy fabric gluing in carpentry. Retains high flexing capacity under walking movements.",
+    description:
+      "Industrial strength flexible resin designed for high-stress leather joints, sole bonding, shoe repairs, and heavy fabric gluing in carpentry. Retains high flexing capacity under walking movements.",
     basePrice: 250,
     unit: "liter",
     sizes: ["500 ml", "1 L"],
@@ -1548,7 +3106,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol 998 FW High Viscosity",
     tagline: "Thick industrial adhesive for rough wood joins",
-    description: "Specially formulated high-solids PVA adhesive with thick paste viscosity. Excellent for vertical timber pillars, building frames, and joinery of rough-hewn solid wood planks.",
+    description:
+      "Specially formulated high-solids PVA adhesive with thick paste viscosity. Excellent for vertical timber pillars, building frames, and joinery of rough-hewn solid wood planks.",
     basePrice: 265,
     unit: "kg",
     sizes: ["5 kg", "10 kg", "50 kg"],
@@ -1572,7 +3131,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Hardener C",
     tagline: "Liquid crosslinker to upgrade PVA adhesives",
-    description: "Catalyst additive designed to mix with Fevicol PL111 or standard PVA adhesives. Increases the heat resistance and waterproofing properties to achieve premium boiling water proof standards.",
+    description:
+      "Catalyst additive designed to mix with Fevicol PL111 or standard PVA adhesives. Increases the heat resistance and waterproofing properties to achieve premium boiling water proof standards.",
     basePrice: 180,
     unit: "pack",
     sizes: ["100 ml", "500 ml"],
@@ -1580,7 +3140,7 @@ export const PRODUCTS = [
     reviews: 49,
     image: hardenerC,
     specs: {
-      "Form": "Reactive liquid crosslinker",
+      Form: "Reactive liquid crosslinker",
       "Mix Ratio": "Mix 5% by weight with adhesive",
       "Pot Life": "8 hours pot life after mixing",
     },
@@ -1596,7 +3156,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Membrane Press LC",
     tagline: "Vacuum forming membrane press PU dispersion adhesive",
-    description: "Highly technical single-component water-based PU dispersion adhesive. Designed for vacuum membrane presses to laminating PVC foils onto routed MDF cabinet doors and modular shutters.",
+    description:
+      "Highly technical single-component water-based PU dispersion adhesive. Designed for vacuum membrane presses to laminating PVC foils onto routed MDF cabinet doors and modular shutters.",
     basePrice: 420,
     unit: "kg",
     sizes: ["10 kg", "20 kg"],
@@ -1606,7 +3167,7 @@ export const PRODUCTS = [
     specs: {
       "Base Material": "Polyurethane Dispersion (PUD)",
       "Activation Temp": "60°C - 70°C heat activation",
-      "Viscosity": "Low for spray application",
+      Viscosity: "Low for spray application",
     },
     features: [
       "Perfect detailing on sharp profiles and grooves",
@@ -1620,7 +3181,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Membrane Press Star 2K",
     tagline: "Premium two-component vacuum membrane adhesive",
-    description: "Premium two-component PU adhesive providing the highest thermal resistance for PVC foil pressing. Essential for kitchen cabinets exposed to steam and cooking heat.",
+    description:
+      "Premium two-component PU adhesive providing the highest thermal resistance for PVC foil pressing. Essential for kitchen cabinets exposed to steam and cooking heat.",
     basePrice: 510,
     unit: "kg",
     sizes: ["20 kg"],
@@ -1644,7 +3206,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol BWP 2 Waterproof Glue",
     tagline: "Boiling water proof polymer wood adhesive",
-    description: "High-spec water resistant wood glue designed for high-humidity residential environments. Retains full strength even after continuous boiling water tests, ensuring furniture remains secure.",
+    description:
+      "High-spec water resistant wood glue designed for high-humidity residential environments. Retains full strength even after continuous boiling water tests, ensuring furniture remains secure.",
     basePrice: 295,
     unit: "kg",
     sizes: ["1 kg", "5 kg", "10 kg", "20 kg"],
@@ -1668,7 +3231,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Hot Melt 382",
     tagline: "High speed edge banding hot melt adhesive",
-    description: "Granular hot melt adhesive formulated for high-speed automatic edge banding machines. Bonds PVC, ABS, and wood veneer edge bands to particle boards and MDF panels.",
+    description:
+      "Granular hot melt adhesive formulated for high-speed automatic edge banding machines. Bonds PVC, ABS, and wood veneer edge bands to particle boards and MDF panels.",
     basePrice: 380,
     unit: "kg",
     sizes: ["5 kg", "25 kg bag"],
@@ -1676,7 +3240,7 @@ export const PRODUCTS = [
     reviews: 55,
     image: hotMelt382,
     specs: {
-      "Form": "Solid granular pellets",
+      Form: "Solid granular pellets",
       "Application Temp": "190°C - 210°C melting point",
       "Feed Speed": "12 to 24 meters per minute",
     },
@@ -1692,7 +3256,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol MNL Transparent",
     tagline: "Water clear glue line adhesive for visible joinery",
-    description: "Highly aesthetic woodwork adhesive that dries to a 100% water-clear film. Designed for high-end wooden artifacts, premium joint carving, and glass-to-wood accents.",
+    description:
+      "Highly aesthetic woodwork adhesive that dries to a 100% water-clear film. Designed for high-end wooden artifacts, premium joint carving, and glass-to-wood accents.",
     basePrice: 320,
     unit: "kg",
     sizes: ["1 kg", "5 kg"],
@@ -1716,7 +3281,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol AMT Acrylic Glue",
     tagline: "Transparent mounting adhesive for acrylic and glass sheets",
-    description: "Water-clear acrylic adhesive engineered for laminating acrylic sheets, mirrors, and glass panels onto plywood substrates. Zero moisture bubbling or chemical reactions with backing surfaces.",
+    description:
+      "Water-clear acrylic adhesive engineered for laminating acrylic sheets, mirrors, and glass panels onto plywood substrates. Zero moisture bubbling or chemical reactions with backing surfaces.",
     basePrice: 350,
     unit: "kg",
     sizes: ["1 kg", "5 kg"],
@@ -1725,7 +3291,7 @@ export const PRODUCTS = [
     image: amtTransparent,
     specs: {
       "Base Chemistry": "Water-based Acrylic Emulsion",
-      "Transparency": "Water clear film",
+      Transparency: "Water clear film",
       "Setting Time": "3 hours initial setting",
     },
     features: [
@@ -1740,7 +3306,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Fast Tack Premium",
     tagline: "High green strength adhesive with rapid grab",
-    description: "High solid content PVA glue designed to achieve instant initial grip. Drastically reduces clamping time to just 10-15 minutes, speeding up furniture assembly lines.",
+    description:
+      "High solid content PVA glue designed to achieve instant initial grip. Drastically reduces clamping time to just 10-15 minutes, speeding up furniture assembly lines.",
     basePrice: 310,
     unit: "kg",
     sizes: ["1 kg", "5 kg", "20 kg"],
@@ -1764,7 +3331,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol SWR Premium",
     tagline: "Extreme moisture proof woodwork resin",
-    description: "Premium synthetic wood resin designed to withstand tropical humidity. Specially suited for wardrobes, modular kitchens, and balcony wooden panels under shade.",
+    description:
+      "Premium synthetic wood resin designed to withstand tropical humidity. Specially suited for wardrobes, modular kitchens, and balcony wooden panels under shade.",
     basePrice: 280,
     unit: "kg",
     sizes: ["1 kg", "5 kg", "10 kg", "20 kg"],
@@ -1788,7 +3356,8 @@ export const PRODUCTS = [
     brand: "fevicol",
     name: "Fevicol Probond",
     tagline: "Premium PVC and Acrylic laminate bonding adhesive",
-    description: "Specialized premium adhesive designed for wood-to-PVC and wood-to-acrylic sheet bonding. Fevicol Probond offers excellent initial tack, fast-setting properties, and heat resistance up to 90°C with bubble-free application.",
+    description:
+      "Specialized premium adhesive designed for wood-to-PVC and wood-to-acrylic sheet bonding. Fevicol Probond offers excellent initial tack, fast-setting properties, and heat resistance up to 90°C with bubble-free application.",
     basePrice: 340,
     unit: "kg",
     sizes: ["1 kg", "5 kg", "10 kg", "20 kg", "50 kg"],
@@ -1799,7 +3368,7 @@ export const PRODUCTS = [
       "Base Chemistry": "Advanced Acrylic Copolymer (Water-based)",
       "Laminate Match": "PVC sheets, acrylic sheets, and high-gloss overlays",
       "Setting Time": "Initial grab in 2 hours, fully cured in 6 hours",
-      "Coverage": "140 - 160 sq.ft per kg",
+      Coverage: "140 - 160 sq.ft per kg",
     },
     features: [
       "Specifically made for thick PVC/acrylic laminate joinery",
@@ -1916,6 +3485,23 @@ export const BRAND_PARTNERS = [
   { name: "EG Ply", logo: egplyLogo },
   { name: "Fevicol", logo: fevicolLogo },
   { name: "Sleek", logo: sleekLogo },
+  { name: "Ebco", logo: ebcoLogo },
+  { name: "Jainson", logo: jainsonLogo },
+  { name: "Hablo", logo: habloLogo },
+  { name: "Woods", logo: woodsLogo },
+  { name: "Yale", logo: yaleLogo },
+  { name: "Godrej", logo: godrejLogo },
+  { name: "Europa", logo: europaLogo },
+  { name: "Clubwell", logo: clubwelllogo },
+  { name: "Links", logo: linklogo },
+  { name: "New Mika", logo: newmikaLogo },
+  { name: "Century Laminates", logo: centurylamLogo },
+  { name: "Greenlam", logo: greenlamLogo },
+  { name: "Ivas", logo: ivasLogo },
+  { name: "Sharon", logo: sharonLogo },
+  { name: "Century Veneers", logo: centuryvenLogo },
+  { name: "Greenply Veneers", logo: greenplyLogo },
+  { name: "Realply", logo: realplyLogo },
 ];
 
 export const TESTIMONIALS = [
