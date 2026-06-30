@@ -160,20 +160,20 @@ export default function AboutPage({ timeline, brands }) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {brands.map((brand, idx) => (
               <div
                 key={idx}
                 className="bg-white p-5 rounded-xl border border-slate-100 shadow-sm flex flex-col items-center justify-center gap-3 hover:-translate-y-1 transition-all"
               >
-                <div className="w-14 h-14 rounded-lg overflow-hidden bg-slate-50 border border-slate-200">
+                <div className="w-full h-16 rounded-lg bg-slate-50 border border-slate-100 p-2 flex items-center justify-center">
                   <img
                     src={brand.logo}
                     alt={brand.name}
-                    className="w-full h-full object-cover filter transition-all"
+                    className="max-w-full max-h-full object-contain filter transition-all"
                   />
                 </div>
-                <span className="text-xs font-bold text-slate-700">
+                <span className="text-xs font-bold text-slate-700 text-center">
                   {brand.name}
                 </span>
               </div>

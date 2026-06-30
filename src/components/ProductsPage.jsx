@@ -1,6 +1,20 @@
 import { useState, useMemo } from "react";
-import { Link, useParams, useNavigate, useSearchParams } from "react-router-dom";
-import { Search, Star, Info, ChevronRight, X, ArrowLeft } from "lucide-react";
+import {
+  Link,
+  useParams,
+  useNavigate,
+  useSearchParams,
+} from "react-router-dom";
+import {
+  Search,
+  Star,
+  Info,
+  ChevronRight,
+  X,
+  ArrowLeft,
+  ExternalLink,
+} from "lucide-react";
+import { BRANDS } from "../data/mockData";
 
 export default function ProductsPage({ categories, products }) {
   const { categoryId } = useParams();
@@ -33,12 +47,13 @@ export default function ProductsPage({ categories, products }) {
         p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.tagline.toLowerCase().includes(searchQuery.toLowerCase());
-      
+
       const matchesCat =
         activeCategoryFilter === "all" || p.category === activeCategoryFilter;
-      
+
       const matchesBrand =
-        !brandFilter || (p.brand && p.brand.toLowerCase() === brandFilter.toLowerCase());
+        !brandFilter ||
+        (p.brand && p.brand.toLowerCase() === brandFilter.toLowerCase());
 
       return matchesSearch && matchesCat && matchesBrand;
     });
@@ -74,23 +89,53 @@ export default function ProductsPage({ categories, products }) {
         <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-6 mb-10">
           {/* Row 1: Search & Active state */}
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-            <div className="relative w-full md:max-w-md">
-              <Search className="absolute left-3.5 top-3.5 text-slate-400 w-5 h-5" />
-              <input
-                type="text"
-                placeholder="Search plywood, soft hinges, adhesives..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-11 pr-4 py-3 bg-slate-50 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition-all text-slate-800"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery("")}
-                  className="absolute right-3.5 top-3 text-xs bg-slate-200 text-slate-600 px-1.5 py-0.5 rounded hover:bg-slate-300"
+            <div className="flex flex-col sm:flex-row gap-4 w-full md:max-w-2xl">
+              {/* Search Box */}
+              <div className="relative flex-grow">
+                <Search className="absolute left-3.5 top-3.5 text-slate-400 w-5 h-5" />
+                <input
+                  type="text"
+                  placeholder="Search plywood, soft hinges, adhesives..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-11 pr-4 py-3 bg-slate-50 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-amber-500 focus:bg-white transition-all text-slate-800"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={() => setSearchQuery("")}
+                    className="absolute right-3.5 top-3.5 text-xs bg-slate-200 text-slate-600 px-1.5 py-0.5 rounded hover:bg-slate-300 cursor-pointer"
+                  >
+                    Clear
+                  </button>
+                )}
+              </div>
+              {/* Brand Filter Dropdown */}
+              <div className="relative shrink-0">
+                <select
+                  value={brandFilter || ""}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    const newParams = new URLSearchParams(searchParams);
+                    if (val) {
+                      newParams.set("brand", val);
+                    } else {
+                      newParams.delete("brand");
+                    }
+                    setSearchParams(newParams);
+                  }}
+                  className="w-full sm:w-[200px] pl-4 pr-10 py-3 bg-slate-50 rounded-xl border border-slate-200 text-sm font-semibold focus:outline-none focus:border-amber-500 focus:bg-white text-slate-700 transition-all cursor-pointer appearance-none"
                 >
-                  Clear
-                </button>
-              )}
+                  <option value="">All Brands</option>
+                  {BRANDS.map((br) => (
+                    <option key={br.id} value={br.id}>
+                      {br.name}
+                    </option>
+                  ))}
+                </select>
+                <div className="absolute inset-y-0 right-3 flex items-center pointer-events-none text-slate-500">
+                  <ChevronRight className="w-4 h-4 rotate-90" />
+                </div>
+              </div>
             </div>
 
             <div className="text-xs text-slate-500 font-bold">
@@ -149,6 +194,111 @@ export default function ProductsPage({ categories, products }) {
           )}
         </div>
 
+        {/* Laminates Catalog Explorer */}
+        {activeCategoryFilter === "laminates" && (
+          <div className="mb-12 p-8 rounded-3xl bg-slate-950 text-white border border-slate-900 shadow-xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-tr from-amber-500/10 to-orange-600/10 rounded-full blur-[100px] pointer-events-none" />
+            <div className="relative z-10 space-y-6">
+              <div className="max-w-2xl">
+                <span className="px-3 py-1 bg-amber-500 text-slate-950 font-black text-[10px] rounded-full uppercase tracking-widest">
+                  Official Brand Partner Collections
+                </span>
+                <h3 className="text-2xl sm:text-3xl font-black tracking-tight mt-3">
+                  Browse 2,000+ Decorative Laminate Designs
+                </h3>
+                <p className="text-sm text-slate-300 mt-2 leading-relaxed">
+                  We are authorized direct distributors for India's leading
+                  laminate brands. Because each partner manufacturer maintains
+                  massive portfolios of 2,000+ exquisite designs, we encourage
+                  you to browse their official, live catalogs to view the
+                  complete range.
+                </p>
+                <p className="text-xs text-amber-400 font-extrabold mt-3 border-l-2 border-amber-500 pl-3">
+                  How to Order: Pick any laminate code/name from their catalogs,
+                  click "Full Specs & Inquiry" on any item, and send it to our
+                  WhatsApp. We will deliver it directly to your site at
+                  best-in-market rates!
+                </p>
+              </div>
+
+              {/* Brand Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 border-t border-slate-800">
+                {[
+                  {
+                    brandId: "century-laminates",
+                    catalogUrl: "https://www.centuryply.com/laminates",
+                    designs: "2,000+ Designs",
+                    tagline: "Lucida Gloss & ViroKill Tech",
+                  },
+                  {
+                    brandId: "greenlam",
+                    catalogUrl: "https://www.greenlam.co.in",
+                    designs: "2,500+ Designs",
+                    tagline: "Global Textures & Antimicrobial",
+                  },
+                  {
+                    brandId: "newmika",
+                    catalogUrl: "https://www.newmika.com",
+                    designs: "1,500+ Designs",
+                    tagline: "Trendsetting Suede & Gloss",
+                  },
+                  {
+                    brandId: "ivas",
+                    catalogUrl: "https://www.ivas.homes/laminates/",
+                    designs: "1,000+ Designs",
+                    tagline: "90° Bendable PVC & Pastels",
+                  },
+                ].map((item) => {
+                  const brandInfo =
+                    BRANDS.find((b) => b.id === item.brandId) || {};
+                  return (
+                    <div
+                      key={item.brandId}
+                      className="bg-slate-900/60 p-5 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-amber-500/30 transition-all group"
+                    >
+                      <div className="space-y-4">
+                        <div className="h-12 w-full bg-white rounded-lg p-1.5 flex items-center justify-center">
+                          <img
+                            src={brandInfo.logo}
+                            alt={brandInfo.name || item.brandId}
+                            className="max-h-full max-w-full object-contain"
+                          />
+                        </div>
+                        <div>
+                          <div className="flex items-center justify-between gap-2">
+                            <h4 className="text-sm font-bold text-white group-hover:text-amber-400 transition-colors">
+                              {brandInfo.name || item.brandId}
+                            </h4>
+                            <span className="text-[9px] font-black uppercase text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">
+                              {item.designs}
+                            </span>
+                          </div>
+                          <p className="text-[11px] text-slate-400 mt-1 font-semibold">
+                            {item.tagline}
+                          </p>
+                          <p className="text-[11px] text-slate-500 mt-2 leading-relaxed line-clamp-2">
+                            {brandInfo.description}
+                          </p>
+                        </div>
+                      </div>
+
+                      <a
+                        href={item.catalogUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-5 w-full py-2.5 rounded-xl bg-slate-800 hover:bg-amber-500 text-white hover:text-slate-950 font-extrabold text-[11px] transition-all flex items-center justify-center gap-1.5 border border-slate-700 hover:border-transparent cursor-pointer"
+                      >
+                        <span>Browse Official Site</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Product Grid */}
         {filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -162,7 +312,12 @@ export default function ProductsPage({ categories, products }) {
                   <img
                     src={prod.image}
                     alt={prod.name}
-                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                    className={`w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ${
+                      prod.category === "hardware" ||
+                      prod.category === "adhesives"
+                        ? "p-6"
+                        : ""
+                    }`}
                   />
                   <div className="absolute top-4 left-4 bg-slate-950/90 text-amber-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
                     {prod.category}

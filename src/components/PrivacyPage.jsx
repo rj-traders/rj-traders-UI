@@ -16,7 +16,7 @@ export default function PrivacyPage() {
             <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
             <span>Back</span>
           </button>
-          
+
           <div className="flex items-center gap-2 text-xs text-slate-500 font-semibold">
             <Link to="/" className="hover:text-amber-500">
               Home

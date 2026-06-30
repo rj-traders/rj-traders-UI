@@ -72,7 +72,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
@@ -120,7 +120,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Icon */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
@@ -138,7 +138,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation Drawer */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-slate-950 border-t border-slate-800 py-4 px-6 animate-fadeIn">
+        <div className="lg:hidden bg-slate-950 border-t border-slate-800 py-4 px-6 animate-fadeIn">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <NavLink

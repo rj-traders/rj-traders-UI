@@ -1,16 +1,19 @@
 import { useState, useEffect, useMemo } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import {
   ChevronRight,
   Star,
   ShieldCheck,
   Truck,
   CheckCircle,
+  MessageCircle,
+  ArrowLeft,
 } from "lucide-react";
 import { PRODUCTS } from "../data/mockData";
 
 export default function ProductDetailsPage() {
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const product = useMemo(() => {
     return PRODUCTS.find((p) => p.id === id);
@@ -19,9 +22,6 @@ export default function ProductDetailsPage() {
   const [selectedThickness, setSelectedThickness] = useState("");
   const [selectedSize, setSelectedSize] = useState("");
   const [quantity, setQuantity] = useState(1);
-  const [inquirySent, setInquirySent] = useState(false);
-  const [inquiryName, setInquiryName] = useState("");
-  const [inquiryPhone, setInquiryPhone] = useState("");
 
   // Auto-select first options
   useEffect(() => {
@@ -36,7 +36,6 @@ export default function ProductDetailsPage() {
     } else {
       setSelectedSize("");
     }
-    setInquirySent(false);
   }, [product]);
 
   // Derived price calculated dynamically
@@ -50,13 +49,6 @@ export default function ProductDetailsPage() {
     }
     return Math.round(base);
   }, [product, selectedThickness, quantity]);
-
-  // Handle local submit inquiry
-  const handleSendInquiry = (e) => {
-    e.preventDefault();
-    if (!inquiryName || !inquiryPhone) return;
-    setInquirySent(true);
-  };
 
   // Get other products in the same category
   const relatedProducts = useMemo(() => {
@@ -86,6 +78,16 @@ export default function ProductDetailsPage() {
   return (
     <div className="animate-fadeIn py-12 bg-slate-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Back Button */}
+        <div className="mb-6">
+          <button
+            onClick={() => navigate(-1)}
+            className="group inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-slate-100 shadow-sm hover:shadow hover:bg-slate-50 text-xs font-bold text-slate-600 hover:text-amber-500 transition-all duration-300 cursor-pointer"
+          >
+            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+            <span>Back</span>
+          </button>
+        </div>
         {/* Navigation Breadcrumb */}
         <div className="flex items-center gap-2 text-xs text-slate-500 mb-8 font-semibold">
           <Link to="/" className="hover:text-amber-500">
@@ -320,54 +322,33 @@ export default function ProductDetailsPage() {
                 </div>
               </div>
 
-              {/* Instant Quotation Form Block */}
-              <div className="pt-4 border-t border-slate-200/60">
-                {!inquirySent ? (
-                  <form onSubmit={handleSendInquiry} className="space-y-3">
-                    <p className="text-xs text-slate-500 italic">
-                      Submit this design request to our store desk. We will call
-                      you immediately back with exact shipping schedules and
-                      custom pricing.
-                    </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      <input
-                        type="text"
-                        placeholder="Your Name"
-                        value={inquiryName}
-                        onChange={(e) => setInquiryName(e.target.value)}
-                        required
-                        className="p-2.5 bg-white border border-slate-200 rounded-lg text-xs"
-                      />
-                      <input
-                        type="tel"
-                        placeholder="Phone Number"
-                        value={inquiryPhone}
-                        onChange={(e) => setInquiryPhone(e.target.value)}
-                        required
-                        className="p-2.5 bg-white border border-slate-200 rounded-lg text-xs"
-                      />
-                    </div>
-                    <button
-                      type="submit"
-                      className="w-full py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 hover:scale-[1.01] transition-transform text-slate-950 font-black text-sm uppercase tracking-wider"
-                    >
-                      Submit Custom Material Order
-                    </button>
-                  </form>
-                ) : (
-                  <div className="p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-center space-y-2">
-                    <CheckCircle className="w-8 h-8 text-emerald-600 mx-auto" />
-                    <h4 className="text-sm font-bold text-emerald-800">
-                      Inquiry Received Successfully!
-                    </h4>
-                    <p className="text-xs text-slate-600">
-                      Thank you {inquiryName}. Our Madurai warehouse executive
-                      is preparing your quotation for {quantity} {product.unit}{" "}
-                      of {product.name} ({selectedThickness || "Standard"}). We
-                      will call you at {inquiryPhone} in less than 30 minutes!
-                    </p>
-                  </div>
-                )}
+              {/* WhatsApp Enquiry Block */}
+              <div className="pt-4 border-t border-slate-200/60 space-y-4">
+                <p className="text-xs text-slate-500 italic">
+                  Click the button below to enquire about this product directly
+                  on WhatsApp. We will connect with you immediately to discuss
+                  your custom requirements, shipping schedules, and final
+                  pricing.
+                </p>
+                <a
+                  href={`https://wa.me/918072808083?text=${encodeURIComponent(
+                    `Hello! I would like to enquire about the following product:
+- Product: ${product.name}
+- Category: ${product.category}
+${selectedThickness ? `- Selected Thickness: ${selectedThickness}` : ""}
+${selectedSize ? `- Selected Size: ${selectedSize}` : ""}
+- Quantity: ${quantity} ${product.unit}(s)
+- Estimated Price: ₹${calculatedPrice.toLocaleString()}
+
+Link: ${window.location.href}`,
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3.5 rounded-xl bg-green-500 hover:bg-green-600 transition-colors text-white font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 shadow-md shadow-green-500/25 cursor-pointer"
+                >
+                  <MessageCircle className="w-5 h-5 fill-white text-green-500" />
+                  <span>Enquire on WhatsApp</span>
+                </a>
               </div>
             </div>
           </div>
