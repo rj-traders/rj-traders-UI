@@ -3,16 +3,16 @@ import greenpanel from "../assets/greenpanel.jpg";
 // import egPly from "../assets/eg-ply-certified-polywoods.jpg";
 // import fevicol from "../assets/fevicol.png";
 // import sleekimg from "../assets/sleek.jpeg";
-import egmarkimg from "../assets/product-images/EG Mark.webp";
-import egbondimg from "../assets/product-images/EG Bond.webp";
-import egbondBWBimg from "../assets/product-images/EG Bond BWB.webp";
-import egbondMRimg from "../assets/product-images/EG PLY ( MR ).webp";
-import egedgeply from "../assets/product-images/EG EDGE.webp";
-import egplybsl from "../assets/product-images/EG Ply ( BSL ).webp";
-import vitomrimg from "../assets/product-images/NC Vito (MR).webp";
-import vitobwrimg from "../assets/product-images/NC Vito ( BWR ).webp";
-import vitobslimg from "../assets/product-images/NC Vito ( BSL ).webp";
-import ncmrimg from "../assets/product-images/NC Vito Ply ( MR ).webp";
+import egmarkimg from "../assets/product-images/EG Mark 710 Plywood.webp";
+import egbondimg from "../assets/product-images/EG Bond Plywood.webp";
+import egbondBWBimg from "../assets/product-images/EG Bond (BWP).webp";
+import egbondMRimg from "../assets/product-images/EG Ply (MR).webp";
+import egedgeply from "../assets/product-images/EG Edge Plywood.webp";
+import egplybsl from "../assets/product-images/EG Ply (BSL).webp";
+import vitomrimg from "../assets/product-images/NC Vito Ply (MR).webp";
+import vitobwrimg from "../assets/product-images/NC Vito Ply (BWR).webp";
+import vitobslimg from "../assets/product-images/NC Vito Ply (BSL).webp";
+import ncmrimg from "../assets/product-images/NC (MR) Plywood.webp";
 import wbcblockimg from "../assets/product-images/WBC Blockboard.webp";
 import shutteringimg from "../assets/product-images/Shuttering Plywood.webp";
 import hdmrimg from "../assets/product-images/HDMR.webp";
@@ -41,25 +41,25 @@ import egplyLogo from "../assets/our-brand/eg-ply-certified-polywoods.jpg";
 import fevicolLogo from "../assets/our-brand/fevicol.png";
 
 // Ebco Product Images
-import ebcoHingesNormal from "../assets/ebco-images/hinges-normal.jpg";
+import ebcoHingesNormal from "../assets/ebco-images/hinges-normal.webp";
 import ebcoHingesSoftClose from "../assets/ebco-images/hinges-soft-close.webp";
 import ebcoTelescopicNormal from "../assets/ebco-images/telescopic-drawer.webp";
 import ebcoTelescopicSC from "../assets/ebco-images/Telescopic-Drawer-SC.webp";
 import ebcoDoorCloser from "../assets/ebco-images/Door-Closer-Compact.webp";
 
 // Jainson Product Images
-import jainsonAxel from "../assets/jainson-images/AXEL.jpg";
-import jainsonDesire from "../assets/jainson-images/Desire.jpg";
-import jainsonDoorLockBrass from "../assets/jainson-images/Door Lock with Latch (Brass).jpg";
-import jainsonFabio from "../assets/jainson-images/Fabio.jpg";
-import jainsonGizmo from "../assets/jainson-images/GIZMO.jpg";
-import jainsonKnox from "../assets/jainson-images/Multipurpose Knox.png";
-import jainsonPlum from "../assets/jainson-images/Plum.jpg";
-import jainsonTriLock from "../assets/jainson-images/Tri-Lock.jpg";
-import jainsonTriLockNS from "../assets/jainson-images/Tri-Lock Nickel Silver.png";
-import jainsonWave from "../assets/jainson-images/Wave.jpg";
-import jainsonMortise1 from "../assets/jainson-images/mortise-lock-1.png";
-import jainsonMortise2 from "../assets/jainson-images/mortise-lock-2.png";
+import jainsonAxel from "../assets/jainson-images/AXEL.webp";
+import jainsonDesire from "../assets/jainson-images/Desire.webp";
+import jainsonDoorLockBrass from "../assets/jainson-images/Door Lock with Latch (Brass).webp";
+import jainsonFabio from "../assets/jainson-images/Fabio.webp";
+import jainsonGizmo from "../assets/jainson-images/GIZMO.webp";
+import jainsonKnox from "../assets/jainson-images/Multipurpose Knox.webp";
+import jainsonPlum from "../assets/jainson-images/Plum.webp";
+import jainsonTriLock from "../assets/jainson-images/Tri-Lock.webp";
+import jainsonTriLockNS from "../assets/jainson-images/Tri-Lock Nickel Silver.webp";
+import jainsonWave from "../assets/jainson-images/Wave.webp";
+import jainsonMortise1 from "../assets/jainson-images/mortise-lock-1.webp";
+import jainsonMortise2 from "../assets/jainson-images/mortise-lock-2.webp";
 
 // Sleek Product Images
 import sleekTelescopicSC from "../assets/sleek-images/sleek-by-asian-paints-telescopic-channel-zinc-soft-closing.webp";
@@ -94,14 +94,14 @@ import clubwell25 from "../assets/club-well-images/25.webp";
 import clubwell26 from "../assets/club-well-images/26.webp";
 
 // Links Product Images
-import linksDoorCloser from "../assets/link-images/door-closer-1.jpeg";
-import linksLock1 from "../assets/link-images/lock-1.jpeg";
-import linksLock2 from "../assets/link-images/lock-2.jpeg";
-import linksLock3 from "../assets/link-images/lock-3.jpeg";
-import linksLock4 from "../assets/link-images/lock-4.jpeg";
-import linksTelescopic from "../assets/link-images/telescopic-1.jpeg";
-import linksMortiseA from "../assets/link-images/WhatsApp Image 2026-06-30 at 6.55.32 PM (6).jpeg";
-import linksMortiseB from "../assets/link-images/WhatsApp Image 2026-06-30 at 6.55.32 PM (7).jpeg";
+import linksDoorCloser from "../assets/link-images/door-closer-1.webp";
+import linksLock1 from "../assets/link-images/lock-1.webp";
+import linksLock2 from "../assets/link-images/lock-2.webp";
+import linksLock3 from "../assets/link-images/lock-3.webp";
+import linksLock4 from "../assets/link-images/lock-4.webp";
+import linksTelescopic from "../assets/link-images/telescopic-1.webp";
+import linksMortiseA from "../assets/link-images/WhatsApp Image 2026-06-30 at 6.55.32 PM (6).webp";
+import linksMortiseB from "../assets/link-images/WhatsApp Image 2026-06-30 at 6.55.32 PM (7).webp";
 
 // Yale Product Images
 import yaleDrawerLock1 from "../assets/yale-images/drawer-lock-1.webp";
@@ -132,13 +132,13 @@ import godrejRim2 from "../assets/godrej-images/rim-lock-2.webp";
 import godrejRim3 from "../assets/godrej-images/rim-lock-3.webp";
 
 // Hablo Product Images
-import habloAutoHinges from "../assets/hablo-images/AUTO HINGES.jpg";
-import habloDoorCloser from "../assets/hablo-images/DOOR CLOSER.jpg";
-import habloDrawerChannel from "../assets/hablo-images/DRAWER CHANNEL.jpg";
-import habloGHandleProfile from "../assets/hablo-images/G HANDLE PROFILE.jpg";
-import habloPureSSHinges from "../assets/hablo-images/PURE SS SOFT CLOSING HINGES.jpg";
-import habloSoftTelescopic from "../assets/hablo-images/SOFT TELESCOPIC CHANNEL.jpg";
-import habloSlimTandem from "../assets/hablo-images/Slim Tandem Box.jpg";
+import habloAutoHinges from "../assets/hablo-images/AUTO HINGES.webp";
+import habloDoorCloser from "../assets/hablo-images/DOOR CLOSER.webp";
+import habloDrawerChannel from "../assets/hablo-images/DRAWER CHANNEL.webp";
+import habloGHandleProfile from "../assets/hablo-images/G HANDLE PROFILE.webp";
+import habloPureSSHinges from "../assets/hablo-images/PURE SS SOFT CLOSING HINGES.webp";
+import habloSoftTelescopic from "../assets/hablo-images/SOFT TELESCOPIC CHANNEL.webp";
+import habloSlimTandem from "../assets/hablo-images/Slim Tandem Box.webp";
 
 // Europa Product Images
 import europaDrawerAB from "../assets/europa-images/Drawer-Lock-AB.webp";
@@ -149,30 +149,30 @@ import europaCupboardF160 from "../assets/europa-images/cupboard-lock-F160.webp"
 import europaCupboardF170 from "../assets/europa-images/cupboard-lock-F170.jpg";
 import europaCupboardF360 from "../assets/europa-images/cupboard-lock-F360.webp";
 
-import bwp2 from "../assets/fevicol-images/BWP-2.jpg";
-import fevicolSWR from "../assets/fevicol-images/Fevicol-SWR.png";
-import memPressLC from "../assets/fevicol-images/Fevicol-membrane-Press-Adhesive-LC.png";
-import memPressStar from "../assets/fevicol-images/Fevicol-membrane-Press-Star-2-K.png";
-import foamfix from "../assets/fevicol-images/Foamfix.jpg";
-import hotMelt382 from "../assets/fevicol-images/Hot-melt-382-Packshot.png";
-import mnlTransparent from "../assets/fevicol-images/MNL-TRANSPARENT.png";
-import amtTransparent from "../assets/fevicol-images/amt-transparent.png";
-import fastTack from "../assets/fevicol-images/fast-tack.png";
-import nailFreeUltra from "../assets/fevicol-images/fevicol nail free ultra.png";
-import fevicol707 from "../assets/fevicol-images/fevicol-707-FW.png";
-import fevicol998 from "../assets/fevicol-images/fevicol-998-FW.png";
-import hardenerC from "../assets/fevicol-images/fevicol-Hardener-C.png";
-import pl111 from "../assets/fevicol-images/fevicol-PL111.png";
-import pl222 from "../assets/fevicol-images/fevicol-PL222.png";
-import sr505 from "../assets/fevicol-images/fevicol-SR-505.png";
-import ezeeSpray from "../assets/fevicol-images/fevicol-ezee-spray.png";
-import floorfix from "../assets/fevicol-images/fevicol-floorfix.png";
-import heatx from "../assets/fevicol-images/fevicol-heatx.png";
-import hiper from "../assets/fevicol-images/fevicol-hiper.png";
-import marine from "../assets/fevicol-images/fevicol-marine.png";
-import sh from "../assets/fevicol-images/fevicol-sh.png";
-import speedx from "../assets/fevicol-images/fevicol-speedx.png";
-import swrEq from "../assets/fevicol-images/swr-eq.png";
+import bwp2 from "../assets/fevicol-images/BWP-2.webp";
+import fevicolSWR from "../assets/fevicol-images/Fevicol-SWR.webp";
+import memPressLC from "../assets/fevicol-images/Fevicol-membrane-Press-Adhesive-LC.webp";
+import memPressStar from "../assets/fevicol-images/Fevicol-membrane-Press-Star-2-K.webp";
+import foamfix from "../assets/fevicol-images/Foamfix.webp";
+import hotMelt382 from "../assets/fevicol-images/Hot-melt-382-Packshot.webp";
+import mnlTransparent from "../assets/fevicol-images/MNL-TRANSPARENT.webp";
+import amtTransparent from "../assets/fevicol-images/amt-transparent.webp";
+import fastTack from "../assets/fevicol-images/fast-tack.webp";
+import nailFreeUltra from "../assets/fevicol-images/fevicol nail free ultra.webp";
+import fevicol707 from "../assets/fevicol-images/fevicol-707-FW.webp";
+import fevicol998 from "../assets/fevicol-images/fevicol-998-FW.webp";
+import hardenerC from "../assets/fevicol-images/fevicol-Hardener-C.webp";
+import pl111 from "../assets/fevicol-images/fevicol-PL111.webp";
+import pl222 from "../assets/fevicol-images/fevicol-PL222.webp";
+import sr505 from "../assets/fevicol-images/fevicol-SR-505.webp";
+import ezeeSpray from "../assets/fevicol-images/fevicol-ezee-spray.webp";
+import floorfix from "../assets/fevicol-images/fevicol-floorfix.webp";
+import heatx from "../assets/fevicol-images/fevicol-heatx.webp";
+import hiper from "../assets/fevicol-images/fevicol-hiper.webp";
+import marine from "../assets/fevicol-images/fevicol-marine.webp";
+import sh from "../assets/fevicol-images/fevicol-sh.webp";
+import speedx from "../assets/fevicol-images/fevicol-speedx.webp";
+import swrEq from "../assets/fevicol-images/swr-eq.webp";
 import probond from "../assets/fevicol-images/fevicol-FV-Probond-Packshot.webp";
 
 // Century Veneers Product Images
@@ -815,154 +815,154 @@ export const PRODUCTS = [
   },
 
   // Laminates
-  {
-    id: "lam-01",
-    category: "laminates",
-    brand: "greenlam",
-    name: "Greenlam Suede Finish Decorative Laminates",
-    tagline: "1.0mm Premium Suede & Matte Scratch-Resistant Sheets",
-    description:
-      "Bring sophisticated textures and deep pigments to your interior cabinetry. These high-pressure laminates are equipped with surface-defending properties protecting them from scuffs and moisture.",
-    basePrice: 1400,
-    unit: "sheet (8x4 ft)",
-    sizes: ["8ft x 4ft"],
-    finishes: ["Suede", "Ultra-Matte", "Textured Woodgrain"],
-    rating: 4.8,
-    reviews: 112,
-    image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
-    specs: {
-      Thickness: "1.0mm",
-      "Standard Dimensions": "1220mm x 2440mm",
-      "Heat Resistance": "Up to 180°C",
-      Antibacterial: "Yes, Certified Silver-Ion technology",
-      Resistances: "Scratch, Stain, and Water Splash resistant",
-    },
-    features: [
-      "Vibrant colorfast pigments",
-      "Non-porous hygienic surface",
-      "Crack and craze resistant",
-      "Easiest maintenance",
-    ],
-  },
-  {
-    id: "lam-02",
-    category: "laminates",
-    brand: "century-laminates",
-    name: "Century High Gloss Acrylic Luxury Laminates",
-    tagline: "Mirror-like Premium High Gloss Kitchen Laminates",
-    description:
-      "Turn your kitchen and vanity shutter panels into statements of pure luxury. Our premium high-gloss acrylic laminates provide absolute depth of color, UV protection, and supreme scratch shielding.",
-    basePrice: 2800,
-    unit: "sheet (8x4 ft)",
-    sizes: ["8ft x 4ft"],
-    finishes: ["High Gloss Mirror", "Glossy Metallic"],
-    rating: 4.9,
-    reviews: 83,
-    image:
-      "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&q=80&w=800",
-    specs: {
-      Thickness: "1.2mm",
-      "Gloss Level": "> 95 Gloss Units (GU)",
-      "Core Material": "Premium Acrylic on PVC Backing",
-      "Color Fastness": "Excellent (UV Resistant)",
-      "Scratch Rating": "4H Hardness certified",
-    },
-    features: [
-      "Zero Orange Peel reflection",
-      "Scratch Resistant Coating",
-      "Color stays vibrant for 15+ years",
-      "Waterproof design",
-    ],
-  },
-  {
-    id: "lam-newmika-suede",
-    category: "laminates",
-    brand: "newmika",
-    name: "NewMika Premium Matte Laminates",
-    tagline:
-      "1.0mm scratch-resistant decorative sheets with rich pigment depth",
-    description:
-      "Available in a wide range of sophisticated solids, textures, and wood patterns. Crafted to deliver premium scuff defense for modern residential kitchens and workspaces.",
-    basePrice: 1650,
-    unit: "sheet (8x4 ft)",
-    sizes: ["8ft x 4ft"],
-    finishes: ["Suede", "Matte", "Woodgrain"],
-    rating: 4.7,
-    reviews: 54,
-    image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
-    specs: {
-      Thickness: "1.0mm",
-      Size: "1220mm x 2440mm",
-      Finish: "Super Matte & Fine Suede",
-      Resistance: "Impact, stain and boil resistant",
-    },
-    features: [
-      "100% phenolic paper backing",
-      "Vibrant UV-resistant pigments",
-      "Anti-crack flexibility",
-      "Easy maintenance and cleanability",
-    ],
-  },
-  {
-    id: "lam-century-antibac",
-    category: "laminates",
-    brand: "century-laminates",
-    name: "CenturyLaminates Silver-Ion Antibacterial Sheets",
-    tagline: "Hygienic 1.0mm high-pressure laminates with ViroKill technology",
-    description:
-      "Specially treated sheets that kill 99.9% of bacteria and viruses on touch. Highly recommended for dining tables, kitchen countertops, and kids' bedroom furniture.",
-    basePrice: 1950,
-    unit: "sheet (8x4 ft)",
-    sizes: ["8ft x 4ft"],
-    finishes: ["Suede", "Glossy"],
-    rating: 4.9,
-    reviews: 106,
-    image:
-      "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&q=80&w=800",
-    specs: {
-      Technology: "ViroKill Nanotechnology",
-      Thickness: "1.0mm",
-      Size: "1220mm x 2440mm",
-      Certification: "ISO 22196 Certified Antibacterial",
-    },
-    features: [
-      "Kills 99.9% microbes on surface",
-      "Excellent resistance to hot water spills",
-      "Termite and borer resistant backing",
-      "Scratch-resistant coating",
-    ],
-  },
-  {
-    id: "lam-ivas-gloss",
-    category: "laminates",
-    brand: "ivas",
-    name: "IVAS Decorative PVC Laminates",
-    tagline: "High-gloss scratch-resistant PVC laminate sheets for cabinetry",
-    description:
-      "IVAS laminate sheets offer high reflectivity and vibrant colors, making them perfect for sleek modular kitchen shutters, wardrobe doors, and modern cabinets.",
-    basePrice: 2200,
-    unit: "sheet (8x4 ft)",
-    sizes: ["8ft x 4ft"],
-    finishes: ["Acrylic High Gloss", "PVC Suede"],
-    rating: 4.6,
-    reviews: 31,
-    image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
-    specs: {
-      Material: "Premium PVC Base",
-      Thickness: "1.2mm",
-      "Gloss Level": "90+ Gloss Units (GU)",
-      Flexibility: "Can bend up to 90 degrees for post-forming",
-    },
-    features: [
-      "Bends seamlessly for post-forming edges",
-      "High UV-fade resistance",
-      "Zero orange peel effect",
-      "Completely waterproof and rustproof",
-    ],
-  },
+  // {
+  //   id: "lam-01",
+  //   category: "laminates",
+  //   brand: "greenlam",
+  //   name: "Greenlam Suede Finish Decorative Laminates",
+  //   tagline: "1.0mm Premium Suede & Matte Scratch-Resistant Sheets",
+  //   description:
+  //     "Bring sophisticated textures and deep pigments to your interior cabinetry. These high-pressure laminates are equipped with surface-defending properties protecting them from scuffs and moisture.",
+  //   basePrice: 1400,
+  //   unit: "sheet (8x4 ft)",
+  //   sizes: ["8ft x 4ft"],
+  //   finishes: ["Suede", "Ultra-Matte", "Textured Woodgrain"],
+  //   rating: 4.8,
+  //   reviews: 112,
+  //   image:
+  //     "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
+  //   specs: {
+  //     Thickness: "1.0mm",
+  //     "Standard Dimensions": "1220mm x 2440mm",
+  //     "Heat Resistance": "Up to 180°C",
+  //     Antibacterial: "Yes, Certified Silver-Ion technology",
+  //     Resistances: "Scratch, Stain, and Water Splash resistant",
+  //   },
+  //   features: [
+  //     "Vibrant colorfast pigments",
+  //     "Non-porous hygienic surface",
+  //     "Crack and craze resistant",
+  //     "Easiest maintenance",
+  //   ],
+  // },
+  // {
+  //   id: "lam-02",
+  //   category: "laminates",
+  //   brand: "century-laminates",
+  //   name: "Century High Gloss Acrylic Luxury Laminates",
+  //   tagline: "Mirror-like Premium High Gloss Kitchen Laminates",
+  //   description:
+  //     "Turn your kitchen and vanity shutter panels into statements of pure luxury. Our premium high-gloss acrylic laminates provide absolute depth of color, UV protection, and supreme scratch shielding.",
+  //   basePrice: 2800,
+  //   unit: "sheet (8x4 ft)",
+  //   sizes: ["8ft x 4ft"],
+  //   finishes: ["High Gloss Mirror", "Glossy Metallic"],
+  //   rating: 4.9,
+  //   reviews: 83,
+  //   image:
+  //     "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&q=80&w=800",
+  //   specs: {
+  //     Thickness: "1.2mm",
+  //     "Gloss Level": "> 95 Gloss Units (GU)",
+  //     "Core Material": "Premium Acrylic on PVC Backing",
+  //     "Color Fastness": "Excellent (UV Resistant)",
+  //     "Scratch Rating": "4H Hardness certified",
+  //   },
+  //   features: [
+  //     "Zero Orange Peel reflection",
+  //     "Scratch Resistant Coating",
+  //     "Color stays vibrant for 15+ years",
+  //     "Waterproof design",
+  //   ],
+  // },
+  // {
+  //   id: "lam-newmika-suede",
+  //   category: "laminates",
+  //   brand: "newmika",
+  //   name: "NewMika Premium Matte Laminates",
+  //   tagline:
+  //     "1.0mm scratch-resistant decorative sheets with rich pigment depth",
+  //   description:
+  //     "Available in a wide range of sophisticated solids, textures, and wood patterns. Crafted to deliver premium scuff defense for modern residential kitchens and workspaces.",
+  //   basePrice: 1650,
+  //   unit: "sheet (8x4 ft)",
+  //   sizes: ["8ft x 4ft"],
+  //   finishes: ["Suede", "Matte", "Woodgrain"],
+  //   rating: 4.7,
+  //   reviews: 54,
+  //   image:
+  //     "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
+  //   specs: {
+  //     Thickness: "1.0mm",
+  //     Size: "1220mm x 2440mm",
+  //     Finish: "Super Matte & Fine Suede",
+  //     Resistance: "Impact, stain and boil resistant",
+  //   },
+  //   features: [
+  //     "100% phenolic paper backing",
+  //     "Vibrant UV-resistant pigments",
+  //     "Anti-crack flexibility",
+  //     "Easy maintenance and cleanability",
+  //   ],
+  // },
+  // {
+  //   id: "lam-century-antibac",
+  //   category: "laminates",
+  //   brand: "century-laminates",
+  //   name: "CenturyLaminates Silver-Ion Antibacterial Sheets",
+  //   tagline: "Hygienic 1.0mm high-pressure laminates with ViroKill technology",
+  //   description:
+  //     "Specially treated sheets that kill 99.9% of bacteria and viruses on touch. Highly recommended for dining tables, kitchen countertops, and kids' bedroom furniture.",
+  //   basePrice: 1950,
+  //   unit: "sheet (8x4 ft)",
+  //   sizes: ["8ft x 4ft"],
+  //   finishes: ["Suede", "Glossy"],
+  //   rating: 4.9,
+  //   reviews: 106,
+  //   image:
+  //     "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&q=80&w=800",
+  //   specs: {
+  //     Technology: "ViroKill Nanotechnology",
+  //     Thickness: "1.0mm",
+  //     Size: "1220mm x 2440mm",
+  //     Certification: "ISO 22196 Certified Antibacterial",
+  //   },
+  //   features: [
+  //     "Kills 99.9% microbes on surface",
+  //     "Excellent resistance to hot water spills",
+  //     "Termite and borer resistant backing",
+  //     "Scratch-resistant coating",
+  //   ],
+  // },
+  // {
+  //   id: "lam-ivas-gloss",
+  //   category: "laminates",
+  //   brand: "ivas",
+  //   name: "IVAS Decorative PVC Laminates",
+  //   tagline: "High-gloss scratch-resistant PVC laminate sheets for cabinetry",
+  //   description:
+  //     "IVAS laminate sheets offer high reflectivity and vibrant colors, making them perfect for sleek modular kitchen shutters, wardrobe doors, and modern cabinets.",
+  //   basePrice: 2200,
+  //   unit: "sheet (8x4 ft)",
+  //   sizes: ["8ft x 4ft"],
+  //   finishes: ["Acrylic High Gloss", "PVC Suede"],
+  //   rating: 4.6,
+  //   reviews: 31,
+  //   image:
+  //     "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
+  //   specs: {
+  //     Material: "Premium PVC Base",
+  //     Thickness: "1.2mm",
+  //     "Gloss Level": "90+ Gloss Units (GU)",
+  //     Flexibility: "Can bend up to 90 degrees for post-forming",
+  //   },
+  //   features: [
+  //     "Bends seamlessly for post-forming edges",
+  //     "High UV-fade resistance",
+  //     "Zero orange peel effect",
+  //     "Completely waterproof and rustproof",
+  //   ],
+  // },
 
   // Veneers - Century Veneers
   {
@@ -971,7 +971,8 @@ export const PRODUCTS = [
     brand: "century-veneers",
     name: "Century Dyed Pearl Slate Grey Veneer",
     tagline: "Premium dyed slate grey reconstituted veneer",
-    description: "Sleek and contemporary, this slate grey veneer offers a modern cool-toned aesthetic for premium wall paneling and customized furniture. It features high stability and excellent color uniformity across large surfaces.",
+    description:
+      "Sleek and contemporary, this slate grey veneer offers a modern cool-toned aesthetic for premium wall paneling and customized furniture. It features high stability and excellent color uniformity across large surfaces.",
     basePrice: 220,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
@@ -997,7 +998,8 @@ export const PRODUCTS = [
     brand: "century-veneers",
     name: "Century Dyed Pearl Marble White Veneer",
     tagline: "Exquisite dyed pearl white designer veneer",
-    description: "Features delicate off-white wood patterns with a pearlescent sheen. Ideal for bright minimalist cabinets and statement furniture doors that require a clean, luxurious touch.",
+    description:
+      "Features delicate off-white wood patterns with a pearlescent sheen. Ideal for bright minimalist cabinets and statement furniture doors that require a clean, luxurious touch.",
     basePrice: 235,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
@@ -1023,7 +1025,8 @@ export const PRODUCTS = [
     brand: "century-veneers",
     name: "Century Dyed Opal Grey Veneer",
     tagline: "Warm opal grey premium reconstituted wood sheet",
-    description: "A fine-grained, uniform grey veneer sheet processed to eliminate natural inconsistencies. Perfect for sleek kitchen cabinets, wardrobe shutters, and corporate office paneling.",
+    description:
+      "A fine-grained, uniform grey veneer sheet processed to eliminate natural inconsistencies. Perfect for sleek kitchen cabinets, wardrobe shutters, and corporate office paneling.",
     basePrice: 215,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
@@ -1049,7 +1052,8 @@ export const PRODUCTS = [
     brand: "century-veneers",
     name: "Century Dyed Koto Coffee Veneer",
     tagline: "Rich espresso brown natural koto wood veneer",
-    description: "Evokes the deep, comforting hue of premium coffee beans. Sourced from high-grade Koto logs and fumed to achieve deep color saturation throughout the wood fibers.",
+    description:
+      "Evokes the deep, comforting hue of premium coffee beans. Sourced from high-grade Koto logs and fumed to achieve deep color saturation throughout the wood fibers.",
     basePrice: 245,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
@@ -1075,7 +1079,8 @@ export const PRODUCTS = [
     brand: "century-veneers",
     name: "Century Blanco Oak Veneer",
     tagline: "Natural white oak grain luxury veneer",
-    description: "Classic European Oak face with a bleached, Scandinavian-inspired Blanco finish. Showcases rich natural wood rays and straight-grain patterns with clean textures.",
+    description:
+      "Classic European Oak face with a bleached, Scandinavian-inspired Blanco finish. Showcases rich natural wood rays and straight-grain patterns with clean textures.",
     basePrice: 260,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
@@ -1101,7 +1106,8 @@ export const PRODUCTS = [
     brand: "century-veneers",
     name: "Century Dyed Oak Grey Veneer",
     tagline: "Sophisticated dyed oak grey natural face sheet",
-    description: "Showcases the iconic oak growth rings combined with a smoky grey tone. Provides a highly tactile and architecturally refined finish for high-end accent walls.",
+    description:
+      "Showcases the iconic oak growth rings combined with a smoky grey tone. Provides a highly tactile and architecturally refined finish for high-end accent walls.",
     basePrice: 250,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
@@ -1127,7 +1133,8 @@ export const PRODUCTS = [
     brand: "century-veneers",
     name: "Century Dyed Chen Chen Light Brown Veneer",
     tagline: "Light golden-brown Chen Chen exotic veneer",
-    description: "Featuring the exotic striped grain patterns of premium Chen Chen timber. Lightly dyed to highlight the natural golden and amber tones, perfect for warm, luxurious interiors.",
+    description:
+      "Featuring the exotic striped grain patterns of premium Chen Chen timber. Lightly dyed to highlight the natural golden and amber tones, perfect for warm, luxurious interiors.",
     basePrice: 240,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
@@ -1155,7 +1162,8 @@ export const PRODUCTS = [
     brand: "sharon",
     name: "Sharon Dibeto Designer Veneer",
     tagline: "Exotic dark-veined premium timber face",
-    description: "Features bold, high-contrast dark grain lines on a warm honey background. Hand-picked logs sliced to perfection for luxury paneling in presidential rooms.",
+    description:
+      "Features bold, high-contrast dark grain lines on a warm honey background. Hand-picked logs sliced to perfection for luxury paneling in presidential rooms.",
     basePrice: 230,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1181,7 +1189,8 @@ export const PRODUCTS = [
     brand: "sharon",
     name: "Sharon Figured Eucalyptus Veneer",
     tagline: "Exquisite quilted eucalyptus natural wood sheet",
-    description: "Boasts a highly shimmering, three-dimensional wavy figure characteristic of premium eucalyptus fiddleback logs. Reflects ambient light beautifully with a liquid-like look.",
+    description:
+      "Boasts a highly shimmering, three-dimensional wavy figure characteristic of premium eucalyptus fiddleback logs. Reflects ambient light beautifully with a liquid-like look.",
     basePrice: 275,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1207,7 +1216,8 @@ export const PRODUCTS = [
     brand: "sharon",
     name: "Sharon Light American Maple Veneer",
     tagline: "Bright cream-toned maple natural veneer",
-    description: "Sourced from Northern American maple forests, featuring an ultra-smooth, fine texture and clean blonde color palette. Perfect for modern Scandinavian interiors.",
+    description:
+      "Sourced from Northern American maple forests, featuring an ultra-smooth, fine texture and clean blonde color palette. Perfect for modern Scandinavian interiors.",
     basePrice: 210,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1233,7 +1243,8 @@ export const PRODUCTS = [
     brand: "sharon",
     name: "Sharon Light Anegre Veneer",
     tagline: "Warm golden Anegre soft-grained wood sheet",
-    description: "Hails from East Africa, presenting a smooth, straw-like amber grain. Highly favored for large office walls and partitions due to its clean, uniform look.",
+    description:
+      "Hails from East Africa, presenting a smooth, straw-like amber grain. Highly favored for large office walls and partitions due to its clean, uniform look.",
     basePrice: 215,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1259,7 +1270,8 @@ export const PRODUCTS = [
     brand: "sharon",
     name: "Sharon Light Chestnut Veneer",
     tagline: "Rustic light chestnut natural face veneer",
-    description: "Features gentle, flowing cathedrals and fine wood pores. Brings a classic, cozy European farmhouse charm to contemporary home kitchen and wardrobe shutters.",
+    description:
+      "Features gentle, flowing cathedrals and fine wood pores. Brings a classic, cozy European farmhouse charm to contemporary home kitchen and wardrobe shutters.",
     basePrice: 225,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1285,7 +1297,8 @@ export const PRODUCTS = [
     brand: "sharon",
     name: "Sharon Light Eucalyptus Veneer",
     tagline: "Fine-grain light eucalyptus wood veneer",
-    description: "A clean and modern option showing straight, vertical grain patterns of sustainable eucalyptus timber. Highly versatile for daily residential wardrobes and kitchen panels.",
+    description:
+      "A clean and modern option showing straight, vertical grain patterns of sustainable eucalyptus timber. Highly versatile for daily residential wardrobes and kitchen panels.",
     basePrice: 200,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1311,7 +1324,8 @@ export const PRODUCTS = [
     brand: "sharon",
     name: "Sharon Light Knotty Pine Veneer",
     tagline: "Rustic knotty pine natural grain sheet",
-    description: "Showcases beautiful, authentic wood knots and rich grain transitions. Adds a warm, cabins-in-the-woods organic texture to country-style home decors.",
+    description:
+      "Showcases beautiful, authentic wood knots and rich grain transitions. Adds a warm, cabins-in-the-woods organic texture to country-style home decors.",
     basePrice: 190,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1339,7 +1353,8 @@ export const PRODUCTS = [
     brand: "greenply",
     name: "Greenply American Cherry Veneer",
     tagline: "Warm reddish-brown cherry natural wood face",
-    description: "Showcases the timeless, rich reddish-brown patina of American Cherry wood. Develops a gorgeous deeper amber depth when exposed to natural light in your living room.",
+    description:
+      "Showcases the timeless, rich reddish-brown patina of American Cherry wood. Develops a gorgeous deeper amber depth when exposed to natural light in your living room.",
     basePrice: 245,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1365,7 +1380,8 @@ export const PRODUCTS = [
     brand: "greenply",
     name: "Greenply Premium Anigre Veneer",
     tagline: "Clean, silky-textured natural timber veneer",
-    description: "Premium African Anigre wood presenting a silky surface and light golden-yellow color. Beautifully accepts custom wood oils, varnishes, and stains.",
+    description:
+      "Premium African Anigre wood presenting a silky surface and light golden-yellow color. Beautifully accepts custom wood oils, varnishes, and stains.",
     basePrice: 220,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1391,7 +1407,8 @@ export const PRODUCTS = [
     brand: "greenply",
     name: "Greenply Exotic Bacote Veneer",
     tagline: "Bold zebra-striped high-end decorative veneer",
-    description: "An ultra-exotic wood featuring dramatic, swirling black-and-gold grain patterns. Makes a striking statement on conference desks, bars, and luxury hotel counters.",
+    description:
+      "An ultra-exotic wood featuring dramatic, swirling black-and-gold grain patterns. Makes a striking statement on conference desks, bars, and luxury hotel counters.",
     basePrice: 320,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1417,7 +1434,8 @@ export const PRODUCTS = [
     brand: "greenply",
     name: "Greenply Curly & Quilted Maple Veneer",
     tagline: "Shimmering quilted maple luxury wood face",
-    description: "Exhibits a breathtaking three-dimensional ripple wave pattern. Perfect for custom acoustic panels, premium headboards, and executive office backdrops.",
+    description:
+      "Exhibits a breathtaking three-dimensional ripple wave pattern. Perfect for custom acoustic panels, premium headboards, and executive office backdrops.",
     basePrice: 290,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1443,7 +1461,8 @@ export const PRODUCTS = [
     brand: "greenply",
     name: "Greenply Roasted Bibolo Veneer",
     tagline: "Thermotreated dark bibolo exotic veneer",
-    description: "Bibolo wood roasted under controlled heat to achieve deep, rich chocolate brown colors with enhanced structural stability and rot resistance for modular kitchen surfaces.",
+    description:
+      "Bibolo wood roasted under controlled heat to achieve deep, rich chocolate brown colors with enhanced structural stability and rot resistance for modular kitchen surfaces.",
     basePrice: 280,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1469,7 +1488,8 @@ export const PRODUCTS = [
     brand: "greenply",
     name: "Greenply Roasted Figured Eucalyptus Veneer",
     tagline: "Smoked fiddleback eucalyptus premium veneer",
-    description: "Combines the shimmer of figured eucalyptus with a rich, roasted coffee tone. Creates an incredibly luxurious, reflective wall panel look for statement lobbies.",
+    description:
+      "Combines the shimmer of figured eucalyptus with a rich, roasted coffee tone. Creates an incredibly luxurious, reflective wall panel look for statement lobbies.",
     basePrice: 310,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1495,7 +1515,8 @@ export const PRODUCTS = [
     brand: "greenply",
     name: "Greenply Exotic Zericote Veneer",
     tagline: "Artistic landscape-patterned premium wood sheet",
-    description: "Famous for its unique 'spider-web' or 'landscape' grain lines, this highly sought-after wood is a masterpiece of natural art for high-end dining table surfaces.",
+    description:
+      "Famous for its unique 'spider-web' or 'landscape' grain lines, this highly sought-after wood is a masterpiece of natural art for high-end dining table surfaces.",
     basePrice: 350,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
@@ -1523,7 +1544,8 @@ export const PRODUCTS = [
     brand: "realply",
     name: "Realply Goncalo Alves 1.5mm Heavy Veneer",
     tagline: "Exotic Tigerwood thick-face natural veneer",
-    description: "Often called Tigerwood, this extremely durable wood features dark brown streaks on a warm orange-brown body. Thick 1.5mm face allows deep sanding, carving, and heavy routing.",
+    description:
+      "Often called Tigerwood, this extremely durable wood features dark brown streaks on a warm orange-brown body. Thick 1.5mm face allows deep sanding, carving, and heavy routing.",
     basePrice: 360,
     unit: "sq.ft",
     thicknesses: ["1.5mm thick-face wood base"],
@@ -1549,7 +1571,8 @@ export const PRODUCTS = [
     brand: "realply",
     name: "Realply Oak Crown 1.5mm Heavy Veneer",
     tagline: "Thick-cut crown patterned white oak veneer",
-    description: "Features premium cathedral arch patterns of European White Oak. Heavy-duty 1.5mm veneer suitable for solid-feeling main door overlays and high-traffic restaurant tables.",
+    description:
+      "Features premium cathedral arch patterns of European White Oak. Heavy-duty 1.5mm veneer suitable for solid-feeling main door overlays and high-traffic restaurant tables.",
     basePrice: 330,
     unit: "sq.ft",
     thicknesses: ["1.5mm thick-face wood base"],
@@ -1575,7 +1598,8 @@ export const PRODUCTS = [
     brand: "realply",
     name: "Realply Smoked Larch Crown 1.5mm Veneer",
     tagline: "Cathedral grain fumed larch heavy wood sheet",
-    description: "Larch wood fumed to a deep smoky carbon black tone, highlighting the bold, curved growth ring crowns. Resilient, heavy, and extremely modern.",
+    description:
+      "Larch wood fumed to a deep smoky carbon black tone, highlighting the bold, curved growth ring crowns. Resilient, heavy, and extremely modern.",
     basePrice: 340,
     unit: "sq.ft",
     thicknesses: ["1.5mm thick-face wood base"],
@@ -1601,7 +1625,8 @@ export const PRODUCTS = [
     brand: "realply",
     name: "Realply Teak Crown 1.5mm Heavy Veneer",
     tagline: "Premium Burma Teak thick crown-cut veneer",
-    description: "The absolute pinnacle of luxury. Thick 1.5mm cut Burma Teak face showing beautiful crown grain arches. Highly resistant to termites, borers, and moisture.",
+    description:
+      "The absolute pinnacle of luxury. Thick 1.5mm cut Burma Teak face showing beautiful crown grain arches. Highly resistant to termites, borers, and moisture.",
     basePrice: 390,
     unit: "sq.ft",
     thicknesses: ["1.5mm thick-face wood base"],
@@ -1627,7 +1652,8 @@ export const PRODUCTS = [
     brand: "realply",
     name: "Realply White Ash Crown 1.5mm Veneer",
     tagline: "Bright textured thick-cut white ash veneer",
-    description: "Presents bold, prominent crown rings with a clean ivory hue. Excellent for heavy sanding, coloring, staining, and creating premium open-grain finishes.",
+    description:
+      "Presents bold, prominent crown rings with a clean ivory hue. Excellent for heavy sanding, coloring, staining, and creating premium open-grain finishes.",
     basePrice: 310,
     unit: "sq.ft",
     thicknesses: ["1.5mm thick-face wood base"],
@@ -1653,7 +1679,8 @@ export const PRODUCTS = [
     brand: "realply",
     name: "Realply Pommele Eucalyptus Veneer",
     tagline: "Dappled water-droplet effect luxury veneer",
-    description: "Pommele figure creates a beautiful dappled or 'water droplet' pattern on the wood surface, resembling rain on a window. Stunning under high-gloss mirror polish.",
+    description:
+      "Pommele figure creates a beautiful dappled or 'water droplet' pattern on the wood surface, resembling rain on a window. Stunning under high-gloss mirror polish.",
     basePrice: 380,
     unit: "sq.ft",
     thicknesses: ["0.6mm face thickness"],
@@ -1679,7 +1706,8 @@ export const PRODUCTS = [
     brand: "realply",
     name: "Realply Pommele Sapeli Veneer",
     tagline: "Warm mahogany-toned quilted pommele veneer",
-    description: "Sapele wood featuring a rare pommele figure. Shimmers with rich reddish-copper waves, perfect for premium cabinetry and custom audio rooms.",
+    description:
+      "Sapele wood featuring a rare pommele figure. Shimmers with rich reddish-copper waves, perfect for premium cabinetry and custom audio rooms.",
     basePrice: 340,
     unit: "sq.ft",
     thicknesses: ["0.6mm face thickness"],
@@ -2733,7 +2761,7 @@ export const PRODUCTS = [
     specs: {
       Material: "Grade 304 Stainless Steel",
       Finish: "Brushed Satin Silver",
-      Size: "5\" x 3\" x 3mm thickness",
+      Size: '5" x 3" x 3mm thickness',
     },
     features: [
       "Four ball bearing rings ensure silent movement",

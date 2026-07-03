@@ -8,6 +8,8 @@ export default function ContactPage() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [submittedName, setSubmittedName] = useState("");
   const [submittedSubject, setSubmittedSubject] = useState("");
+  const [showDirectContact, setShowDirectContact] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   // Initialize react-hook-form
   const {
@@ -33,6 +35,14 @@ export default function ContactPage() {
     setSubmittedName(data.name);
     setSubmittedSubject(data.subject);
     setFormSubmitted(true);
+    setShowDirectContact(true);
+    setShowSuccessModal(true);
+  };
+
+  const handleResetForm = () => {
+    setFormSubmitted(false);
+    setShowDirectContact(false);
+    reset();
   };
 
   return (
@@ -249,10 +259,7 @@ export default function ContactPage() {
                   you within an hour.
                 </p>
                 <button
-                  onClick={() => {
-                    setFormSubmitted(false);
-                    reset(); // Clear form values back to default
-                  }}
+                  onClick={handleResetForm}
                   className="px-6 py-2.5 bg-slate-950 text-white font-bold text-xs rounded-xl hover:bg-slate-800 transition-colors"
                 >
                   Send another inquiry
@@ -263,101 +270,153 @@ export default function ContactPage() {
 
           {/* Right Block: Sidebar Info */}
           <div className="lg:col-span-5 space-y-8">
-            <div className="bg-slate-950 text-white p-8 rounded-3xl space-y-6">
-              <h3 className="text-lg font-bold border-b border-slate-800 pb-3 text-amber-400">
-                Direct Contact Hub
-              </h3>
+            <div className="bg-slate-950 text-white p-8 rounded-3xl space-y-6 relative overflow-hidden">
+              {/* Blurred Overlay */}
+              {!showDirectContact && (
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-6 bg-slate-950/85 backdrop-blur-md text-center select-none animate-fadeIn">
+                  <MapPin className="w-12 h-12 text-amber-500 mb-3 animate-pulse" />
+                  <h4 className="text-white font-black text-lg mb-2">Location &amp; Address Locked</h4>
+                  <p className="text-slate-300 text-xs leading-relaxed max-w-[280px]">
+                    To protect address and contact info, please fill out and submit the Electronic Query form on the left.
+                  </p>
+                </div>
+              )}
 
-              <ul className="space-y-6 text-sm">
-                <li className="flex items-start gap-4">
-                  <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-amber-400 shrink-0">
-                    <MapPin className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <strong className="block text-slate-300">
-                      Head Office &amp; Yard:
-                    </strong>
-                    <span className="text-slate-400">
-                      No. 153/2, SRH Building, Alagar Kovil Mian Road, K Pudur,
-                      Madurai
-                    </span>
-                  </div>
-                </li>
+              <div className={!showDirectContact ? "filter blur-[3px] select-none pointer-events-none transition-all duration-300" : "transition-all duration-300"}>
+                <h3 className="text-lg font-bold border-b border-slate-800 pb-3 text-amber-400">
+                  Direct Contact Hub
+                </h3>
 
-                <li className="flex items-start gap-4">
-                  <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-amber-400 shrink-0">
-                    <Phone className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <strong className="block text-slate-300">Hotlines:</strong>
-                    <a
-                      href="tel:+918072808083"
-                      className="block text-amber-400 font-bold hover:underline"
-                    >
-                      +91 8072808083
-                    </a>
-                    <a
-                      href="tel:+919876543211"
-                      className="block text-slate-400 hover:underline"
-                    >
-                      +91 98765 43211
-                    </a>
-                  </div>
-                </li>
+                <ul className="space-y-6 text-sm mt-6">
+                  <li className="flex items-start gap-4">
+                    <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-amber-400 shrink-0">
+                      <MapPin className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <strong className="block text-slate-300">
+                        Head Office &amp; Yard:
+                      </strong>
+                      <span className="text-slate-400">
+                        No. 153/2, SRH Building, Alagar Kovil Mian Road, K Pudur,
+                        Madurai
+                      </span>
+                    </div>
+                  </li>
 
-                <li className="flex items-start gap-4">
-                  <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-amber-400 shrink-0">
-                    <Clock className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <strong className="block text-slate-300">
-                      Working Hours:
-                    </strong>
-                    <span className="block text-slate-400">
-                      Monday - Saturday
-                    </span>
-                    <span className="text-amber-500 font-bold">
-                      9:30 AM - 8:30 PM
-                    </span>
-                  </div>
-                </li>
-              </ul>
+                  <li className="flex items-start gap-4">
+                    <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-amber-400 shrink-0">
+                      <Phone className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <strong className="block text-slate-300">Hotlines:</strong>
+                      <a
+                        href="tel:+918072808083"
+                        className="block text-amber-400 font-bold hover:underline"
+                      >
+                        +91 8072808083
+                      </a>
+                      <a
+                        href="tel:+919876543211"
+                        className="block text-slate-400 hover:underline"
+                      >
+                        +91 98765 43211
+                      </a>
+                    </div>
+                  </li>
 
-              {/* Quick Action button */}
-              <div className="pt-4 border-t border-slate-800">
-                <a
-                  href="tel:+918072808083"
-                  className="w-full py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-white font-extrabold flex items-center justify-center gap-2 transition-all"
-                >
-                  <Phone className="w-4 h-4 text-amber-500" />
-                  <span>Call Owner Directly</span>
-                </a>
+                  <li className="flex items-start gap-4">
+                    <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-amber-400 shrink-0">
+                      <Clock className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <strong className="block text-slate-300">
+                        Working Hours:
+                      </strong>
+                      <span className="block text-slate-400">
+                        Monday - Saturday
+                      </span>
+                      <span className="text-amber-500 font-bold">
+                        9:30 AM - 8:30 PM
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+
+                {/* Quick Action button */}
+                <div className="pt-4 border-t border-slate-800 mt-6">
+                  <a
+                    href="tel:+918072808083"
+                    className="w-full py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-white font-extrabold flex items-center justify-center gap-2 transition-all"
+                  >
+                    <Phone className="w-4 h-4 text-amber-500" />
+                    <span>Call Owner Directly</span>
+                  </a>
+                </div>
               </div>
             </div>
 
             {/* Map Placeholder Block */}
-            <div className="p-4 bg-white border border-slate-100 rounded-3xl space-y-3">
-              <span className="text-xs uppercase font-bold tracking-wider text-slate-400">
-                Store GPS Coordinates
-              </span>
-
-              <div className="relative h-48 rounded-2xl bg-slate-100 border border-slate-200 overflow-hidden flex items-center justify-center">
-                <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" />
-                <div className="relative text-center space-y-2 px-6">
-                  <MapPin className="w-10 h-10 text-amber-500 mx-auto animate-bounce" />
-                  <span className="block text-xs font-bold text-slate-800">
-                    Near Central Flyover, Madurai
-                  </span>
-                  <p className="text-[10px] text-slate-500">
-                    Directions: Take the second exit under the flyover, we are
-                    located 200m ahead on the left.
+            <div className="p-4 bg-white border border-slate-100 rounded-3xl space-y-3 relative overflow-hidden">
+              {!showDirectContact && (
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-4 bg-white/80 backdrop-blur-md text-center select-none animate-fadeIn">
+                  <MapPin className="w-8 h-8 text-amber-500 mb-1 animate-pulse" />
+                  <h4 className="text-slate-900 font-bold text-xs">GPS Coordinates Locked</h4>
+                  <p className="text-slate-500 text-[10px] max-w-[200px] mt-0.5">
+                    Submit the form to unlock GPS navigation and directions.
                   </p>
+                </div>
+              )}
+
+              <div className={!showDirectContact ? "filter blur-[3px] select-none pointer-events-none transition-all duration-300" : "transition-all duration-300"}>
+                <span className="text-xs uppercase font-bold tracking-wider text-slate-400">
+                  Store GPS Coordinates
+                </span>
+
+                <div className="relative h-48 rounded-2xl bg-slate-100 border border-slate-200 overflow-hidden flex items-center justify-center mt-3">
+                  <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" />
+                  <div className="relative text-center space-y-2 px-6">
+                    <MapPin className="w-10 h-10 text-amber-500 mx-auto animate-bounce" />
+                    <span className="block text-xs font-bold text-slate-800">
+                      Near Central Flyover, Madurai
+                    </span>
+                    <p className="text-[10px] text-slate-500">
+                      Directions: Take the second exit under the flyover, we are
+                      located 200m ahead on the left.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Success Modal Popup */}
+      {showSuccessModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm animate-fadeIn">
+          <div className="bg-white rounded-3xl max-w-sm w-full p-8 border border-slate-100 shadow-2xl text-center space-y-5 animate-scaleIn">
+            <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center mx-auto text-emerald-600 shadow-inner">
+              <CheckCircle className="w-9 h-9" />
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-xl font-black text-slate-900">
+                Query Received!
+              </h3>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                Thank you for submitting your details. The <strong>Direct Contact Hub</strong> has been successfully unlocked for you!
+              </p>
+            </div>
+            <button
+              onClick={() => {
+                setShowSuccessModal(false);
+              }}
+              className="w-full py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-extrabold text-sm rounded-xl transition-all shadow-md shadow-emerald-500/20 cursor-pointer"
+            >
+              OK, View Address &amp; Contact Details
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
