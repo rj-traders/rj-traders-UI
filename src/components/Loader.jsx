@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import rjLogoNew from "../assets/rj-logo-new.png";
+import rjLogoNew from "../assets/rj-logo-new.webp";
 
 export function Preloader({ onComplete }) {
   const [progress, setProgress] = useState(0);

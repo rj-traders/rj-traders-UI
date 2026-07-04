@@ -5,7 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import { WhatsApp } from "@mui/icons-material";
 import { PRODUCT_CATEGORIES } from "../data/mockData";
-import rjLogoNew from "../assets/rj-logo-new.png";
+import rjLogoNew from "../assets/rj-logo-new.webp";
 
 export default function Footer() {
   return (

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import rjLogoNew from "../assets/rj-logo-new.png";
+import rjLogoNew from "../assets/rj-logo-new.webp";
 import { Phone, Menu, X, MessageCircle } from "lucide-react";
 
 export default function Navbar() {

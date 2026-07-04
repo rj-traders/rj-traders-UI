@@ -1,5 +1,5 @@
 import { Layers, Layers3, Wrench, Droplets } from "lucide-react";
-import greenpanel from "../assets/greenpanel.jpg";
+import greenpanel from "../assets/greenpanel.webp";
 // import egPly from "../assets/eg-ply-certified-polywoods.jpg";
 // import fevicol from "../assets/fevicol.png";
 // import sleekimg from "../assets/sleek.jpeg";
@@ -18,27 +18,27 @@ import shutteringimg from "../assets/product-images/Shuttering Plywood.webp";
 import hdmrimg from "../assets/product-images/HDMR.webp";
 import interiormdfimg from "../assets/product-images/Interior MDF.webp";
 import exteriormdfimg from "../assets/product-images/Exterior MDF.webp";
-import jainsonLogo from "../assets/our-brand/jainson.png";
+import jainsonLogo from "../assets/our-brand/jainson.webp";
 import ebcoLogo from "../assets/our-brand/ebco.webp";
-import sleekLogo from "../assets/our-brand/sleek.jpeg";
-import habloLogo from "../assets/our-brand/hablologo.png";
-import woodsLogo from "../assets/our-brand/woods.png";
+import sleekLogo from "../assets/our-brand/sleek.webp";
+import habloLogo from "../assets/our-brand/hablologo.webp";
+import woodsLogo from "../assets/our-brand/woods.webp";
 import yaleLogo from "../assets/our-brand/yale.webp";
 import godrejLogo from "../assets/our-brand/godrej.webp";
 import europaLogo from "../assets/our-brand/europa.webp";
-import newmikaLogo from "../assets/our-brand/newmika.jpeg";
+import newmikaLogo from "../assets/our-brand/newmika.webp";
 import centurylamLogo from "../assets/our-brand/centurylaminates.webp";
-import greenlamLogo from "../assets/our-brand/greenlam_laminates.png";
-import ivasLogo from "../assets/our-brand/ivas.jpg";
-import sharonLogo from "../assets/our-brand/sharon.png";
-import centuryvenLogo from "../assets/our-brand/century.png";
-import greenplyLogo from "../assets/our-brand/greenply.png";
-import realplyLogo from "../assets/our-brand/realply.jpeg";
+import greenlamLogo from "../assets/our-brand/greenlam_laminates.webp";
+import ivasLogo from "../assets/our-brand/ivas.webp";
+import sharonLogo from "../assets/our-brand/sharon.webp";
+import centuryvenLogo from "../assets/our-brand/century.webp";
+import greenplyLogo from "../assets/our-brand/greenply.webp";
+import realplyLogo from "../assets/our-brand/realply.webp";
 import clubwelllogo from "../assets/our-brand/clubwell-logo.webp";
-import linklogo from "../assets/our-brand/links.jpg";
+import linklogo from "../assets/our-brand/links.webp";
 // import greenpanelLogo from "../assets/our-brand/logo-Greenpanel.png";
-import egplyLogo from "../assets/our-brand/eg-ply-certified-polywoods.jpg";
-import fevicolLogo from "../assets/our-brand/fevicol.png";
+import egplyLogo from "../assets/our-brand/eg-ply-certified-polywoods.webp";
+import fevicolLogo from "../assets/our-brand/fevicol.webp";
 
 // Ebco Product Images
 import ebcoHingesNormal from "../assets/ebco-images/hinges-normal.webp";
@@ -63,7 +63,7 @@ import jainsonMortise2 from "../assets/jainson-images/mortise-lock-2.webp";
 
 // Sleek Product Images
 import sleekTelescopicSC from "../assets/sleek-images/sleek-by-asian-paints-telescopic-channel-zinc-soft-closing.webp";
-import sleekTandemBox from "../assets/sleek-images/tandem-box-in-kitchen.jpg";
+import sleekTandemBox from "../assets/sleek-images/tandem-box-in-kitchen.webp";
 
 // Clubwell Product Images
 import clubwell1 from "../assets/club-well-images/1.webp";
@@ -119,7 +119,7 @@ import yaleMortiseLockset1 from "../assets/yale-images/mortise-lockset-1.webp";
 import yaleMortiseLockset2 from "../assets/yale-images/mortise-lockset-2.webp";
 
 // Woods Product Images
-import woodsSlidingChannel from "../assets/woods-images/WSH-400x278.jpg";
+import woodsSlidingChannel from "../assets/woods-images/WSH-400x278.webp";
 
 // Godrej Product Images
 import godrejMortise1 from "../assets/godrej-images/mortise-lock-1.webp";
@@ -146,7 +146,7 @@ import europaDrawerF365 from "../assets/europa-images/Drawer-Lock-F365.webp";
 import europaDrawerRG from "../assets/europa-images/Drawer-Lock-RG.webp";
 import europaDrawerSS from "../assets/europa-images/Drawer-Lock-SS.webp";
 import europaCupboardF160 from "../assets/europa-images/cupboard-lock-F160.webp";
-import europaCupboardF170 from "../assets/europa-images/cupboard-lock-F170.jpg";
+import europaCupboardF170 from "../assets/europa-images/cupboard-lock-F170.webp";
 import europaCupboardF360 from "../assets/europa-images/cupboard-lock-F360.webp";
 
 import bwp2 from "../assets/fevicol-images/BWP-2.webp";
