@@ -973,7 +973,7 @@ export const PRODUCTS = [
     tagline: "Premium dyed slate grey reconstituted veneer",
     description:
       "Sleek and contemporary, this slate grey veneer offers a modern cool-toned aesthetic for premium wall paneling and customized furniture. It features high stability and excellent color uniformity across large surfaces.",
-    basePrice: 220,
+    basePrice: 115,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
     rating: 4.8,
@@ -1000,7 +1000,7 @@ export const PRODUCTS = [
     tagline: "Exquisite dyed pearl white designer veneer",
     description:
       "Features delicate off-white wood patterns with a pearlescent sheen. Ideal for bright minimalist cabinets and statement furniture doors that require a clean, luxurious touch.",
-    basePrice: 235,
+    basePrice: 150,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
     rating: 4.9,
@@ -1027,7 +1027,7 @@ export const PRODUCTS = [
     tagline: "Warm opal grey premium reconstituted wood sheet",
     description:
       "A fine-grained, uniform grey veneer sheet processed to eliminate natural inconsistencies. Perfect for sleek kitchen cabinets, wardrobe shutters, and corporate office paneling.",
-    basePrice: 215,
+    basePrice: 120,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
     rating: 4.7,
@@ -1054,7 +1054,7 @@ export const PRODUCTS = [
     tagline: "Rich espresso brown natural koto wood veneer",
     description:
       "Evokes the deep, comforting hue of premium coffee beans. Sourced from high-grade Koto logs and fumed to achieve deep color saturation throughout the wood fibers.",
-    basePrice: 245,
+    basePrice: 160,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
     rating: 4.8,
@@ -1081,7 +1081,7 @@ export const PRODUCTS = [
     tagline: "Natural white oak grain luxury veneer",
     description:
       "Classic European Oak face with a bleached, Scandinavian-inspired Blanco finish. Showcases rich natural wood rays and straight-grain patterns with clean textures.",
-    basePrice: 260,
+    basePrice: 120,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
     rating: 4.9,
@@ -1108,7 +1108,7 @@ export const PRODUCTS = [
     tagline: "Sophisticated dyed oak grey natural face sheet",
     description:
       "Showcases the iconic oak growth rings combined with a smoky grey tone. Provides a highly tactile and architecturally refined finish for high-end accent walls.",
-    basePrice: 250,
+    basePrice: 160,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
     rating: 4.8,
@@ -1135,7 +1135,7 @@ export const PRODUCTS = [
     tagline: "Light golden-brown Chen Chen exotic veneer",
     description:
       "Featuring the exotic striped grain patterns of premium Chen Chen timber. Lightly dyed to highlight the natural golden and amber tones, perfect for warm, luxurious interiors.",
-    basePrice: 240,
+    basePrice: 115,
     unit: "sq.ft",
     thicknesses: ["3.5mm", "4.0mm"],
     rating: 4.7,
@@ -1164,7 +1164,7 @@ export const PRODUCTS = [
     tagline: "Exotic dark-veined premium timber face",
     description:
       "Features bold, high-contrast dark grain lines on a warm honey background. Hand-picked logs sliced to perfection for luxury paneling in presidential rooms.",
-    basePrice: 230,
+    basePrice: 85,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.8,
@@ -1191,7 +1191,7 @@ export const PRODUCTS = [
     tagline: "Exquisite quilted eucalyptus natural wood sheet",
     description:
       "Boasts a highly shimmering, three-dimensional wavy figure characteristic of premium eucalyptus fiddleback logs. Reflects ambient light beautifully with a liquid-like look.",
-    basePrice: 275,
+    basePrice: 110,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.9,
@@ -1218,7 +1218,7 @@ export const PRODUCTS = [
     tagline: "Bright cream-toned maple natural veneer",
     description:
       "Sourced from Northern American maple forests, featuring an ultra-smooth, fine texture and clean blonde color palette. Perfect for modern Scandinavian interiors.",
-    basePrice: 210,
+    basePrice: 100,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.7,
@@ -1245,7 +1245,7 @@ export const PRODUCTS = [
     tagline: "Warm golden Anegre soft-grained wood sheet",
     description:
       "Hails from East Africa, presenting a smooth, straw-like amber grain. Highly favored for large office walls and partitions due to its clean, uniform look.",
-    basePrice: 215,
+    basePrice: 150,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.8,
@@ -1272,7 +1272,7 @@ export const PRODUCTS = [
     tagline: "Rustic light chestnut natural face veneer",
     description:
       "Features gentle, flowing cathedrals and fine wood pores. Brings a classic, cozy European farmhouse charm to contemporary home kitchen and wardrobe shutters.",
-    basePrice: 225,
+    basePrice: 100,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.8,
@@ -1299,7 +1299,7 @@ export const PRODUCTS = [
     tagline: "Fine-grain light eucalyptus wood veneer",
     description:
       "A clean and modern option showing straight, vertical grain patterns of sustainable eucalyptus timber. Highly versatile for daily residential wardrobes and kitchen panels.",
-    basePrice: 200,
+    basePrice: 90,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.6,
@@ -1326,7 +1326,7 @@ export const PRODUCTS = [
     tagline: "Rustic knotty pine natural grain sheet",
     description:
       "Showcases beautiful, authentic wood knots and rich grain transitions. Adds a warm, cabins-in-the-woods organic texture to country-style home decors.",
-    basePrice: 190,
+    basePrice: 150,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.5,
@@ -1355,7 +1355,7 @@ export const PRODUCTS = [
     tagline: "Warm reddish-brown cherry natural wood face",
     description:
       "Showcases the timeless, rich reddish-brown patina of American Cherry wood. Develops a gorgeous deeper amber depth when exposed to natural light in your living room.",
-    basePrice: 245,
+    basePrice: 120,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.9,
@@ -1382,7 +1382,7 @@ export const PRODUCTS = [
     tagline: "Clean, silky-textured natural timber veneer",
     description:
       "Premium African Anigre wood presenting a silky surface and light golden-yellow color. Beautifully accepts custom wood oils, varnishes, and stains.",
-    basePrice: 220,
+    basePrice: 150,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.8,
@@ -1409,7 +1409,7 @@ export const PRODUCTS = [
     tagline: "Bold zebra-striped high-end decorative veneer",
     description:
       "An ultra-exotic wood featuring dramatic, swirling black-and-gold grain patterns. Makes a striking statement on conference desks, bars, and luxury hotel counters.",
-    basePrice: 320,
+    basePrice: 150,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 5.0,
@@ -1436,7 +1436,7 @@ export const PRODUCTS = [
     tagline: "Shimmering quilted maple luxury wood face",
     description:
       "Exhibits a breathtaking three-dimensional ripple wave pattern. Perfect for custom acoustic panels, premium headboards, and executive office backdrops.",
-    basePrice: 290,
+    basePrice: 190,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.9,
@@ -1463,7 +1463,7 @@ export const PRODUCTS = [
     tagline: "Thermotreated dark bibolo exotic veneer",
     description:
       "Bibolo wood roasted under controlled heat to achieve deep, rich chocolate brown colors with enhanced structural stability and rot resistance for modular kitchen surfaces.",
-    basePrice: 280,
+    basePrice: 200,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.8,
@@ -1490,7 +1490,7 @@ export const PRODUCTS = [
     tagline: "Smoked fiddleback eucalyptus premium veneer",
     description:
       "Combines the shimmer of figured eucalyptus with a rich, roasted coffee tone. Creates an incredibly luxurious, reflective wall panel look for statement lobbies.",
-    basePrice: 310,
+    basePrice: 130,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 4.9,
@@ -1517,7 +1517,7 @@ export const PRODUCTS = [
     tagline: "Artistic landscape-patterned premium wood sheet",
     description:
       "Famous for its unique 'spider-web' or 'landscape' grain lines, this highly sought-after wood is a masterpiece of natural art for high-end dining table surfaces.",
-    basePrice: 350,
+    basePrice: 190,
     unit: "sq.ft",
     thicknesses: ["4.0mm"],
     rating: 5.0,
@@ -1546,7 +1546,7 @@ export const PRODUCTS = [
     tagline: "Exotic Tigerwood thick-face natural veneer",
     description:
       "Often called Tigerwood, this extremely durable wood features dark brown streaks on a warm orange-brown body. Thick 1.5mm face allows deep sanding, carving, and heavy routing.",
-    basePrice: 360,
+    basePrice: 90,
     unit: "sq.ft",
     thicknesses: ["1.5mm thick-face wood base"],
     rating: 5.0,
@@ -1573,7 +1573,7 @@ export const PRODUCTS = [
     tagline: "Thick-cut crown patterned white oak veneer",
     description:
       "Features premium cathedral arch patterns of European White Oak. Heavy-duty 1.5mm veneer suitable for solid-feeling main door overlays and high-traffic restaurant tables.",
-    basePrice: 330,
+    basePrice: 90,
     unit: "sq.ft",
     thicknesses: ["1.5mm thick-face wood base"],
     rating: 4.8,
@@ -1600,7 +1600,7 @@ export const PRODUCTS = [
     tagline: "Cathedral grain fumed larch heavy wood sheet",
     description:
       "Larch wood fumed to a deep smoky carbon black tone, highlighting the bold, curved growth ring crowns. Resilient, heavy, and extremely modern.",
-    basePrice: 340,
+    basePrice: 110,
     unit: "sq.ft",
     thicknesses: ["1.5mm thick-face wood base"],
     rating: 4.9,
@@ -1627,7 +1627,7 @@ export const PRODUCTS = [
     tagline: "Premium Burma Teak thick crown-cut veneer",
     description:
       "The absolute pinnacle of luxury. Thick 1.5mm cut Burma Teak face showing beautiful crown grain arches. Highly resistant to termites, borers, and moisture.",
-    basePrice: 390,
+    basePrice: 80,
     unit: "sq.ft",
     thicknesses: ["1.5mm thick-face wood base"],
     rating: 5.0,
@@ -1654,7 +1654,7 @@ export const PRODUCTS = [
     tagline: "Bright textured thick-cut white ash veneer",
     description:
       "Presents bold, prominent crown rings with a clean ivory hue. Excellent for heavy sanding, coloring, staining, and creating premium open-grain finishes.",
-    basePrice: 310,
+    basePrice: 70,
     unit: "sq.ft",
     thicknesses: ["1.5mm thick-face wood base"],
     rating: 4.7,
@@ -1681,7 +1681,7 @@ export const PRODUCTS = [
     tagline: "Dappled water-droplet effect luxury veneer",
     description:
       "Pommele figure creates a beautiful dappled or 'water droplet' pattern on the wood surface, resembling rain on a window. Stunning under high-gloss mirror polish.",
-    basePrice: 380,
+    basePrice: 65,
     unit: "sq.ft",
     thicknesses: ["0.6mm face thickness"],
     rating: 4.9,
@@ -1708,7 +1708,7 @@ export const PRODUCTS = [
     tagline: "Warm mahogany-toned quilted pommele veneer",
     description:
       "Sapele wood featuring a rare pommele figure. Shimmers with rich reddish-copper waves, perfect for premium cabinetry and custom audio rooms.",
-    basePrice: 340,
+    basePrice: 70,
     unit: "sq.ft",
     thicknesses: ["0.6mm face thickness"],
     rating: 4.8,
