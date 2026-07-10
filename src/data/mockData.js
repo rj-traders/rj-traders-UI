@@ -4,7 +4,7 @@ import greenpanel from "../assets/greenpanel.webp";
 // import fevicol from "../assets/fevicol.png";
 // import sleekimg from "../assets/sleek.jpeg";
 import egmarkimg from "../assets/product-images/EG Mark 710 Plywood.webp";
-import egbondimg from "../assets/product-images/EG Bond Plywood.webp";
+// import egbondimg from "../assets/product-images/EG Bond Plywood.webp";
 import egbondBWBimg from "../assets/product-images/EG Bond (BWP).webp";
 import egbondMRimg from "../assets/product-images/EG Ply (MR).webp";
 import egedgeply from "../assets/product-images/EG Edge Plywood.webp";
@@ -450,12 +450,12 @@ export const PRODUCTS = [
     tagline: "Premium IS:710 Marine Boiling Water Proof Plywood",
     description:
       "Our top-tier structural grade plywood. Crafted with selected high-density hardwood veneers and bonded with premium undiluted phenol-formaldehyde resin. Offers extraordinary moisture immunity for extreme conditions.",
-    basePrice: 125,
+    basePrice: 86,
     unit: "sq.ft",
-    thicknesses: ["12mm", "18mm", "19mm"],
+    thicknesses: ["8mm", "12mm", "19mm"],
     stock: {
+      "8mm": 23,
       "12mm": 64,
-      "18mm": 23,
       "19mm": 91,
     },
     rating: 4.9,
@@ -483,12 +483,15 @@ export const PRODUCTS = [
     tagline: "High-Performance Waterproof Bonded Plywood",
     description:
       "Boasting optimal structural elasticity and outstanding water immunity. Crafted using high-quality synthetic phenolics to sustain extreme moisture levels without losing structural configuration.",
-    basePrice: 110,
+    basePrice: 59,
     unit: "sq.ft",
-    thicknesses: ["16mm", "19mm"],
+    thicknesses: ["6mm", "8mm", "12mm", "16mm", "19mm"],
     stock: {
+      "6mm": 14,
+      "8mm": 41,
+      "12mm": 26,
       "16mm": 46,
-      "19mm": 85,
+      "19mm": 84,
     },
     rating: 4.8,
     reviews: 142,
@@ -507,37 +510,37 @@ export const PRODUCTS = [
       "Zero Warpage Guarantee",
     ],
   },
-  {
-    id: "ply-eg-bond",
-    category: "plywood",
-    brand: "egply",
-    name: "EG Bond Plywood",
-    tagline: "Premium Structural Synthetic Resin Bonded Plywood",
-    description:
-      "Specially engineered using optimized wood veneer layers bonded with premium synthetic adhesive. Delivers superb load-bearing capacity and durability for residential furniture frameworks.",
-    basePrice: 98,
-    unit: "sq.ft",
-    thicknesses: ["6mm", "8mm", "12mm"],
-    stock: {
-      "6mm": 14,
-      "8mm": 41,
-      "12mm": 26,
-    },
-    rating: 4.7,
-    reviews: 121,
-    image: egbondimg,
-    specs: {
-      "Core Wood": "Eucalyptus & Selected Hardwoods",
-      Resin: "Fortified Synthetic Resin",
-      "Glue Shear Strength": "> 1200 N",
-      "Moisture Content": "9% - 12%",
-    },
-    features: [
-      "Excellent Mechanical Strength",
-      "High Core Density",
-      "Superior Surface Flatness",
-    ],
-  },
+  // {
+  //   id: "ply-eg-bond",
+  //   category: "plywood",
+  //   brand: "egply",
+  //   name: "EG Bond Plywood",
+  //   tagline: "Premium Structural Synthetic Resin Bonded Plywood",
+  //   description:
+  //     "Specially engineered using optimized wood veneer layers bonded with premium synthetic adhesive. Delivers superb load-bearing capacity and durability for residential furniture frameworks.",
+  //   basePrice: 98,
+  //   unit: "sq.ft",
+  //   thicknesses: ["6mm", "8mm", "12mm"],
+  //   stock: {
+  //     "6mm": 14,
+  //     "8mm": 41,
+  //     "12mm": 26,
+  //   },
+  //   rating: 4.7,
+  //   reviews: 121,
+  //   image: egbondimg,
+  //   specs: {
+  //     "Core Wood": "Eucalyptus & Selected Hardwoods",
+  //     Resin: "Fortified Synthetic Resin",
+  //     "Glue Shear Strength": "> 1200 N",
+  //     "Moisture Content": "9% - 12%",
+  //   },
+  //   features: [
+  //     "Excellent Mechanical Strength",
+  //     "High Core Density",
+  //     "Superior Surface Flatness",
+  //   ],
+  // },
   {
     id: "ply-eg-ply-mr",
     category: "plywood",
@@ -577,11 +580,11 @@ export const PRODUCTS = [
     tagline: "Extreme Precision Calibrated Edging Board",
     description:
       "A special-dimension calibrated panel showcasing supreme edge-holding strength. Best suited for high-accuracy modern architectural framing where precise corner joints are paramount.",
-    basePrice: 75,
+    basePrice: 96,
     unit: "sq.ft",
-    thicknesses: ["15mm"],
+    thicknesses: ["19mm"],
     stock: {
-      "15mm": 101,
+      "19mm": 101,
     },
     rating: 4.7,
     reviews: 104,
