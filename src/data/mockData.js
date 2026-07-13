@@ -40,6 +40,17 @@ import linklogo from "../assets/our-brand/links.webp";
 import egplyLogo from "../assets/our-brand/eg-ply-certified-polywoods.webp";
 import fevicolLogo from "../assets/our-brand/fevicol.webp";
 
+// RJ Shop Gallery Images
+import rjBathroomAccessories from "../assets/rj-gallery/Bathroom Accessories.webp";
+import rjDoorLockSet from "../assets/rj-gallery/Door Lock Set.webp";
+import rjEdgeTapes from "../assets/rj-gallery/Edge Tapes.webp";
+import rjGProfiles from "../assets/rj-gallery/G-Profiles.webp";
+import rjHandles from "../assets/rj-gallery/Handles.webp";
+import rjLouvers1 from "../assets/rj-gallery/Louvers 1.webp";
+import rjLouvers from "../assets/rj-gallery/Louvers.webp";
+import rjPlywoods from "../assets/rj-gallery/Plywoods.webp";
+import rjVeneers from "../assets/rj-gallery/Veneers.webp";
+
 // Ebco Product Images
 import ebcoHingesNormal from "../assets/ebco-images/hinges-normal.webp";
 import ebcoHingesSoftClose from "../assets/ebco-images/hinges-soft-close.webp";
@@ -4811,44 +4822,74 @@ export const TIMELINE_EVENTS = [
 export const GALLERY_PHOTOS = [
   {
     id: 1,
-    title: "Luxury Veneered Ceiling",
-    category: "interior",
-    image:
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800",
+    title: "Premium Calibrated Plywoods",
+    category: "plywood",
+    image: rjPlywoods,
+    description:
+      "Our core inventory of high-density calibrated hardwood plywoods, marine grade blockboards, and flush doors, built for maximum water resistance and load-bearing strength.",
   },
   {
     id: 2,
-    title: "Premium Modular Kitchen",
-    category: "kitchen",
-    image:
-      "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&q=80&w=800",
+    title: "Exotic Natural Wood Veneers",
+    category: "veneers",
+    image: rjVeneers,
+    description:
+      "A wide display of premium natural wood veneers showing off rich timber grains, perfect for main doors, feature walls, and luxury office cabin furniture.",
   },
   {
     id: 3,
-    title: "3D CNC Routed HDMR Panel",
-    category: "panels",
-    image:
-      "https://images.unsplash.com/photo-1610557892470-76d747eed00b?auto=format&fit=crop&q=80&w=800",
+    title: "Designer Cladding Louvers (Style A)",
+    category: "louvers",
+    image: rjLouvers,
+    description:
+      "Premium charcoal and wooden louvers designed to create rich 3D textures on TV backdrops, lobby walls, and executive boardrooms.",
   },
   {
     id: 4,
-    title: "Acrylic Soft-Close Cabinetry",
-    category: "kitchen",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+    title: "Designer Cladding Louvers (Style B)",
+    category: "louvers",
+    image: rjLouvers1,
+    description:
+      "Alternative patterns of stylish fluted panels and wall louvers that add warmth and high-end visual appeal to contemporary commercial and home spaces.",
   },
   {
     id: 5,
-    title: "Fumed Oak Office Panelling",
-    category: "office",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+    title: "Luxury Cabinet Pulls & Handles",
+    category: "hardware",
+    image: rjHandles,
+    description:
+      "A gorgeous array of solid brass, zinc alloy, and rose gold finished cabinet pulls, wardrobe handles, and knobs for premium modular furniture.",
   },
   {
     id: 6,
-    title: "Exotic Teak Wardrobe Finish",
-    category: "interior",
-    image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
+    title: "High-Security Mortise Lock Sets",
+    category: "hardware",
+    image: rjDoorLockSet,
+    description:
+      "Premium mechanical locksets and handles featuring double throw bolts, anti-pick dimple keys, and high physical resistance from leading security brands.",
+  },
+  {
+    id: 7,
+    title: "Premium Stainless Steel Bath Accessories",
+    category: "hardware",
+    image: rjBathroomAccessories,
+    description:
+      "Heavy-duty anti-corrosive bathroom fittings, multipurpose towel bars, corner liquid soap dispensers, and modular glass shelves.",
+  },
+  {
+    id: 8,
+    title: "Anodized Metallic G-Profiles",
+    category: "hardware",
+    image: rjGProfiles,
+    description:
+      "Modern cabinet profile handles and channel solutions designed for handleless modular kitchens, wardrobe frames, and office shelving.",
+  },
+  {
+    id: 9,
+    title: "Matching PVC Edge Banding Tapes",
+    category: "veneers",
+    image: rjEdgeTapes,
+    description:
+      "High-grade PVC edge tapes in vibrant solid colors and matching woodgrain textures, ensuring a clean, seamless, moisture-proof edge finish on boards.",
   },
 ];
