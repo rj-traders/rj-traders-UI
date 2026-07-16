@@ -9,8 +9,15 @@ import {
   Users,
 } from "lucide-react";
 import HeroSection from "./HeroSection";
+import useSEO from "../hooks/useSEO";
 
 export default function HomePage({ categories, products, testimonials }) {
+  useSEO({
+    title: "Home",
+    description: "RJ Plywood and Hardwares is Madurai's leading supplier of premium calibrated marine plywood, decorative laminates, natural wood veneers, modular kitchen fittings, and architectural hardware. Trusted by over 10,000 customers.",
+    keywords: "plywood in madurai, hardware shop madurai, calibrated plywood, marine plywood, greenply, century ply, veneer sheet, modular kitchen fittings, ebco hardware, drawer channels, door lock set"
+  });
+
   const navigate = useNavigate();
   const [stats] = useState({
     clients: 10000,

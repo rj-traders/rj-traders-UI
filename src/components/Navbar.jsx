@@ -50,7 +50,7 @@ export default function Navbar() {
             <div className="relative flex items-center justify-center w-12 h-12 rounded-xl text-white transition-transform duration-300">
               <img
                 src={rjLogoNew}
-                alt="logo"
+                alt="RJ Plywood & Hardwares Logo"
                 className="w-full h-full rounded-lg object-contain"
               />
               <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-orange-700 rounded-md flex items-center justify-center text-[8px] font-bold">

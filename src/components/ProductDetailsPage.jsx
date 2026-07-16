@@ -10,6 +10,7 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import { PRODUCTS } from "../data/mockData";
+import useSEO from "../hooks/useSEO";
 
 export default function ProductDetailsPage() {
   const { id } = useParams();
@@ -18,6 +19,16 @@ export default function ProductDetailsPage() {
   const product = useMemo(() => {
     return PRODUCTS.find((p) => p.id === id);
   }, [id]);
+
+  useSEO({
+    title: product ? `${product.name} | Premium ${product.category}` : "Product Details",
+    description: product
+      ? `${product.tagline || ""}. ${product.description || ""}`
+      : "View premium interior products and details.",
+    keywords: product
+      ? `${product.name}, ${product.category}, ${product.brand || ""}, rj plywood, plywood madurai, architectural hardware madurai`
+      : "plywood madurai, hardware madurai"
+  });
 
   const [selectedThickness, setSelectedThickness] = useState("");
   const [selectedSize, setSelectedSize] = useState("");

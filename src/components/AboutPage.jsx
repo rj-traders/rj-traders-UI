@@ -1,7 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import { ShieldCheck, Award, Users, ArrowLeft } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 export default function AboutPage({ timeline, brands }) {
+  useSEO({
+    title: "About Our Heritage",
+    description: "Since 2005, RJ Plywood and Hardwares has provided high-density calibrated marine plywood, wood veneers, decorative laminates, and premium architectural hardware in Madurai.",
+    keywords: "rj plywood story, modular kitchen fittings supplier, plywood store history madurai, rj traders madurai, architectural hardware"
+  });
+
   const navigate = useNavigate();
 
   return (

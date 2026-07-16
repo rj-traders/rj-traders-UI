@@ -2,8 +2,17 @@ import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { CheckCircle, MapPin, Phone, Clock, ArrowLeft } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 export default function ContactPage() {
+  useSEO({
+    title: "Contact Help Desk",
+    description:
+      "Get in touch with RJ Plywood & Hardwares in Madurai. Contact us for custom quotes, material consultations, and store yard directions.",
+    keywords:
+      "contact rj plywood, rj plywood phone number, rj hardware address, plywood shop in k pudur, buy calibrated plywood madurai",
+  });
+
   const navigate = useNavigate();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [submittedName, setSubmittedName] = useState("");
@@ -21,8 +30,9 @@ export default function ContactPage() {
     defaultValues: {
       name: "",
       phone: "",
-      email: "",
-      subject: "product-inquiry",
+      // email: "",
+      // subject: "product-inquiry",
+      address: "",
       message: "",
     },
   });
@@ -90,7 +100,7 @@ export default function ContactPage() {
                   {/* Name Input Field */}
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-500 uppercase">
-                      Your Full Name:
+                      Your Full Name: <span className="text-red-500">*</span>
                     </label>
                     <Controller
                       name="name"
@@ -116,26 +126,28 @@ export default function ContactPage() {
                     )}
                   </div>
 
-                  {/* Phone Input Field */}
+                  {/* Mobile Input Field */}
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-500 uppercase">
-                      Phone Number:
+                      Mobile Number: <span className="text-red-500">*</span>
                     </label>
                     <Controller
                       name="phone"
                       control={control}
                       rules={{
-                        required: "Phone number is required",
+                        required: "Mobile number is required",
                         pattern: {
-                          value: /^[0-9+\s-]{10,15}$/,
-                          message: "Please enter a valid phone number",
+                          value: /^[0-9]{10}$/,
+                          message:
+                            "Mobile number must be exactly 10 digits and contain numbers only",
                         },
                       }}
                       render={({ field }) => (
                         <input
                           {...field}
-                          type="tel"
-                          placeholder="e.g. +91 9876543210"
+                          type="text"
+                          maxLength={10}
+                          placeholder="e.g. 9876543210"
                           className={`w-full p-3 bg-slate-50 border ${
                             errors.phone
                               ? "border-red-500 focus:border-red-500"
@@ -152,8 +164,8 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {/* Email Input Field */}
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  Email Input Field
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-500 uppercase">
                       Email Address (Optional):
@@ -187,7 +199,7 @@ export default function ContactPage() {
                     )}
                   </div>
 
-                  {/* Dropdown Menu Select Field */}
+                  Dropdown Menu Select Field
                   <div className="space-y-1.5">
                     <label className="text-xs font-bold text-slate-500 uppercase">
                       Inquiry Subject:
@@ -216,12 +228,41 @@ export default function ContactPage() {
                       )}
                     />
                   </div>
-                </div>
+                </div> */}
 
-                {/* Textarea Field */}
+                {/* Address Input Field */}
                 <div className="space-y-1.5">
                   <label className="text-xs font-bold text-slate-500 uppercase">
-                    Your Message &amp; Required Volumes:
+                    Your Address: <span className="text-red-500">*</span>
+                  </label>
+                  <Controller
+                    name="address"
+                    control={control}
+                    rules={{ required: "Address is required" }}
+                    render={({ field }) => (
+                      <textarea
+                        {...field}
+                        rows="2"
+                        placeholder="e.g. No. 45, West Street, K Pudur, Madurai"
+                        className={`w-full p-3 bg-slate-50 border ${
+                          errors.address
+                            ? "border-red-500 focus:border-red-500"
+                            : "border-slate-200 focus:border-amber-500"
+                        } rounded-xl text-sm focus:outline-none transition-all text-slate-800`}
+                      />
+                    )}
+                  />
+                  {errors.address && (
+                    <p className="text-xs font-semibold text-red-500">
+                      {errors.address.message}
+                    </p>
+                  )}
+                </div>
+
+                {/* Message Field (Not Mandatory) */}
+                <div className="space-y-1.5">
+                  <label className="text-xs font-bold text-slate-500 uppercase">
+                    Your Message &amp; Required Volumes (Optional):
                   </label>
                   <Controller
                     name="message"
@@ -229,7 +270,7 @@ export default function ContactPage() {
                     render={({ field }) => (
                       <textarea
                         {...field}
-                        rows="4"
+                        rows="3"
                         placeholder="Tell us details of your kitchen wardrobe sizes or total plywood boards you want to purchase..."
                         className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-amber-500 transition-all text-slate-800"
                       />
@@ -275,14 +316,23 @@ export default function ContactPage() {
               {!showDirectContact && (
                 <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-6 bg-slate-950/85 backdrop-blur-md text-center select-none animate-fadeIn">
                   <MapPin className="w-12 h-12 text-amber-500 mb-3 animate-pulse" />
-                  <h4 className="text-white font-black text-lg mb-2">Location &amp; Address Locked</h4>
+                  <h4 className="text-white font-black text-lg mb-2">
+                    Location &amp; Address Locked
+                  </h4>
                   <p className="text-slate-300 text-xs leading-relaxed max-w-[280px]">
-                    To protect address and contact info, please fill out and submit the Electronic Query form on the left.
+                    To protect address and contact info, please fill out and
+                    submit the Electronic Query form on the left.
                   </p>
                 </div>
               )}
 
-              <div className={!showDirectContact ? "filter blur-[3px] select-none pointer-events-none transition-all duration-300" : "transition-all duration-300"}>
+              <div
+                className={
+                  !showDirectContact
+                    ? "filter blur-[3px] select-none pointer-events-none transition-all duration-300"
+                    : "transition-all duration-300"
+                }
+              >
                 <h3 className="text-lg font-bold border-b border-slate-800 pb-3 text-amber-400">
                   Direct Contact Hub
                 </h3>
@@ -297,8 +347,8 @@ export default function ContactPage() {
                         Head Office &amp; Yard:
                       </strong>
                       <span className="text-slate-400">
-                        No. 153/2, SRH Building, Alagar Kovil Mian Road, K Pudur,
-                        Madurai
+                        No. 153/2, SRH Building, Alagar Kovil Mian Road, K
+                        Pudur, Madurai
                       </span>
                     </div>
                   </li>
@@ -308,7 +358,9 @@ export default function ContactPage() {
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
-                      <strong className="block text-slate-300">Hotlines:</strong>
+                      <strong className="block text-slate-300">
+                        Hotlines:
+                      </strong>
                       <a
                         href="tel:+918072808083"
                         className="block text-amber-400 font-bold hover:underline"
@@ -360,14 +412,22 @@ export default function ContactPage() {
               {!showDirectContact && (
                 <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-4 bg-white/80 backdrop-blur-md text-center select-none animate-fadeIn">
                   <MapPin className="w-8 h-8 text-amber-500 mb-1 animate-pulse" />
-                  <h4 className="text-slate-900 font-bold text-xs">GPS Coordinates Locked</h4>
+                  <h4 className="text-slate-900 font-bold text-xs">
+                    GPS Coordinates Locked
+                  </h4>
                   <p className="text-slate-500 text-[10px] max-w-[200px] mt-0.5">
                     Submit the form to unlock GPS navigation and directions.
                   </p>
                 </div>
               )}
 
-              <div className={!showDirectContact ? "filter blur-[3px] select-none pointer-events-none transition-all duration-300" : "transition-all duration-300"}>
+              <div
+                className={
+                  !showDirectContact
+                    ? "filter blur-[3px] select-none pointer-events-none transition-all duration-300"
+                    : "transition-all duration-300"
+                }
+              >
                 <span className="text-xs uppercase font-bold tracking-wider text-slate-400">
                   Store GPS Coordinates
                 </span>
@@ -403,7 +463,9 @@ export default function ContactPage() {
                 Query Received!
               </h3>
               <p className="text-xs text-slate-500 leading-relaxed">
-                Thank you for submitting your details. The <strong>Direct Contact Hub</strong> has been successfully unlocked for you!
+                Thank you for submitting your details. The{" "}
+                <strong>Direct Contact Hub</strong> has been successfully
+                unlocked for you!
               </p>
             </div>
             <button

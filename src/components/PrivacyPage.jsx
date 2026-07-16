@@ -1,7 +1,14 @@
 import { Link, useNavigate } from "react-router-dom";
 import { ShieldCheck, ChevronRight, ArrowLeft } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 export default function PrivacyPage() {
+  useSEO({
+    title: "Privacy Policy",
+    description: "Read the Privacy Policy of RJ Plywood & Hardwares. Learn how we handle customer inquiry information and safeguard data.",
+    keywords: "rj plywood privacy, privacy policy, data safety"
+  });
+
   const navigate = useNavigate();
 
   return (

@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { BRANDS } from "../data/mockData";
 import { CentralTransitionLoader } from "./Loader";
+import useSEO from "../hooks/useSEO";
 
 export default function ProductsPage({ categories, products }) {
   const { categoryId } = useParams();
@@ -25,6 +26,16 @@ export default function ProductsPage({ categories, products }) {
   const [isLoading, setIsLoading] = useState(false);
 
   const activeCategoryFilter = categoryId || "all";
+
+  // Dynamic SEO based on active category
+  const activeCategoryObj = categories.find((c) => c.id === activeCategoryFilter);
+  const categoryName = activeCategoryObj ? activeCategoryObj.name : "All Products";
+
+  useSEO({
+    title: `${categoryName} | Product Catalog`,
+    description: `Browse our premium range of ${categoryName.toLowerCase()} products in Madurai. RJ Plywood & Hardwares delivers quality calibrated plywood, architectural fittings, and luxury laminates.`,
+    keywords: `${categoryName.toLowerCase()} in madurai, ${categoryName.toLowerCase()} supplier, rj plywood ${activeCategoryFilter}, architectural materials madurai`
+  });
   const brandFilter = searchParams.get("brand");
 
   const setActiveCategoryFilter = (catId) => {

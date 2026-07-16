@@ -10,8 +10,15 @@ import {
   Layers,
   ArrowLeft,
 } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 export default function BrandsPage() {
+  useSEO({
+    title: "Authorized Brands Catalog",
+    description: "Explore the global and national partner brands of RJ Plywood and Hardwares in Madurai: Greenply, CenturyPly, Ebco, Godrej, Europa, Asian Paints Sleek, and more.",
+    keywords: "greenply dealer madurai, centuryply supplier, ebco hardware distributor, godrej locks madurai, sleek modular kitchen channel, wood hardware brands"
+  });
+
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedBrand, setSelectedBrand] = useState(null);

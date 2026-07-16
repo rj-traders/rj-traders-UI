@@ -1,7 +1,14 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Award, ChevronRight, ArrowLeft } from "lucide-react";
+import useSEO from "../hooks/useSEO";
 
 export default function TermsPage() {
+  useSEO({
+    title: "Terms & Conditions",
+    description: "Read the Terms & Conditions of RJ Plywood & Hardwares. Review shipping, pricing, and consultation service agreements.",
+    keywords: "rj plywood terms, terms of service, customer agreement"
+  });
+
   const navigate = useNavigate();
 
   return (

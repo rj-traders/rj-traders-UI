@@ -2,8 +2,15 @@ import { useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { Maximize2, X, ArrowLeft } from "lucide-react";
 import { GALLERY_PHOTOS } from "../data/mockData";
+import useSEO from "../hooks/useSEO";
 
 export default function GalleryPage() {
+  useSEO({
+    title: "Design Inspiration Gallery",
+    description: "Browse our dynamic product display gallery. Get inspiration for your home and commercial interiors with natural veneers, handles, wood panel louvers, and calibrated plywood.",
+    keywords: "plywood showroom madurai, wood design gallery, louvers backdrop design, kitchen profile handles, door locks display, interior hardware ideas"
+  });
+
   const navigate = useNavigate();
   const [filter, setFilter] = useState("all");
   const [lightboxImage, setLightboxImage] = useState(null);
