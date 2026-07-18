@@ -12,16 +12,26 @@ import { useEffect } from "react";
  * @param {string} [seoOptions.ogImage] - Social share image URL.
  * @param {string} [seoOptions.ogType] - Open Graph type (defaults to 'website').
  */
-export default function useSEO({ title, description, keywords, canonical, ogImage, ogType }) {
+export default function useSEO({
+  title,
+  description,
+  keywords,
+  canonical,
+  ogImage,
+  ogType,
+}) {
   useEffect(() => {
     // 1. Update Document Title
-    const baseTitle = "RJ Plywood & Hardwares | Plywood, Hardware & Laminates in Madurai";
+    const baseTitle =
+      "RJ Plywood & Hardwares | Plywood, Hardware & Laminates in Madurai";
     document.title = title ? `${title} | RJ Plywood & Hardwares` : baseTitle;
 
     // 2. Helper to get or create meta tags
     const setMetaTag = (attributeName, attributeValue, content) => {
       if (content === undefined || content === null) return;
-      let element = document.querySelector(`meta[${attributeName}="${attributeValue}"]`);
+      let element = document.querySelector(
+        `meta[${attributeName}="${attributeValue}"]`,
+      );
       if (!element) {
         element = document.createElement("meta");
         element.setAttribute(attributeName, attributeValue);
@@ -31,23 +41,34 @@ export default function useSEO({ title, description, keywords, canonical, ogImag
     };
 
     // 3. Set standard descriptions, keywords
-    const descContent = description || "RJ Plywood and Hardwares is Madurai's leading supplier of premium calibrated marine plywood, decorative laminates, wood veneers, modular kitchen fittings, and architectural hardware.";
-    const keywordsStr = Array.isArray(keywords) 
-      ? keywords.join(", ") 
-      : keywords || "plywood in madurai, hardware shop madurai, calibrated plywood, marine plywood, greenply, century ply, veneer sheet, modular kitchen fittings, ebco hardware, drawer channels, door lock set";
+    const descContent =
+      description ||
+      "RJ Plywood and Hardwares is Madurai's leading supplier of premium calibrated marine plywood, decorative laminates, wood veneers, modular kitchen fittings, and architectural hardware.";
+    const keywordsStr = Array.isArray(keywords)
+      ? keywords.join(", ")
+      : keywords ||
+        "plywood in madurai, hardware shop madurai, calibrated plywood, marine plywood, greenply, century ply, veneer sheet, modular kitchen fittings, ebco hardware, drawer channels, door lock set";
 
     setMetaTag("name", "description", descContent);
     setMetaTag("name", "keywords", keywordsStr);
 
     // 4. Set Open Graph tags
-    setMetaTag("property", "og:title", title ? `${title} | RJ Plywood & Hardwares` : "RJ Plywood & Hardwares");
+    setMetaTag(
+      "property",
+      "og:title",
+      title ? `${title} | RJ Plywood & Hardwares` : "RJ Plywood & Hardwares",
+    );
     setMetaTag("property", "og:description", descContent);
     setMetaTag("property", "og:image", ogImage || "/main-logo.png");
     setMetaTag("property", "og:type", ogType || "website");
     setMetaTag("property", "og:url", window.location.href);
 
     // 5. Set Twitter tags
-    setMetaTag("name", "twitter:title", title ? `${title} | RJ Plywood & Hardwares` : "RJ Plywood & Hardwares");
+    setMetaTag(
+      "name",
+      "twitter:title",
+      title ? `${title} | RJ Plywood & Hardwares` : "RJ Plywood & Hardwares",
+    );
     setMetaTag("name", "twitter:description", descContent);
     setMetaTag("name", "twitter:image", ogImage || "/main-logo.png");
     setMetaTag("name", "twitter:card", "summary_large_image");

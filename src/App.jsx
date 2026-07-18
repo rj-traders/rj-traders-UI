@@ -34,7 +34,8 @@ function ScrollToTop() {
 }
 
 export default function App() {
-  const [showPreloader, setShowPreloader] = useState(true);
+  // const [showPreloader, setShowPreloader] = useState(true);
+  const [showPreloader, setShowPreloader] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
 
@@ -48,9 +49,11 @@ export default function App() {
     return () => clearTimeout(timer);
   }, [location.pathname, showPreloader]);
 
+  /*
   if (showPreloader) {
     return <Preloader onComplete={() => setShowPreloader(false)} />;
   }
+  */
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans flex flex-col antialiased selection:bg-amber-500 selection:text-white">
