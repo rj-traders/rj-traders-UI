@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/rj-logo-new.png" />
+    <!-- Favicons (Google reads /favicon.ico first, then rel="icon") -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="canonical" href="https://rjplywoodandhardwares.com/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -59,6 +64,33 @@
       content="https://rjplywoodandhardwares.com/rj-logo-new.png"
     />
 
+    <!-- Structured Data: WebSite -> controls the site name Google shows in search -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "RJ Plywood and Hardwares",
+        "alternateName": ["RJ Plywood & Hardwares", "RJ Plywood"],
+        "url": "https://rjplywoodandhardwares.com/"
+      }
+    </script>
+
+    <!-- Structured Data: Organization -> logo used for the search result icon -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RJ Plywood and Hardwares",
+        "url": "https://rjplywoodandhardwares.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://rjplywoodandhardwares.com/favicon-192.png",
+          "width": 192,
+          "height": 192
+        }
+      }
+    </script>
+
     <!-- Structured Data (JSON-LD Schema) for LocalBusiness & Organization -->
     <script type="application/ld+json">
       {
@@ -90,7 +122,7 @@
           "opens": "09:30",
           "closes": "08:30"
         },
-        "sameAs": ["", "https://rjplywoodandhardwares.com"]
+        "sameAs": ["https://rjplywoodandhardwares.com"]
       }
     </script>
   </head>

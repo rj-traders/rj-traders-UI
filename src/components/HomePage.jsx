@@ -11,6 +11,35 @@ import {
 import HeroSection from "./HeroSection";
 import useSEO from "../hooks/useSEO";
 
+// Avatar that falls back to the person's initial when the image is missing or fails to load
+function TestimonialAvatar({ src, name }) {
+  const [failed, setFailed] = useState(false);
+  const initial = name?.trim().charAt(0).toUpperCase() || "?";
+
+  if (!src || failed) {
+    return (
+      <div
+        role="img"
+        aria-label={name}
+        className="w-12 h-12 shrink-0 rounded-full border border-slate-200 bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center select-none"
+      >
+        <span className="text-lg font-bold leading-none text-white">
+          {initial}
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={src}
+      alt={name}
+      onError={() => setFailed(true)}
+      className="w-12 h-12 shrink-0 rounded-full object-cover border border-slate-200"
+    />
+  );
+}
+
 export default function HomePage({ categories, products, testimonials }) {
   useSEO({
     title: "Home",
@@ -478,11 +507,7 @@ export default function HomePage({ categories, products, testimonials }) {
                 </div>
 
                 <div className="flex items-center gap-4 mt-6 pt-6 border-t border-slate-200/60">
-                  <img
-                    src={test.avatar}
-                    alt={test.name}
-                    className="w-12 h-12 rounded-full object-cover border border-slate-200"
-                  />
+                  <TestimonialAvatar src={test.avatar} name={test.name} />
                   <div>
                     <h4 className="text-sm font-bold text-slate-900">
                       {test.name}
