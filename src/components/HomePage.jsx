@@ -484,7 +484,6 @@ export default function HomePage({ categories, products, testimonials }) {
                     "{test.text}"
                   </p>
                 </div>
-
                 <div className="flex items-center gap-4 mt-6 pt-6 border-t border-slate-200/60">
                   <TestimonialAvatar src={test.avatar} name={test.name} />
                   <div>
@@ -507,7 +506,6 @@ export default function HomePage({ categories, products, testimonials }) {
         {/* Colorful Gradients */}
         <div className="absolute inset-0 bg-gradient-to-r from-amber-600/10 via-orange-600/10 to-transparent pointer-events-none" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-[100px] pointer-events-none" />
-
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
             Planning a Premium Home renovation?
