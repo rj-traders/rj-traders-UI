@@ -28,13 +28,17 @@ export default function ProductsPage({ categories, products }) {
   const activeCategoryFilter = categoryId || "all";
 
   // Dynamic SEO based on active category
-  const activeCategoryObj = categories.find((c) => c.id === activeCategoryFilter);
-  const categoryName = activeCategoryObj ? activeCategoryObj.name : "All Products";
+  const activeCategoryObj = categories.find(
+    (c) => c.id === activeCategoryFilter,
+  );
+  const categoryName = activeCategoryObj
+    ? activeCategoryObj.name
+    : "All Products";
 
   useSEO({
     title: `${categoryName} | Product Catalog`,
     description: `Browse our premium range of ${categoryName.toLowerCase()} products in Madurai. RJ Plywood & Hardwares delivers quality calibrated plywood, architectural fittings, and luxury laminates.`,
-    keywords: `${categoryName.toLowerCase()} in madurai, ${categoryName.toLowerCase()} supplier, rj plywood ${activeCategoryFilter}, architectural materials madurai`
+    keywords: `${categoryName.toLowerCase()} in madurai, ${categoryName.toLowerCase()} supplier, rj plywood ${activeCategoryFilter}, architectural materials madurai`,
   });
   const brandFilter = searchParams.get("brand");
 
@@ -130,7 +134,7 @@ export default function ProductsPage({ categories, products }) {
           <p className="text-slate-600 mt-2">
             Explore 12 supreme-quality carpentry items, structured across our
             six premium divisions. Select a material to dive deep into custom
-            thickness variants, spec sheets, and price metrics.
+            thickness variants, spec sheets, and technical parameters.
           </p>
         </div>
 
@@ -445,20 +449,8 @@ Thank you!`,
                       )}
                     </div>
 
-                    {/* Price & Primary Action */}
-                    <div className="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
-                      <div>
-                        <span className="block text-[10px] text-slate-400 uppercase font-bold tracking-wider">
-                          Starting Price
-                        </span>
-                        <span className="text-lg font-black text-slate-900">
-                          ₹{prod.basePrice}
-                          <span className="text-xs font-medium text-slate-500">
-                            /{prod.unit}
-                          </span>
-                        </span>
-                      </div>
-
+                    {/* Primary Action */}
+                    <div className="mt-6 pt-5 border-t border-slate-100 flex items-center justify-end">
                       <Link
                         to={`/products/${prod.id}`}
                         className="px-4 py-2.5 rounded-xl bg-slate-950 text-white group-hover:bg-amber-500 group-hover:text-slate-950 font-bold text-xs transition-all flex items-center gap-1 shadow-sm text-center"

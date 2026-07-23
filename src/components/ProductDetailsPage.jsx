@@ -21,13 +21,15 @@ export default function ProductDetailsPage() {
   }, [id]);
 
   useSEO({
-    title: product ? `${product.name} | Premium ${product.category}` : "Product Details",
+    title: product
+      ? `${product.name} | Premium ${product.category}`
+      : "Product Details",
     description: product
       ? `${product.tagline || ""}. ${product.description || ""}`
       : "View premium interior products and details.",
     keywords: product
       ? `${product.name}, ${product.category}, ${product.brand || ""}, rj plywood, plywood madurai, architectural hardware madurai`
-      : "plywood madurai, hardware madurai"
+      : "plywood madurai, hardware madurai",
   });
 
   const [selectedThickness, setSelectedThickness] = useState("");
@@ -223,11 +225,14 @@ export default function ProductDetailsPage() {
               </h3>
               <div className="bg-slate-50 border border-slate-100 rounded-xl overflow-hidden divide-y divide-slate-100">
                 {Object.entries(product.specs).map(([label, val]) => (
-                  <div key={label} className="grid grid-cols-12 p-3 text-xs">
-                    <span className="col-span-5 font-bold text-slate-500 uppercase">
+                  <div
+                    key={label}
+                    className="flex flex-col sm:grid sm:grid-cols-12 p-3 text-xs gap-1 sm:gap-0"
+                  >
+                    <span className="sm:col-span-5 font-bold text-slate-500 uppercase">
                       {label}
                     </span>
-                    <span className="col-span-7 font-semibold text-slate-800">
+                    <span className="sm:col-span-7 font-semibold text-slate-800">
                       {val}
                     </span>
                   </div>
@@ -237,9 +242,9 @@ export default function ProductDetailsPage() {
 
             {/* Selector Options & Pricing Engine */}
             <div className="p-6 rounded-2xl bg-slate-50 border border-slate-100 space-y-6">
-              <h3 className="text-sm font-black text-slate-900 border-b border-slate-200/60 pb-2">
+              {/* <h3 className="text-sm font-black text-slate-900 border-b border-slate-200/60 pb-2">
                 Material Selector &amp; Estimator
-              </h3>
+              </h3> */}
 
               {/* Size Selector if exits */}
               {product.sizes && (
@@ -269,7 +274,7 @@ export default function ProductDetailsPage() {
               {product.thicknesses && (
                 <div className="space-y-2">
                   <label className="block text-xs font-bold text-slate-500 uppercase">
-                    Select Calibrated Thickness:
+                    Available Thickness:
                   </label>
                   <div className="flex flex-wrap gap-2">
                     {product.thicknesses.map((th) => (
@@ -290,7 +295,7 @@ export default function ProductDetailsPage() {
               )}
 
               {/* Quantity Changer */}
-              <div className="flex items-center justify-between gap-4 pt-2">
+              {/* <div className="pt-2">
                 <div className="space-y-1">
                   <label className="block text-xs font-bold text-slate-500 uppercase">
                     Project Requirement Volume:
@@ -322,19 +327,16 @@ export default function ProductDetailsPage() {
                     </span>
                   </div>
                 </div>
-
-                <div className="text-right">
-                  <span className="block text-xs text-slate-400 font-bold uppercase">
-                    Estimated Base Cost
-                  </span>
-                  <span className="text-2xl font-black text-slate-900">
-                    ₹{calculatedPrice.toLocaleString()}
-                  </span>
-                </div>
-              </div>
+              </div> */}
 
               {/* WhatsApp Enquiry Block */}
-              <div className="pt-4 border-t border-slate-200/60 space-y-4">
+              <div
+                className={`pt-4 space-y-4 ${
+                  product.category !== "hardware"
+                    ? "border-t border-slate-200/60"
+                    : ""
+                }`}
+              >
                 <p className="text-xs text-slate-500 italic">
                   Click the button below to enquire about this product directly
                   on WhatsApp. We will connect with you immediately to discuss
@@ -346,10 +348,6 @@ export default function ProductDetailsPage() {
                     `Hello! I would like to enquire about the following product:
 - Product: ${product.name}
 - Category: ${product.category}
-${selectedThickness ? `- Selected Thickness: ${selectedThickness}` : ""}
-${selectedSize ? `- Selected Size: ${selectedSize}` : ""}
-- Quantity: ${quantity} ${product.unit}(s)
-- Estimated Price: ₹${calculatedPrice.toLocaleString()}
 
 Link: ${window.location.href}`,
                   )}`}
@@ -391,10 +389,7 @@ Link: ${window.location.href}`,
                   <p className="text-xs text-amber-600 font-medium mt-0.5">
                     {p.tagline}
                   </p>
-                  <div className="flex items-center justify-between mt-4 pt-3 border-t border-slate-100">
-                    <span className="text-xs font-black text-slate-900">
-                      ₹{p.basePrice}/{p.unit}
-                    </span>
+                  <div className="flex items-center justify-end mt-4 pt-3 border-t border-slate-100">
                     <span className="text-[10px] text-amber-600 font-extrabold uppercase">
                       View Specs
                     </span>

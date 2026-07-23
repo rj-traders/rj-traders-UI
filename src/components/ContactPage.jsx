@@ -110,7 +110,7 @@ export default function ContactPage() {
                         <input
                           {...field}
                           type="text"
-                          placeholder="e.g. Anand Kumar"
+                          placeholder="Enter Your Name"
                           className={`w-full p-3 bg-slate-50 border ${
                             errors.name
                               ? "border-red-500 focus:border-red-500"
@@ -147,7 +147,7 @@ export default function ContactPage() {
                           {...field}
                           type="text"
                           maxLength={10}
-                          placeholder="e.g. 9876543210"
+                          placeholder="Enter Mobile Number"
                           className={`w-full p-3 bg-slate-50 border ${
                             errors.phone
                               ? "border-red-500 focus:border-red-500"
@@ -243,7 +243,7 @@ export default function ContactPage() {
                       <textarea
                         {...field}
                         rows="2"
-                        placeholder="e.g. No. 45, West Street, K Pudur, Madurai"
+                        placeholder="Enter Your Address"
                         className={`w-full p-3 bg-slate-50 border ${
                           errors.address
                             ? "border-red-500 focus:border-red-500"
