@@ -12,7 +12,7 @@ import GalleryPage from "./components/GalleryPage";
 import ContactPage from "./components/ContactPage";
 import PrivacyPage from "./components/PrivacyPage";
 import TermsPage from "./components/TermsPage";
-import { Preloader, CentralTransitionLoader } from "./components/Loader";
+import { CentralTransitionLoader } from "./components/Loader";
 import "./App.css";
 import {
   PRODUCT_CATEGORIES,
